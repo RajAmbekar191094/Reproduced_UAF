@@ -25,7 +25,7 @@ void execute(int &A, B &callback) {
     std::thread([&A, &callback]() {
         doSomething();
         std::this_thread::sleep_for(std::chrono::seconds(2));
-        // Check if work was successful (for simplicity, we'll assume A > 0 means success)
+       
         if (A > 0) {
             callback.notify(true);  // Notify success
         } else {
@@ -35,16 +35,15 @@ void execute(int &A, B &callback) {
     
 }
 
-// A new function that replaces main, named runProgram
+
 void runProgram() {
   
   int A = 5;  // Simple variable to pass to the function
     B callback; // Create a simple callback object
 
-    // Call the execute function to do work asynchronously, passing by value
+    
     execute(A, callback);
-    // Sleep to give the detached thread time to finish (for demo purposes)
-    // std::this_thread::sleep_for(std::chrono::seconds(1));
+    
 
 }
 
@@ -52,6 +51,6 @@ int main() {
     // Call the new function to run the program
     runProgram();
     std::cout<<"Run gone"<<"\n";
-   std::this_thread::sleep_for(std::chrono::seconds(1));
+   std::this_thread::sleep_for(std::chrono::seconds(3));
     return 0;
 }
