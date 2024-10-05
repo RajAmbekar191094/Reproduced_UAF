@@ -1,4 +1,9 @@
-// before_fix.cpp
+/*Description: Following is program with a bug. The string object pointer is declared while passing as
+parameter to process_string function as reference along with tmptok. Inside processs_string a new string pointer is created which is made to point
+input value. After line 21 the object passed goes out of scope and tmptok points to a NULL pointer
+assert at line 25 gives rise to NULL pointer dereference
+*/
+
 #include <iostream>
 #include <string>
 #include <cassert>

@@ -1,3 +1,7 @@
+/*Description: In this program a vector of thread clients is declared in main() function. A vector of strings by 
+name files is passed as a reference to run function inside the Worker class. As the main function lifetime ends'
+it causes use after scope bug at line 16. To avoid this situation  join the threads in main() using a for loop
+on client vector*/
 #include <iostream>
 #include <thread>
 #include <vector>

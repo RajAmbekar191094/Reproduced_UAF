@@ -1,3 +1,6 @@
+/*Description: In this program the thread ids are stored in a local array which is passed as reference to 
+threadFunction. Once the main() function goes out of scope reference to threadId leads to Use after Scope
+bug. To resolve this bug the lifetime of main function is extended using join statements in for loop*/
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>  // For sleep function
@@ -17,7 +20,7 @@ void* threadFunction(void* arg) {
     }
 
     // Simulate some work
-    sleep(1);
+    sleep(5);
     return nullptr;
 }
 

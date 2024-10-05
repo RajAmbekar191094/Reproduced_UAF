@@ -1,3 +1,6 @@
+/*Description: In the following program data is local to main function(stack variable). It is passed as
+reference to a thread running doWork function when the main thread goes out of scope and there is use after scope
+bug from line 19*/
 #include <iostream>
 #include <thread>
 #include <mutex>

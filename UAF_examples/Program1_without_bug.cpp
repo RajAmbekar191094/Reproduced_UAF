@@ -1,4 +1,5 @@
-// after_fix.cpp
+/*Description: The bug is rectified by declaring tok_value pointer outside parse_thread-id and 
+then passing it as a parameter*/
 #include <iostream>
 #include <string>
 #include <cassert>

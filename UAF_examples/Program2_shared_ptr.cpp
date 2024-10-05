@@ -1,3 +1,5 @@
+/*Description: In this example the Use after scope bug is resolved by making  data as a shared pointer instead '
+of local variable to runProgram and then passing it to doWork thread*/
 #include <iostream>
 #include <thread>
 #include <mutex>

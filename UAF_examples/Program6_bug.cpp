@@ -1,3 +1,6 @@
+/*Description: In thim program struct s2 is a local (stack) variable of Func1. From func1 it is passed
+as a reference to thread running Func2 which leads to use after scope as the thread is detached from Func1 */
+
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>  // For sleep function

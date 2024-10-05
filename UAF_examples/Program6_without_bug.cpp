@@ -1,3 +1,5 @@
+/* Description: The Use after scope bug is resolved by making struct s1 as a local (stack) variable of main 
+function instead of Func1 as the lifetime of main is greater than that of Func2*/
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>  // For sleep function
