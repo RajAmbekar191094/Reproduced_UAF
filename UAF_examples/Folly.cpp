@@ -20,7 +20,7 @@ void test(A g){
 std::thread t1;
 void runProgram(){
     static A a;
-    static int b=10;
+     static int b=10;
     a.y=&b;
     t1=std::thread(test,a);
     // t1.join();

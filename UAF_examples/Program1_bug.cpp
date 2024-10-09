@@ -8,8 +8,10 @@ assert at line 25 gives rise to NULL pointer dereference
 #include <string>
 #include <cassert>
 #include <cstdlib>  // For strtol
+#include <thread>
+#include <unistd.h>  
 
-void process_string(const char* str, char** out_tmptok) {
+void parse_thread_id(const char* str, char** out_tmptok) {
     long result = strtol(str, out_tmptok, 0);  
     std::cout << "Result from strtol: " << result << std::endl;
 }
@@ -18,11 +20,19 @@ int main() {
     std::string input_value = "12345";
     char* tmptok;
 
-    // Bug: Using a temporary std::string
-    process_string(std::string(input_value).c_str(), &tmptok);  
+    // Create a thread to call parse_thread_id directly
+    // std::thread thr(parse_thread_id, std::string(input_value).c_str(), &tmptok);  // Temporary string created here
+    parse_thread_id( std::string(input_value).c_str(),&tmptok);
 
-   
-     assert(*tmptok == '1'); 
+    // Detach the thread to run independently
+    
+    sleep(5);
+    // Attempt to assert the value of tmptok - may lead to undefined behavior
+    // assert(*tmptok == '\0');
+    //   thr.join();
+    assert(*tmptok == '\0');
+  
 
     return 0;
 }
+

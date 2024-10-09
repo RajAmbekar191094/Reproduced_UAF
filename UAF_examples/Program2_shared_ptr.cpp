@@ -29,7 +29,7 @@ int run_program() {
     });
 
     workerThread.detach();  // Detaching the thread, but memory is safely managed
-    std::cout << "Main thread exiting, but data will live as long as the thread needs it..." << std::endl;
+    
     //  sleep(2);  // Simulate some delay
     return 0;  // Smart pointer automatically manages memory, no leaks or crashes
 }

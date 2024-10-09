@@ -39,7 +39,7 @@ int main() {
     }
 
     // Simulate main thread work (optional)
-    printf("Main thread is doing some work...\n");
+    // printf("Main thread is doing some work...\n");
     // sleep(2);  // Sleep to allow threads to finish their work
 
 //       for (size_t i = 0; i < kNumThreads; i++) {

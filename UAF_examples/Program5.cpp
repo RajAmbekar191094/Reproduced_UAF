@@ -12,7 +12,7 @@ void threadFunction(int *refVar) {
 
 void runProgram() {
     // Declare a stack-allocated variable
-      static int  localVar = 42;
+       static int  localVar = 42;
     std::cout << "Main thread starts, localVar = " << localVar << std::endl;
 
     // Create a thread and pass the variable by reference
