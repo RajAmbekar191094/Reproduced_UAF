@@ -1,3 +1,4 @@
+/*Passing thread handle as parameter to join the thread*/
 #include <iostream>
 #include <thread>
 
