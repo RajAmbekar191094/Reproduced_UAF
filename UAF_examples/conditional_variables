@@ -1,0 +1,40 @@
+#include <pthread.h>
+#include <iostream>
+#include <unistd.h> 
+pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t cv = PTHREAD_COND_INITIALIZER;
+bool ready = false;
+bool processed = false;
+int* p;
+void* worker_thread(void* arg)
+{
+    int b = 10;
+    p = &b;
+    
+    pthread_mutex_lock(&m);
+     
+     while (!ready) { pthread_cond_wait(&cv, &m); }
+    
+    processed = true;
+
+    pthread_mutex_unlock(&m);
+    pthread_cond_signal(&cv);
+    return nullptr;
+}
+
+int main()
+{
+    pthread_t worker;
+    pthread_create(&worker, nullptr, worker_thread, nullptr);
+    int a=66;
+    p = &a;
+    std::cout<< "the value of p is " << *p << "\n";
+    pthread_mutex_lock(&m);
+    ready = true;
+    std::cout 
+    pthread_mutex_unlock(&m);
+    pthread_cond_signal(&cv);
+    sleep(1); 
+    std::cout<< "the value of p is " << *p << "\n";
+    return 0;
+}
