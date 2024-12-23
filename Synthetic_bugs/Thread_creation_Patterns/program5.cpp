@@ -1,11 +1,10 @@
+//the else branch in the main function has a use after scope issue with variable y.
+
 #include<thread>
 #include <atomic>
 #include<vector>
 #include<iostream>
 #include <pthread.h>
-
-//the else branch in the main function has a use after scope issue with variable y.
-
 
 bool is_signal()
 {
