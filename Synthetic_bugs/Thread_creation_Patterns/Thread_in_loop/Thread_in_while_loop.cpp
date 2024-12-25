@@ -2,10 +2,10 @@
 #include <thread>
 #include <vector>
 using namespace std;
-void func1(int *y)
+void func1(int *y,int id)
 {
     *y=*y+1;
-    cout<<"Incremented data"<<*y<<endl;
+    cout<<"Incremented data by id "<<id<<"and with val "<<*y<<endl;
 }
 int main()
 {
@@ -18,13 +18,16 @@ int main()
         if(i==3)
         {
             v.emplace_back(thread(func1,&i,i+1));
-        }
-        else {
-        {
-              v.emplace_back(thread(func1,&j,i+1));
+            v.back().join();
 
         }
+        else 
+        {
+              v.emplace_back(thread(func1,&j,i+1));
+               v.back().join();
+
         }
+       
     }
 
     return 0;

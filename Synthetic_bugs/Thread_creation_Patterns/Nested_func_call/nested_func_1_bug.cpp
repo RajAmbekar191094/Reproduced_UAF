@@ -2,7 +2,7 @@
 #include <iostream>
 #include <thread>
 using namespace std;
-
+ thread t1;
 void runThread(int *t)
 {
     cout<<"Value passed from main:"<<*t<<endl;
@@ -17,8 +17,8 @@ void c(int *z)
 
     }
     else{
-        thread t1(runThread,z);
-        t1.join();
+        t1=thread (runThread,z);
+        // t1.join();
 
     }
     
@@ -36,16 +36,18 @@ void b(int *y)
     c(y);
 }
 
-void a(int *x)
+void a()
 {
-    *x=20;
-    b(x);
+    int x=10;
+   
+    b(&x);
 
 }
 
 int main()
 {
-    int x=10;
-    a(&x);
+    // int x=10;
+    a();
+    t1.join();
 
 }

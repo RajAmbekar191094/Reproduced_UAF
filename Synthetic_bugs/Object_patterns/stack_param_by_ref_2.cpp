@@ -8,16 +8,22 @@ void thread_func(int *x){
     // std::cout<<"Value of x is:";
 
 }
-void threadFunction(){
-    int x=10;
-    t1=std::thread(thread_func,&x);
+// void threadFunction(){
+//     int x=10;
+//     t1=std::thread(thread_func,&x);
     
 
-}
+// }
 int main(){
-    //  int x=10;
-    // t1=std::thread(thread_func);
-    threadFunction();
+    int a=10;
+    if(a==10)
+    {
+        int x=10;
+        t1=std::thread(thread_func,&x);
+
+    }
+    
+    // threadFunction();
     t1.join();
 
 }
