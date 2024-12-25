@@ -2,7 +2,7 @@
 #include <iostream>
 #include <thread>
 void thread_func(int *x){
-    cout<<"Value of x is:"<<*x<<"\n";
+    std::cout<<"Value of x is:"<<*x<<"\n";
 
 }
 void threadFunction(){

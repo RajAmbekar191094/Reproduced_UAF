@@ -1,10 +1,11 @@
+/* Description: Thread creation inside a one of the branches of if loop*/
 #include<thread>
 #include <atomic>
 #include<vector>
 #include<iostream>
 #include <pthread.h>
 
-//the else branch in the  function  "func " has a use after scope issue with variable newval.
+
 void func2(int *yy)
 {
      *yy = *yy +1;

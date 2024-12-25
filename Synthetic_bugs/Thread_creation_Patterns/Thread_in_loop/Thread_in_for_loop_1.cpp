@@ -23,7 +23,6 @@ int main() {
     for (auto& t : threads) {
         t.join();
     }
-
     std::cout << "Main thread: Final value of sharedVar: " << sharedVar << "\n";
 
     return 0;

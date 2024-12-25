@@ -11,7 +11,7 @@ void task(int *ref) {
     std::cout << "Task running in thread, modified value: " << *ref << "\n";
 }
 
-e
+
 void createThread() {
     int localVar = 5;
     

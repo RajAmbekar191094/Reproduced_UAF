@@ -1,5 +1,5 @@
 /*Description: Thread handle is initialized globally. Thread is created in  function start thread 
-running thread function where local value is passed by reference*/
+running thread function where local value is passed by reference */
 
 #include <iostream>
 #include <thread>
