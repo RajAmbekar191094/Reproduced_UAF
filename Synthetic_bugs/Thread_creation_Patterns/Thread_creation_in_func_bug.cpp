@@ -1,12 +1,13 @@
 
-/* Description: Thread creation inside a function. A local variable by name localVar
-passed as a ref to task function. Thread is joined in same createThread function so there is no bug*/
+/* Description: Thread creation inside a function createThread(). Local variable is passed as reference to 
+thread running the function task. As the thread is joined at wrong location (inside main) it creates a Use After 
+Scope bug */
 
 #include <iostream>
 #include <thread>
 #include <functional> 
 
-
+std::thread t;
 void task(int *ref) {
     *ref += 10;
     std::cout << "Task running in thread, modified value: " << *ref << "\n";
@@ -19,14 +20,15 @@ void createThread() {
     std::cout << "Before thread, localVar: " << localVar << "\n";
     
    
-    std::thread t(task, &localVar);  
+    t=std::thread(task, &localVar);  
     
-    t.join();  
+   
     
     std::cout << "After thread, localVar: " << localVar << "\n";
 }
 
 int main() {
     createThread(); 
+     t.join();  
     return 0;
 }

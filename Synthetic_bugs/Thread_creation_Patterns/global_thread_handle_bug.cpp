@@ -1,6 +1,6 @@
 /*Description: Thread handle is initialized globally. Thread is created in  function start thread 
-running thread function where local value is passed by reference. This is not a buggy program as the thread is
-joined in stratThread function itself where it is created*/
+running thread function where local value is passed by reference. This is buggy program as the thread join
+is placed in main function by which the scope of startThread function ends much before*/
 
 #include <iostream>
 #include <thread>
@@ -18,15 +18,14 @@ void threadFunction(int *counter) {
 void startThread() {
     int counter = 0;
     t = std::thread(threadFunction, &counter);  // Pass counter by pointer
-     if (t.joinable()) {
-        t.join();  // Ensure the thread is joined before main continues
-    }
 }
 
 int main() {
-    
+    // int counter = 0;
     startThread();
-   
-    std::cout << "Main function ends "<<"\n";  
+    if (t.joinable()) {
+        t.join();  // Ensure the thread is joined before main continues
+    }
+    // std::cout << "Main function ends, counter = " << counter << "\n";  
     return 0;
 }

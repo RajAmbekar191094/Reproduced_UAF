@@ -5,7 +5,8 @@
 #include<iostream>
 #include <pthread.h>
 
-
+std::thread t1;
+std::thread t2;
 void func2(int *yy)
 {
      *yy = *yy +1;
@@ -20,33 +21,32 @@ bool signal()
 
 void func(int *current)
 {
-    std::thread t1;
+
     if(signal())
     {
-     *current = *current +1;
-     std::cout<<"the value of current is "<<*current<<"  \n";
-     t1 = std::thread(func, current);
+        *current = *current +1;
+        std::cout<<"the value of current is "<<*current<<"  \n";
+        t1 = std::thread(func, current);
     }
-    else{
+    else
+    {
 
-    int newval=30;
-    
-    t1 = std::thread(func2, &newval);
-     std::this_thread::sleep_for(std::chrono::milliseconds(3));
+        int newval=30;
+        t1 = std::thread(func2, &newval);
+        // std::this_thread::sleep_for(std::chrono::milliseconds(3));
     }
-t1.join();
+    t1.join();
 
 }
 
 int main()
 {
-    
-int  x =1;
-std::thread t1;
 
-t1 = std::thread(func, &x);
+int  x=1;
+t2 = std::thread(func, &x);
 
-t1.join();
+//t1.join();
+t2.join();
 return 0;
 
 }

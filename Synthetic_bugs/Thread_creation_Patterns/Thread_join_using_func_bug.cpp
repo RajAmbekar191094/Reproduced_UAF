@@ -3,6 +3,7 @@
 #include <thread>
 
 // Function that will be executed by the thread
+std::thread t1;
 void threadTask(int id) {
     std::cout << "Thread " << id << " is running...\n";
     std::this_thread::sleep_for(std::chrono::seconds(2));
@@ -18,9 +19,16 @@ void joinThread(std::thread& t) {
     }
 }
 
+void createThread()
+{
+     t1=std::thread(threadTask, 1);  // Create a thread that runs threadTask
+
+    
+}
+
 
 int main() {
-    std::thread t1(threadTask, 1);  // Create a thread that runs threadTask
+    // std::thread t1(threadTask, 1);  // Create a thread that runs threadTask
 
     // Pass the thread handle (t1) to another function to join it
     joinThread(t1);  // Passing the thread handle as a reference
