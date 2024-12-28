@@ -39,7 +39,7 @@ int main() {
         else
         {
             threads.emplace_back(threadTask, id++, &sharedData);
-            cout<< threads.back().get_id()<<"is joining"<<endl;
+            cout<< threads.back().get_id()<<" is joining"<<endl;
             threads.back().join();
 
         }
@@ -47,7 +47,7 @@ int main() {
     } while (sharedData < 50);
 
     for ( int i=2;i<10;i++) {
-        std::cout << threads[i].get_id() <<"is joining"<<endl;
+        std::cout << threads[i].get_id() <<" is joining"<<endl;
         threads[i].join();
     }
 

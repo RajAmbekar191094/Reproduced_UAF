@@ -4,9 +4,10 @@
 
 // Function that will be executed by the thread
 std::thread t1;
-void threadTask(int id) {
+void threadTask(int *x,int id) {
     std::cout << "Thread " << id << " is running...\n";
-    std::this_thread::sleep_for(std::chrono::seconds(2));
+    // std::this_thread::sleep_for(std::chrono::seconds(2));
+    std::cout<<"Value of x is "<<*x<<std::endl;
     std::cout << "Thread " << id << " has finished.\n";
 }
 
@@ -21,7 +22,9 @@ void joinThread(std::thread& t) {
 
 void createThread()
 {
-     t1=std::thread(threadTask, 1);  // Create a thread that runs threadTask
+    int x=100;
+     t1=std::thread(threadTask, &x,1);  // Create a thread that runs threadTask
+       std::cout << "Function create thread went out of scope.\n";
 
     
 }
@@ -29,6 +32,7 @@ void createThread()
 
 int main() {
     // std::thread t1(threadTask, 1);  // Create a thread that runs threadTask
+    createThread();
 
     // Pass the thread handle (t1) to another function to join it
     joinThread(t1);  // Passing the thread handle as a reference

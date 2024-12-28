@@ -19,14 +19,14 @@ bool signal()
     return false;
 }
 
-void func(int *current)
+void func1(int *current)
 {
 
     if(signal())
     {
         *current = *current +1;
         std::cout<<"the value of current is "<<*current<<"  \n";
-        t1 = std::thread(func, current);
+        t1 = std::thread(func1, current);
     }
     else
     {
@@ -35,7 +35,7 @@ void func(int *current)
         t1 = std::thread(func2, &newval);
         // std::this_thread::sleep_for(std::chrono::milliseconds(3));
     }
-    t1.join();
+    // t1.join();
 
 }
 
@@ -43,9 +43,9 @@ int main()
 {
 
 int  x=1;
-t2 = std::thread(func, &x);
+t2 = std::thread(func1, &x);
 
-//t1.join();
+t1.join();
 t2.join();
 return 0;
 

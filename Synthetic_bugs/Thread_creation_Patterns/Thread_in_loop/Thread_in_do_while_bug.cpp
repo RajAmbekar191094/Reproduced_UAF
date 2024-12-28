@@ -4,6 +4,7 @@
 #include <mutex>
 #include <atomic>
 #include <bits/stdc++.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -57,7 +58,8 @@ int main() {
     } while (tcount < 50);
     cout<<"Loop completed !!!"<<endl;
 
-    for ( int i=0;i< tcount;i++) {
+    for ( int i=0;i< tcount;i++) 
+    {
         std::cout << threads[i].get_id() <<"is joining"<<endl;
         threads[i].join();
     }

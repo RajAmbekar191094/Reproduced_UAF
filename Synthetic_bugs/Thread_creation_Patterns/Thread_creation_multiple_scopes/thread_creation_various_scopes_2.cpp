@@ -4,13 +4,8 @@ which internally creates thread to run threadTask function*/
 #include <thread>
 #include <functional>  // for std::ref
 using namespace std;
-// int a=10;
-// void runGlobalThread(int *a)
-// {
-//     cout<<"Value in global thread:"<<*a<<endl;
 
 
-// }
 void runLocalThread1(int *x)
 {
     cout<<"Value in local thread 1:"<<*x<<endl;
@@ -83,10 +78,10 @@ int main()
                     {
                         int sn_var=4;
                         scope_n=thread(runLocalThread4,&sn_var);
-                        scope_1.join();
-                        scope_2.join();
-                        scope_3.join();
-                        scope_n.join();
+                        // scope_1.join();
+                        // scope_2.join();
+                        // scope_3.join();
+                        // scope_n.join();
                          
                        
                         //  scope_1.join();
@@ -102,10 +97,10 @@ int main()
         }
     }
     
-    // scope_1.join();
-    // scope_2.join();
-    // scope_3.join();
-    // scope_n.join();
+    scope_1.join();
+    scope_2.join();
+    scope_3.join();
+    scope_n.join();
     
     return 0;
 }

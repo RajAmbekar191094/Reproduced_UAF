@@ -1,6 +1,10 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+#include <unistd.h>
+
+
+std::vector<std::thread> threads; // Vector to store threads
 
 // Function for level 5 thread
 void taskLevel5(int* ref) {
@@ -20,6 +24,7 @@ void taskLevel4(int* ref) {
 void level3ThreadTask(int id, int* ref) {
     // *ref += id;  // Modify the shared variable based on thread ID
     std::cout << "Thread in Level 3 running. ID: " << id << ", Value: " << *ref << "\n";
+    sleep(1);
 }
 
 // Function for level 3 thread
@@ -27,7 +32,7 @@ void taskLevel3() {
     int localVar = 100;  // Local variable to be passed by reference
     std::cout << "Level 3 thread is running.\n";
 
-    std::vector<std::thread> threads; // Vector to store threads
+    
     for (int i = 10; i < 20; ++i) {
         if (i == 15) {
             threads.emplace_back(taskLevel4, &localVar);  // Pass reference to level 4
@@ -36,10 +41,8 @@ void taskLevel3() {
         }
     }
 
-    // Join all threads in the loop
-    for (auto& t : threads) {
-        t.join();
-    }
+  
+ 
 
     std::cout << "Level 3 thread finished after all inner threads. Final value: " << localVar << "\n";
 }
@@ -66,6 +69,11 @@ int main() {
 
     std::thread t1(taskLevel1);  // Create Level 1 thread
     t1.join();  // Wait for Level 1 to finish
+
+      // Join all threads in the loop
+    for (auto& t : threads) {
+        t.join();
+    }
 
     std::cout << "Main thread finished after level 1.\n";
     return 0;

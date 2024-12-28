@@ -5,6 +5,8 @@
 #include <functional> // for std::ref
 
 // Function for level 5 thread
+std::thread t1;
+
 void taskLevel5(int *ref) {
     *ref += 50;  // Modify the variable by reference
     std::cout << "Level 5 thread is running. Modified value: " << ref << "\n";
@@ -27,31 +29,37 @@ void taskLevel3(int * ref) {
 }
 
 // Function for level 2 thread
-void taskLevel2() {
-    int localVar = 100;  // Local variable to be passed by reference
+void taskLevel2(int *ref) {
     std::cout << "Level 2 thread is running.\n";
-    std::thread t3(taskLevel3, &localVar);  // Pass reference to level 3
+    std::thread t3(taskLevel3, ref);  // Pass reference to level 3
     t3.join();  
-    std::cout << "Level 2 thread finished after level 3. Current value: " << localVar << "\n";
+    std::cout << "Level 2 thread finished after level 3. Current value: " << ref << "\n";
 }
 
 // Function for level 1 thread
-void taskLevel1() {
+void taskLevel1(int *ref) {
     std::cout << "Level 1 thread is running.\n";
-    std::thread t2(taskLevel2);  // Pass reference to level 2
+    std::thread t2(taskLevel2, ref);  // Pass reference to level 2
     t2.join();  
-    std::cout << "Level 1 thread finished after level \n";
+    std::cout << "Level 1 thread finished after level 2. Current value: " << ref << "\n";
 }
 
 // Main function
-int main() {
-  
-    std::cout << "Main thread is running. " << "\n";
+void taskLevel0()
+{
+    int localVar = 100;  // Local variable to be passed by reference
+    std::cout << "Level 0 is running. Initial value: " << localVar << "\n";
     
    
-    std::thread t1(taskLevel1);
-    t1.join();  
+    t1=std::thread(taskLevel1, &localVar);
+   
     
-    std::cout << "Main thread finished after level 1." <<"\n";
+    std::cout << "Level 0 is running. Final value: " << localVar << "\n";
+    // return 0;
+
+}
+int main() {
+    taskLevel0();
+    t1.join();  
     return 0;
 }
