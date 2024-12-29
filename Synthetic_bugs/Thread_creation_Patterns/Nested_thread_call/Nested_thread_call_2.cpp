@@ -1,4 +1,5 @@
-/* description: A single object is passed as reference from one thread to another at multiple levels */
+/* description: A single object is passed as reference from one thread to another at multiple levels. No Use AFter Scope as localVar os owned by taskLevel1
+and joined immediately inside same function */
 
 #include <iostream>
 #include <thread>

@@ -1,4 +1,5 @@
-/* description: A single object is passed as reference from one thread to another at multiple levels */
+/* description: A single object is passed as reference from one thread to another at multiple levels. Data object local_var is declared in main function
+and passed all the way to thread taskLevel5 where it is used. Thread join is placed in main fucntion which avoids potential Use After Scope */
 
 #include <iostream>
 #include <thread>

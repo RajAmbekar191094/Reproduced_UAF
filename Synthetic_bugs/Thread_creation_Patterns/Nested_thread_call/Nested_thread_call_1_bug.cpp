@@ -1,11 +1,13 @@
-/* description: A single object is passed as reference from one thread to another at multiple levels */
+/* Description: A single object is passed as reference from one thread to another at multiple levels . A loal object is declared in taskLevel0 which is apssed 
+all the way to taskLevel5 where it is finally used. Joining the thread at main() insterad of threadLevel0 who is the owner of the object leads to Use After Scope 
+bug*/
 
 #include <iostream>
 #include <thread>
 #include <functional> // for std::ref
 
 // Function for level 5 thread
-std::thread t1;
+std::thread t1; int localVar = 100;  // Local variable to be passed by reference
 
 void taskLevel5(int *ref) {
     *ref += 50;  // Modify the variable by reference

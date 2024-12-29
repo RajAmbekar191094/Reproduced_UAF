@@ -1,5 +1,5 @@
 /*Description: The function UseOfdata is called at 2 different locations in spawnthread function. Here the join 
-is placed immediately after the thread so there is no Use After Scope error*/
+is placed immediately after the thread spawn so there is no Use After Scope error*/
 
 #include <iostream>
 #include <thread>

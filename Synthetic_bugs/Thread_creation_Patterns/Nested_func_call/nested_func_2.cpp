@@ -1,4 +1,7 @@
-
+/*Description: In this program a function call chain is created like main->a()->b()->c()->runthrad.
+A data object x is passed as refernce from one function to another. In function c local variable is passed 
+to final function in the chain runthrad where it is Used. It is enough to extend the lifetime of func c 
+to avoid Use After Scope*/
 #include <iostream>
 #include <thread>
 using namespace std;

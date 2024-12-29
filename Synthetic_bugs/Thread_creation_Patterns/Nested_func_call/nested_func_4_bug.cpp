@@ -1,3 +1,7 @@
+/*Description: In this program a function call chain is created like main->a()->b()->c()->runthread.
+A data object x is passed as refernce from one function to another starting from function b(). 
+In function c local variable is passed to final function in the chain runthrad where it is Used. 
+Thread t1 is joined in a() function instead of c that results in  Use After Scope*/
 
 #include <iostream>
 #include <thread>

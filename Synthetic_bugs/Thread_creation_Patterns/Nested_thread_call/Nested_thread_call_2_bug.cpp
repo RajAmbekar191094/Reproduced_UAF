@@ -1,4 +1,5 @@
-/* description: A single object is passed as reference from one thread to another at multiple levels */
+/* Description: A single object is passed as reference from one thread to another at multiple levels. Use AFter Scope bug is introduced by joining thread t2 
+at main() instead of taskLevel1 */
 
 #include <iostream>
 #include <thread>
