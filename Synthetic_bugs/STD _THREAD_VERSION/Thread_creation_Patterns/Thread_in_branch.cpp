@@ -1,4 +1,8 @@
-/* Description: Thread creation inside a one of the branches of if loop*/
+/* Description: Thread creation inside a one of the branches of if loop
+In a furnace control system,If the temperature is within the range, the system might create threads to log the temperature, 
+update the status display, or perform periodic checks.
+If the temperature exceeds a certain threshold, the system might spawn threads to handle more critical tasks such as turning off 
+heating elements, activating cooling systems, or sending alerts to maintenance staff. */
 #include<thread>
 #include <atomic>
 #include<vector>

@@ -1,6 +1,9 @@
 /*Description: Thread handle is initialized globally. Thread is created in  function start thread 
 running thread function where local value is passed by reference. This is buggy program as the thread join
-is placed in main function by which the scope of startThread function ends much before*/
+is placed in main function by which the scope of startThread function ends much before
+In RTOS-based embedded systems for automotive or aerospace applications, global thread handles are typically used to manage periodic tasks 
+that control system operations like sensor data polling or signal processing. However, thread lifetimes and synchronization must be 
+carefully managed using mutexes, semaphores, or condition variables to avoid race conditions and ensure safe access to shared resources.*/
 
 #include <iostream>
 #include <thread>

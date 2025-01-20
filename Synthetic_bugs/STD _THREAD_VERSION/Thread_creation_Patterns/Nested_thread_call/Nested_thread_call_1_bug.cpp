@@ -1,6 +1,11 @@
-/* Description: A single object is passed as reference from one thread to another at multiple levels . A loal object is declared in taskLevel0 which is apssed 
+/* Description: A single object is passed as reference from one thread to another at multiple levels . 
+A loal object is declared in taskLevel0 which is apssed 
 all the way to taskLevel5 where it is finally used. Joining the thread at main() insterad of threadLevel0 who is the owner of the object leads to Use After Scope 
-bug*/
+bug.
+In a safety-critical industrial control system, a multi-level fault detection system may process sensor data through various stages.
+Each stage involves different tasks (e.g., monitoring, validation, filtering, and analysis) and is handled by a separate thread. 
+The system can be hierarchical, where each thread in the chain is  responsible for a specific task. 
+At the final stage, a decision is made based on the data, and an alarm or safety protocol is triggered.*/
 
 #include <iostream>
 #include <thread>

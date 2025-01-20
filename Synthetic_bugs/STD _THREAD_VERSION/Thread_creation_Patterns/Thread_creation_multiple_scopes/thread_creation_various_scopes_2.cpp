@@ -1,8 +1,12 @@
 /*Description: A function createThread is called in main with sharedVar passed as ref
-which internally creates thread to run threadTask function*/
+which internally creates thread to run threadTask function
+In general air borne vehicles have multiple control actuation systems like ADC (Aerodynamic Control) RCS (Reaction Control
+System) and TVC (Thrust Vectoring Control). Depending on the flight path, configuration, air density and energy available */
 #include <iostream>
 #include <thread>
-#include <functional>  // for std::ref
+#include <functional>  d spawn threads for more complex tasks, such as initiating cooling actions, generating alarms, or switching between system modes.*/
+#include <iostream>
+#include <thread>// for std::ref
 using namespace std;
 
 
@@ -68,7 +72,7 @@ int main()
         int s1_var=1;
           scope_1=thread(runLocalThread1,&s1_var);
 
-        {
+
             int s2_var=2;
               scope_2=thread(runLocalThread2,&s2_var);
             {
@@ -95,12 +99,12 @@ int main()
             }
 
         }
-    }
-    
     scope_1.join();
     scope_2.join();
     scope_3.join();
     scope_n.join();
     
     return 0;
-}
+    }
+    
+

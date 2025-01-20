@@ -1,5 +1,7 @@
 /*Description: Threads are created inside a for loop and paarmeterb passed as reference The threads are joined inside main() function avoiding 
-potential Use After Scope bugs*/
+potential Use After Scope bugs.In image processing applications, such as those used in medical imaging (e.g., MRI or CT scan analysis), 
+video streaming, or computer vision systems, large images or frames are divided into smaller blocks to be processed 
+by multiple threads in parallel. Each thread processes a part of the image, performs necessary computations, and updates the result.*/
 #include <iostream>
 #include <thread>
 #include <vector>

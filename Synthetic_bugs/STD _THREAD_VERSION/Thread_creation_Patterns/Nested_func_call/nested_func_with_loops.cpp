@@ -1,3 +1,7 @@
+/*Description: In this program a function call chain is created like main->a()->b()->c()->runthread.
+In function c() threads are created in a loop where a local object is shared as reference or value depending on the iteration count.
+In an autonomous vehicle system, a situation can arise where a sensor data (e.g., LiDAR or camera readings) must propagate through a 
+pipeline of processing functions, each adding or refining data before the final stage spawns a thread to process the enriched data.*/
 #include <iostream>
 #include <thread>
 #include <vector>

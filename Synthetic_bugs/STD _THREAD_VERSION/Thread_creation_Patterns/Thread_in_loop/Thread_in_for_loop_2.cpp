@@ -1,5 +1,7 @@
 /*Description: Threads are created in for loop in runThreads() function passing data object z as reference and joined immediately in same scope block avoiding
-potential Use After Scope bugs*/
+potential Use After Scope bugs.In image processing applications, such as those used in medical imaging (e.g., MRI or CT scan analysis), 
+video streaming, or computer vision systems, large images or frames are divided into smaller blocks to be processed 
+by multiple threads in parallel. Each thread processes a part of the image, performs necessary computations, and updates the result.*/
 #include <iostream>
 #include <ostream>
 #include <thread>

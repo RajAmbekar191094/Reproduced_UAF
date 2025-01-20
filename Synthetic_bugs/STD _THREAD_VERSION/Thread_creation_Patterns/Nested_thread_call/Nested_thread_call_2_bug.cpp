@@ -1,5 +1,9 @@
 /* Description: A single object is passed as reference from one thread to another at multiple levels. Use AFter Scope bug is introduced by joining thread t2 
-at main() instead of taskLevel1 */
+at main() instead of taskLevel1 
+In a safety-critical industrial control system, a multi-level fault detection system may process sensor data through various stages.
+Each stage involves different tasks (e.g., monitoring, validation, filtering, and analysis) and is handled by a separate thread. 
+The system can be hierarchical, where each thread in the chain is  responsible for a specific task. 
+At the final stage, a decision is made based on the data, and an alarm or safety protocol is triggered.*/
 
 #include <iostream>
 #include <thread>

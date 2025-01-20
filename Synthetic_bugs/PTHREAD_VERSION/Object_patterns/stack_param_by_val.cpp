@@ -13,7 +13,7 @@ void* thread_func(void *arg) {
 }
 
 void threadFunction() {
-    int x = 10;
+    int x = 10;stack_param_by_val
     pthread_create(&t1, nullptr, thread_func, static_cast<void*>(&x));
     //  t1.join();
 }

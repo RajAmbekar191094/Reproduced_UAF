@@ -1,5 +1,8 @@
-/*Description: 50 threads are created in do while loop. First 40 threads are created in else block and last 10 in if block. The threads are joined outside the 
-if-else block leading to Use After Scope bug  */
+/*Description: 50 threads are created in do while loop. First 40 threads are created in else block and last 10 in if block. 
+The threads are joined outside the  if-else block leading to Use After Scope bug 
+In image processing applications, such as those used in medical imaging (e.g., MRI or CT scan analysis), 
+video streaming, or computer vision systems, large images or frames are divided into smaller blocks to be processed 
+by multiple threads in parallel. Each thread processes a part of the image, performs necessary computations, and updates the result. */
 #include <iostream>
 #include <thread>
 #include <vector>

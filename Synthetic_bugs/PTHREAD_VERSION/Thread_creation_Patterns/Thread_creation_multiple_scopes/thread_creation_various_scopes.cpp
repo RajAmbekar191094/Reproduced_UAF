@@ -105,6 +105,7 @@ int main()
                     pthread_join(scope_1, nullptr);
                     pthread_join(scope_2, nullptr);
                     pthread_join(scope_3, nullptr);
+
                     pthread_join(scope_n, nullptr);
                 }
             }

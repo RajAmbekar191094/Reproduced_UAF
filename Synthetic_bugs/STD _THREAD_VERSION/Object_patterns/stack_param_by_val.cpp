@@ -1,5 +1,7 @@
 /*Description: Object x is created on stack (local var) and then passed as value to thread function thread_func. Since parameter is passed by value there is 
-no Use After Scope bug*/
+no Use After Scope bug
+In an autonomous vehicle, sensor data from LIDAR, cameras, or radar must be processed concurrently to make driving decisions. 
+To ensure thread safety and avoid data races, data snapshots are often passed by value to worker threads for independent processing.*/
 #include <iostream>
 #include <thread>
 std::thread t1;

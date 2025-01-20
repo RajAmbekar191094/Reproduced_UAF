@@ -1,5 +1,8 @@
 /*Description: SwapnThreads function is called at two different locations in main function.
-Depending on value of x UseOfdata function prints the value of data passed as reference */
+Depending on value of x UseOfdata function prints the value of data passed as reference.
+In an industrial robotic arm, multiple subsystems (e.g., motor controllers, sensor handlers, and safety monitors) operate concurrently to 
+perform precise tasks. A function like spawnThreads can be called multiple times to initiate threads for specific operations depending 
+on the system's state or input conditions.*/
 
 #include <iostream>
 #include <thread>

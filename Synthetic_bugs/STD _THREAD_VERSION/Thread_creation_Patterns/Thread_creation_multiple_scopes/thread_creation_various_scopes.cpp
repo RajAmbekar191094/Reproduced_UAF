@@ -1,5 +1,11 @@
 /*Description: A function createThread is called in main with sharedVar passed as ref
-which internally creates thread to run threadTask function*/
+which internally creates thread to run threadTask function
+In an industrial environment, safety-critical systems are responsible for monitoring and controlling various subsystems, 
+such as pressure, temperature, flow, or level sensors, and ensuring safe operation in the case of faults. These systems 
+must process sensor data in parallel, make decisions based on this data, and execute control tasks to prevent hazardous situations.
+Global Thread (runGlobalMonitor): This thread would oversee the entire control system.
+Nested Threads: Based on sensor data (e.g., temperature above threshold), deeper levels of decision-making 
+would spawn threads for more complex tasks, such as initiating cooling actions, generating alarms, or switching between system modes.*/
 #include <iostream>
 #include <thread>
 #include <functional>  // for std::ref

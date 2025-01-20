@@ -4,11 +4,11 @@ and is passed as a reference to thread t4. Thread t4 is joined in main() functio
 #include <iostream>
 #include <thread>
 #include <functional> // for std::ref
-
+std::thread t4;
 // Function for level 5 thread
 void taskLevel5(int *ref) {
     *ref += 50;  // Modify the variable by reference
-    std::cout << "Level 5 thread is running. Modified value: " << ref << "\n";
+    std::cout << "Level 5 thread is running. Modified value: " << *ref << "\n";
 }
 
 // Function for level 4 thread
@@ -16,15 +16,15 @@ void taskLevel4(int *ref) {
     std::cout << "Level 4 thread is running.\n";
     std::thread t5(taskLevel5, ref);  // Pass reference to level 5
     t5.join();  // Wait for level 5 to finish
-    std::cout << "Level 4 thread finished after level 5. Current value: " << ref << "\n";
+    std::cout << "Level 4 thread finished after level 5. Current value: " << *ref << "\n";
 }
 
 // Function for level 3 thread
 void taskLevel3() {
      int localVar = 100;  // Local variable to be passed by reference
     std::cout << "Level 3 thread is running.\n";
-    std::thread t4(taskLevel4, &localVar);  // Pass reference to level 4
-    t4.join();  // Wait for level 4 to finish
+    t4=std::thread(taskLevel4, &localVar);  // Pass reference to level 4
+    // t4.join();  // Wait for level 4 to finish
     std::cout << "Level 3 thread finished after level 4. Current value: " << localVar << "\n";
 }
 
@@ -33,7 +33,8 @@ void taskLevel2() {
      
     std::cout << "Level 2 thread is running.\n";
     std::thread t3(taskLevel3);  // Pass reference to level 3
-    t3.join();  
+    t3.join(); 
+    t4.join(); 
     std::cout << "Level 2 thread finished after level 3."<<"\n";
 }
 
