@@ -18,17 +18,18 @@ public:
     }
 };
 
-void threadFunction(Base *baseRef) {
-    sleep(5);
-    baseRef->display();
-}  
+// void threadFunction(Base *baseRef) {
+//     sleep(5);
+//     baseRef->display();
+// }  
 void createThread()  
 {   
     
     Derived derivedObj; 
     basePtr = &derivedObj;    
-    t1=thread(threadFunction,basePtr);
-     t1.join();
+    // t1=thread(threadFunction,basePtr);
+     //t1.join();
+       basePtr->display();
 }
 int main() {
     createThread();
