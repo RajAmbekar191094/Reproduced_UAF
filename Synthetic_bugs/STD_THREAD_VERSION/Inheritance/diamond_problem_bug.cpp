@@ -57,7 +57,7 @@ void createThread() {
     A12 a12Obj;
 
     // Upcast to A* and pass to runThread
-    A* basePtr = &a12Obj;
+    A12* basePtr = &a12Obj;
 
     // Call runThread for the A12 object
     t1 = thread(runThread, basePtr);
