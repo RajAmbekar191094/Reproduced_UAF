@@ -1,0 +1,22 @@
+
+
+===========================================
+Analyzing file: /home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Inheritance_with_data/Inheritance_simple.ll
+===========================================
+
+^^^^^^^^ Dumping Top Level Points-To Information ^^^^^^^^
+NodeID: ValVar ID: 33
+   %3 = load ptr, ptr %2, align 8 
+  PointsTo: { FIObjVar ID: 13 (base object)
+   %2 = alloca %class.Derived, align 4 { "ln": 45, "fl": "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Inheritance_with_data/Inheritance_simple.cpp" }, }
+
+NodeID: ValVar ID: 47
+   %3 = load ptr, ptr %2, align 8 
+  PointsTo: { FIObjVar ID: 13 (base object)
+   %2 = alloca %class.Derived, align 4 { "ln": 45, "fl": "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Inheritance_with_data/Inheritance_simple.cpp" }, }
+
+******* Join relations between threads *********
+Thread    Joined Thread  
+-------------------------
+===========================================
+

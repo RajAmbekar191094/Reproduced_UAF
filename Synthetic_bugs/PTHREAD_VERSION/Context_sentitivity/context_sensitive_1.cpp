@@ -17,7 +17,8 @@ void* UseOfData(void* arg)
 void spawnThreads()
 {
     int x;
-    cin >> x;
+    // cin >> x;
+    x=10;
     if (x == 10)
     {
         // Create thread t1 and join it immediately to avoid Use After Scope

@@ -67,13 +67,16 @@ void* taskLevel0(void* arg) {
     std::cout << "Level 0 is running. Initial value: " << localVar << "\n";
     
     pthread_create(&t1, nullptr, taskLevel1, &localVar);
-    pthread_join(t1, nullptr);  // Wait for thread at level 1 to finish
+    // pthread_join(t1, nullptr);  // Wait for thread at level 1 to finish
     
     std::cout << "Level 0 is running. Final value: " << localVar << "\n";
     return nullptr;
 }
 
 int main() {
+   
+    
     taskLevel0(nullptr);
+    pthread_join(t1, nullptr);  // Wait for thread at level 1 to finish
     return 0;
 }

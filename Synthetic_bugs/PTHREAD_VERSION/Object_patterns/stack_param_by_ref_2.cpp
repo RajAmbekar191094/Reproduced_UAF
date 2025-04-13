@@ -18,7 +18,8 @@ void* thread_func(void *arg) {
 
 int main() {
     int a;
-    std::cin >> a;
+    // std::cin >> a;
+    a=56;
     
     if (a == 10) {
         int x = 10;

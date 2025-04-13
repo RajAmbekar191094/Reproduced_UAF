@@ -34,7 +34,8 @@ void spawnThreads(int* x)
 int main()
 {
     int x;
-    cin >> x;
+    // cin >> x;
+    x=90;
 
     // Call spawnThreads with initial value of x
     spawnThreads(&x);

@@ -1,5 +1,5 @@
 /* Description: A single object is passed as reference from one thread to another at multiple levels. Object localVar is owned by function taskLevel2. It spawns 
-thread t3 which is immediately joined in taskLevel3 itself avoiding Use After Scope bug*/
+thread t3 which is immediately joined in taskLevel2 itself avoiding Use After Scope bug*/
 
 #include <iostream>
 #include <pthread.h>
