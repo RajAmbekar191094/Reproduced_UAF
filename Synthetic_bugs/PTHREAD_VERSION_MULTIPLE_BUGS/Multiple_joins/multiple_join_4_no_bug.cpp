@@ -39,5 +39,5 @@ int main() {
     //  int x=10;
     // t1=std::thread(thread_func);
     threadFunction();
-    pthread_join(t1, nullptr);
+    // pthread_join(t1, nullptr);
 }
