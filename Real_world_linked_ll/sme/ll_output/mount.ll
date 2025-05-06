@@ -32,7 +32,7 @@ $_Z6hasUIDPKc = comdat any
 @.str.17 = private unnamed_addr constant [5 x i8] c"cool\00", align 1, !dbg !79
 @.str.18 = private unnamed_addr constant [53 x i8] c"Security: %s incorrect user-name, other than 'cool'\0A\00", align 1, !dbg !85
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_Z5usagePKc(ptr noundef %0) #0 !dbg !139 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
@@ -57,7 +57,7 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 declare i32 @fprintf(ptr noundef, ptr noundef, ...) #2
 
-; Function Attrs: mustprogress noinline norecurse optnone uwtable
+; Function Attrs: mustprogress noinline norecurse uwtable
 define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #3 !dbg !159 {
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
@@ -382,7 +382,7 @@ define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #3 !dbg !159 
   ret i32 %199, !dbg !408
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i32 @_Z13hasCorrectUIDPKc(ptr noundef %0) #0 comdat !dbg !409 {
   %2 = alloca i32, align 4
   %3 = alloca ptr, align 8
@@ -428,7 +428,7 @@ declare i32 @mount(ptr noundef, ptr noundef, ptr noundef, i64 noundef, ptr nound
 
 declare i32 @fflush(ptr noundef) #2
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i32 @_Z6hasUIDPKc(ptr noundef %0) #0 comdat !dbg !424 {
   %2 = alloca i32, align 4
   %3 = alloca ptr, align 8
@@ -477,10 +477,10 @@ declare ptr @getpwuid(i32 noundef) #2
 ; Function Attrs: nounwind
 declare i32 @getuid() #5
 
-attributes #0 = { mustprogress noinline optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #0 = { mustprogress noinline uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
 attributes #2 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #3 = { mustprogress noinline norecurse optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #3 = { mustprogress noinline norecurse uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #4 = { nounwind willreturn memory(read) "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #5 = { nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #6 = { nounwind willreturn memory(none) "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }

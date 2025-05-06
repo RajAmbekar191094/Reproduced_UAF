@@ -645,7 +645,7 @@ declare void @_ZNSt8ios_base4InitD1Ev(ptr noundef nonnull align 1 dereferenceabl
 ; Function Attrs: nounwind
 declare i32 @__cxa_atexit(ptr, ptr, ptr) #3
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl4hostEv(ptr noalias sret(%"class.Poco::Net::IPAddress") align 8 %0, ptr noundef nonnull align 8 dereferenceable(28) %1) unnamed_addr #4 comdat align 2 !dbg !4083 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -664,7 +664,7 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) #5
 
 declare void @_ZN4Poco3Net9IPAddressC1EPKvj(ptr noundef nonnull align 8 dereferenceable(8), ptr noundef, i32 noundef) unnamed_addr #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl4hostEv(ptr noalias sret(%"class.Poco::Net::IPAddress") align 8 %0, ptr noundef nonnull align 8 dereferenceable(40) %1) unnamed_addr #4 comdat align 2 !dbg !4153 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -683,8 +683,8 @@ define linkonce_odr dso_local void @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl4ho
 
 declare void @_ZN4Poco3Net9IPAddressC1EPKvjj(ptr noundef nonnull align 8 dereferenceable(8), ptr noundef, i32 noundef, i32 noundef) unnamed_addr #1
 
-; Function Attrs: noinline optnone uwtable
-define dso_local void @_ZN4ToolC2Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) unnamed_addr #6 align 2 personality ptr @__gxx_personality_v0 !dbg !4221 {
+; Function Attrs: noinline uwtable
+define dso_local void @_ZN4ToolC2Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) unnamed_addr #0 align 2 personality ptr @__gxx_personality_v0 !dbg !4221 {
   %2 = alloca ptr, align 8
   %3 = alloca %"class.std::__cxx11::basic_string", align 8
   %4 = alloca ptr, align 8
@@ -762,7 +762,7 @@ define dso_local void @_ZN4ToolC2Ev(ptr noundef nonnull align 8 dereferenceable(
 
 declare void @_ZN4Poco4Util11ApplicationC2Ev(ptr noundef nonnull align 8 dereferenceable(224)) unnamed_addr #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_OS8_(ptr noalias sret(%"class.std::__cxx11::basic_string") align 8 %0, ptr noundef %1, ptr noundef nonnull align 8 dereferenceable(32) %2) #4 comdat !dbg !4235 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -779,7 +779,7 @@ define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx111
   ret void, !dbg !4246
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt7__cxx119to_stringEi(ptr noalias sret(%"class.std::__cxx11::basic_string") align 8 %0, i32 noundef %1) #4 comdat personality ptr @__gxx_personality_v0 !dbg !4247 {
   %3 = alloca ptr, align 8
   %4 = alloca i32, align 4
@@ -891,8 +891,8 @@ declare void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(ptr noun
 ; Function Attrs: nounwind
 declare void @_ZNSaIcEC1Ev(ptr noundef nonnull align 1 dereferenceable(1)) unnamed_addr #2
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_(ptr noundef nonnull align 8 dereferenceable(32) %0, ptr noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4281 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_(ptr noundef nonnull align 8 dereferenceable(32) %0, ptr noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4281 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -968,7 +968,7 @@ declare void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev(ptr noun
 ; Function Attrs: nounwind
 declare void @_ZN4Poco4Util11ApplicationD2Ev(ptr noundef nonnull align 8 dereferenceable(224)) unnamed_addr #2
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN4Tool11displayHelpEv(ptr noundef nonnull align 8 dereferenceable(328) %0) #4 align 2 personality ptr @__gxx_personality_v0 !dbg !4309 {
   %2 = alloca ptr, align 8
   %3 = alloca %"class.std::__cxx11::basic_string", align 8
@@ -1059,7 +1059,7 @@ declare noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEPFRSoS_E(ptr nou
 
 declare noundef nonnull align 8 dereferenceable(8) ptr @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(ptr noundef nonnull align 8 dereferenceable(8)) #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN4Tool13defineOptionsERN4Poco4Util9OptionSetE(ptr noundef nonnull align 8 dereferenceable(328) %0, ptr noundef nonnull align 8 dereferenceable(24) %1) unnamed_addr #4 align 2 !dbg !4329 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -1074,7 +1074,7 @@ define dso_local void @_ZN4Tool13defineOptionsERN4Poco4Util9OptionSetE(ptr nound
 
 declare void @_ZN4Poco4Util11Application21stopOptionsProcessingEv(ptr noundef nonnull align 8 dereferenceable(224)) #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_(ptr noundef nonnull align 8 dereferenceable(328) %0, ptr noundef nonnull align 8 dereferenceable(32) %1, ptr noundef nonnull align 8 dereferenceable(32) %2) unnamed_addr #4 align 2 personality ptr @__gxx_personality_v0 !dbg !4336 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1107,7 +1107,7 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
 
 25:                                               ; preds = %3
   call void @_ZN4Tool11displayHelpEv(ptr noundef nonnull align 8 dereferenceable(328) %22), !dbg !4347
-  call void @exit(i32 noundef 0) #19, !dbg !4349
+  call void @exit(i32 noundef 0) #18, !dbg !4349
   unreachable, !dbg !4349
 
 26:                                               ; preds = %3
@@ -1171,14 +1171,14 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
 
 62:                                               ; preds = %59
   call void @llvm.dbg.declare(metadata ptr %9, metadata !4388, metadata !DIExpression()), !dbg !4390
-  %63 = call noalias noundef nonnull ptr @_Znwm(i64 noundef 16) #20, !dbg !4391, !heapallocsite !4392
+  %63 = call noalias noundef nonnull ptr @_Znwm(i64 noundef 16) #19, !dbg !4391, !heapallocsite !4392
   invoke void @_ZN4Poco3Net17KeyConsoleHandlerC1Eb(ptr noundef nonnull align 8 dereferenceable(9) %63, i1 noundef zeroext false)
           to label %64 unwind label %81, !dbg !4394
 
 64:                                               ; preds = %62
   call void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(16) %9, ptr noundef %63), !dbg !4391
   call void @llvm.dbg.declare(metadata ptr %12, metadata !4395, metadata !DIExpression()), !dbg !4396
-  %65 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 16) #20
+  %65 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 16) #19
           to label %66 unwind label %85, !dbg !4397, !heapallocsite !4398
 
 66:                                               ; preds = %64
@@ -1191,7 +1191,7 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
 
 68:                                               ; preds = %67
   call void @llvm.dbg.declare(metadata ptr %13, metadata !4401, metadata !DIExpression()), !dbg !4403
-  %69 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 56) #20
+  %69 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 56) #19
           to label %70 unwind label %93, !dbg !4404, !heapallocsite !152
 
 70:                                               ; preds = %68
@@ -1254,7 +1254,7 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
   store ptr %83, ptr %10, align 8, !dbg !4414
   %84 = extractvalue { ptr, i32 } %82, 1, !dbg !4414
   store i32 %84, ptr %11, align 4, !dbg !4414
-  call void @_ZdlPv(ptr noundef %63) #21, !dbg !4391
+  call void @_ZdlPv(ptr noundef %63) #20, !dbg !4391
   br label %141, !dbg !4391
 
 85:                                               ; preds = %67, %64
@@ -1273,7 +1273,7 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
   store ptr %91, ptr %10, align 8, !dbg !4414
   %92 = extractvalue { ptr, i32 } %90, 1, !dbg !4414
   store i32 %92, ptr %11, align 4, !dbg !4414
-  call void @_ZdlPv(ptr noundef %65) #21, !dbg !4397
+  call void @_ZdlPv(ptr noundef %65) #20, !dbg !4397
   br label %134, !dbg !4397
 
 93:                                               ; preds = %68
@@ -1324,7 +1324,7 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
   br i1 %111, label %112, label %113, !dbg !4404
 
 112:                                              ; preds = %110
-  call void @_ZdlPv(ptr noundef %69) #21, !dbg !4404
+  call void @_ZdlPv(ptr noundef %69) #20, !dbg !4404
   br label %113, !dbg !4404
 
 113:                                              ; preds = %112, %110
@@ -1413,8 +1413,8 @@ define dso_local void @_ZN4Tool12handleOptionERKNSt7__cxx1112basic_stringIcSt11c
   resume { ptr, i32 } %145, !dbg !4391
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_(ptr noundef nonnull align 8 dereferenceable(32) %0, ptr noundef %1) #7 comdat !dbg !4416 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_(ptr noundef nonnull align 8 dereferenceable(32) %0, ptr noundef %1) #6 comdat !dbg !4416 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -1429,12 +1429,12 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZSteqIcSt11char_traitsIcESaIc
 }
 
 ; Function Attrs: noreturn nounwind
-declare void @exit(i32 noundef) #8
+declare void @exit(i32 noundef) #7
 
 declare noundef nonnull align 8 dereferenceable(32) ptr @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_(ptr noundef nonnull align 8 dereferenceable(32), ptr noundef nonnull align 8 dereferenceable(32)) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 4 dereferenceable(4) ptr @_ZSt3maxIiERKT_S2_S2_(ptr noundef nonnull align 4 dereferenceable(4) %0, ptr noundef nonnull align 4 dereferenceable(4) %1) #7 comdat !dbg !4428 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 4 dereferenceable(4) ptr @_ZSt3maxIiERKT_S2_S2_(ptr noundef nonnull align 4 dereferenceable(4) %0, ptr noundef nonnull align 4 dereferenceable(4) %1) #6 comdat !dbg !4428 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1464,7 +1464,7 @@ define linkonce_odr dso_local noundef nonnull align 4 dereferenceable(4) ptr @_Z
   ret ptr %16, !dbg !4449
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i32 @_ZNSt7__cxx114stoiERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEPmi(ptr noundef nonnull align 8 dereferenceable(32) %0, ptr noundef %1, i32 noundef %2) #4 comdat !dbg !4450 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1484,15 +1484,15 @@ define linkonce_odr dso_local noundef i32 @_ZNSt7__cxx114stoiERKNS_12basic_strin
 }
 
 ; Function Attrs: nobuiltin allocsize(0)
-declare noundef nonnull ptr @_Znwm(i64 noundef) #9
+declare noundef nonnull ptr @_Znwm(i64 noundef) #8
 
 declare void @_ZN4Poco3Net17KeyConsoleHandlerC1Eb(ptr noundef nonnull align 8 dereferenceable(9), i1 noundef zeroext) unnamed_addr #1
 
 ; Function Attrs: nobuiltin nounwind
-declare void @_ZdlPv(ptr noundef) #10
+declare void @_ZdlPv(ptr noundef) #9
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef %1) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4465 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef %1) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4465 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1511,7 +1511,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
   br i1 %12, label %13, label %17, !dbg !4472
 
 13:                                               ; preds = %2
-  %14 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 4) #20
+  %14 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 4) #19
           to label %15 unwind label %22, !dbg !4473, !heapallocsite !2368
 
 15:                                               ; preds = %13
@@ -1555,7 +1555,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
 
 31:                                               ; preds = %26
   %32 = load ptr, ptr %7, align 8, !dbg !4473
-  call void @_ZdlPv(ptr noundef %32) #21, !dbg !4473
+  call void @_ZdlPv(ptr noundef %32) #20, !dbg !4473
   br label %33, !dbg !4473
 
 33:                                               ; preds = %31, %26
@@ -1599,14 +1599,14 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
   %51 = landingpad { ptr, i32 }
           catch ptr null, !dbg !4483
   %52 = extractvalue { ptr, i32 } %51, 0, !dbg !4483
-  call void @__clang_call_terminate(ptr %52) #19, !dbg !4483
+  call void @__clang_call_terminate(ptr %52) #18, !dbg !4483
   unreachable, !dbg !4483
 }
 
 declare void @_ZN4Poco3Net24AcceptCertificateHandlerC1Eb(ptr noundef nonnull align 8 dereferenceable(9), i1 noundef zeroext) unnamed_addr #1
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef %1) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4484 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef %1) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4484 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1625,7 +1625,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
   br i1 %12, label %13, label %17, !dbg !4491
 
 13:                                               ; preds = %2
-  %14 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 4) #20
+  %14 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 4) #19
           to label %15 unwind label %22, !dbg !4492, !heapallocsite !2368
 
 15:                                               ; preds = %13
@@ -1669,7 +1669,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
 
 31:                                               ; preds = %26
   %32 = load ptr, ptr %7, align 8, !dbg !4492
-  call void @_ZdlPv(ptr noundef %32) #21, !dbg !4492
+  call void @_ZdlPv(ptr noundef %32) #20, !dbg !4492
   br label %33, !dbg !4492
 
 33:                                               ; preds = %31, %26
@@ -1713,14 +1713,14 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
   %51 = landingpad { ptr, i32 }
           catch ptr null, !dbg !4502
   %52 = extractvalue { ptr, i32 } %51, 0, !dbg !4502
-  call void @__clang_call_terminate(ptr %52) #19, !dbg !4502
+  call void @__clang_call_terminate(ptr %52) #18, !dbg !4502
   unreachable, !dbg !4502
 }
 
 declare void @_ZN4Poco3Net7ContextC1ENS1_5UsageERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS1_16VerificationModeEibSA_(ptr noundef nonnull align 8 dereferenceable(56), i32 noundef, ptr noundef nonnull align 8 dereferenceable(32), i32 noundef, i32 noundef, i1 noundef zeroext, ptr noundef nonnull align 8 dereferenceable(32)) unnamed_addr #1
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef %1) unnamed_addr #11 comdat align 2 !dbg !4503 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEEC2EPS2_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef %1) unnamed_addr #10 comdat align 2 !dbg !4503 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -1738,8 +1738,8 @@ declare noundef nonnull align 8 dereferenceable(560) ptr @_ZN4Poco3Net10SSLManag
 
 declare void @_ZN4Poco3Net10SSLManager16initializeClientENS_9SharedPtrINS0_27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS3_EEEENS2_INS0_25InvalidCertificateHandlerES4_NS5_IS8_EEEENS_7AutoPtrINS0_7ContextEEE(ptr noundef nonnull align 8 dereferenceable(560), ptr noundef, ptr noundef, ptr noundef) #1
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2ERKS6_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef nonnull align 8 dereferenceable(16) %1) unnamed_addr #6 comdat align 2 !dbg !4512 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2ERKS6_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef nonnull align 8 dereferenceable(16) %1) unnamed_addr #0 comdat align 2 !dbg !4512 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -1772,8 +1772,8 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
   ret void, !dbg !4529
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2ERKS6_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef nonnull align 8 dereferenceable(16) %1) unnamed_addr #6 comdat align 2 !dbg !4530 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEEC2ERKS6_(ptr noundef nonnull align 8 dereferenceable(16) %0, ptr noundef nonnull align 8 dereferenceable(16) %1) unnamed_addr #0 comdat align 2 !dbg !4530 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -1806,8 +1806,8 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
   ret void, !dbg !4547
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEEC2ERKS3_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #6 comdat align 2 !dbg !4548 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEEC2ERKS3_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #0 comdat align 2 !dbg !4548 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -1835,8 +1835,8 @@ define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEEC2ERKS3_(p
   ret void, !dbg !4562
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEED2Ev(ptr noundef nonnull align 8 dereferenceable(8) %0) unnamed_addr #11 comdat align 2 !dbg !4563 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEED2Ev(ptr noundef nonnull align 8 dereferenceable(8) %0) unnamed_addr #10 comdat align 2 !dbg !4563 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !4564, metadata !DIExpression()), !dbg !4565
@@ -1856,8 +1856,8 @@ define linkonce_odr dso_local void @_ZN4Poco7AutoPtrINS_3Net7ContextEED2Ev(ptr n
   ret void, !dbg !4572
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEED2Ev(ptr noundef nonnull align 8 dereferenceable(16) %0) unnamed_addr #11 comdat align 2 !dbg !4573 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEED2Ev(ptr noundef nonnull align 8 dereferenceable(16) %0) unnamed_addr #10 comdat align 2 !dbg !4573 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !4574, metadata !DIExpression()), !dbg !4575
@@ -1866,8 +1866,8 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
   ret void, !dbg !4578
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEED2Ev(ptr noundef nonnull align 8 dereferenceable(16) %0) unnamed_addr #11 comdat align 2 !dbg !4579 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEED2Ev(ptr noundef nonnull align 8 dereferenceable(16) %0) unnamed_addr #10 comdat align 2 !dbg !4579 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !4580, metadata !DIExpression()), !dbg !4581
@@ -1876,7 +1876,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
   ret void, !dbg !4584
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local noundef ptr @_Z12workerThreadPv(ptr noundef %0) #4 personality ptr @__gxx_personality_v0 !dbg !4585 {
   %2 = alloca ptr, align 8
   %3 = alloca ptr, align 8
@@ -1905,7 +1905,7 @@ define dso_local noundef ptr @_Z12workerThreadPv(ptr noundef %0) #4 personality 
   br i1 %16, label %18, label %17, !dbg !4616
 
 17:                                               ; preds = %14
-  call void @_ZdlPv(ptr noundef %15) #21, !dbg !4616
+  call void @_ZdlPv(ptr noundef %15) #20, !dbg !4616
   br label %18, !dbg !4616
 
 18:                                               ; preds = %17, %14
@@ -1930,8 +1930,8 @@ define dso_local noundef ptr @_Z12workerThreadPv(ptr noundef %0) #4 personality 
   resume { ptr, i32 } %27, !dbg !4617
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN6WorkerC2ER4ToolRKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE(ptr noundef nonnull align 8 dereferenceable(40) %0, ptr noundef nonnull align 8 dereferenceable(328) %1, ptr noundef nonnull align 8 dereferenceable(24) %2) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4618 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN6WorkerC2ER4ToolRKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE(ptr noundef nonnull align 8 dereferenceable(40) %0, ptr noundef nonnull align 8 dereferenceable(328) %1, ptr noundef nonnull align 8 dereferenceable(24) %2) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4618 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -1975,7 +1975,7 @@ define linkonce_odr dso_local void @_ZN6WorkerC2ER4ToolRKSt6vectorINSt7__cxx1112
   resume { ptr, i32 } %23, !dbg !4633
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZN6Worker3runEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #4 comdat align 2 !dbg !4635 {
   %2 = alloca ptr, align 8
   %3 = alloca ptr, align 8
@@ -2020,8 +2020,8 @@ define linkonce_odr dso_local void @_ZN6Worker3runEv(ptr noundef nonnull align 8
   ret void, !dbg !4654
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN6WorkerD2Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #11 comdat align 2 !dbg !4655 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN6WorkerD2Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #10 comdat align 2 !dbg !4655 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !4657, metadata !DIExpression()), !dbg !4658
@@ -2033,7 +2033,7 @@ define linkonce_odr dso_local void @_ZN6WorkerD2Ev(ptr noundef nonnull align 8 d
   ret void, !dbg !4659
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local noundef i32 @_ZN4Tool4mainERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE(ptr noundef nonnull align 8 dereferenceable(328) %0, ptr noundef nonnull align 8 dereferenceable(24) %1) unnamed_addr #4 align 2 personality ptr @__gxx_personality_v0 !dbg !4662 {
   %3 = alloca i32, align 4
   %4 = alloca ptr, align 8
@@ -2470,7 +2470,7 @@ define dso_local noundef i32 @_ZN4Tool4mainERKSt6vectorINSt7__cxx1112basic_strin
   %261 = add i64 %260, %259, !dbg !4841
   store i64 %261, ptr %27, align 8, !dbg !4841
   call void @llvm.dbg.declare(metadata ptr %40, metadata !4842, metadata !DIExpression()), !dbg !4843
-  %262 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 16) #20
+  %262 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 16) #19
           to label %263 unwind label %297, !dbg !4844, !heapallocsite !1187
 
 263:                                              ; preds = %257
@@ -2509,7 +2509,7 @@ define dso_local noundef i32 @_ZN4Tool4mainERKSt6vectorINSt7__cxx1112basic_strin
   br i1 %282, label %284, label %283, !dbg !4861
 
 283:                                              ; preds = %280
-  call void @_ZdlPv(ptr noundef %281) #21, !dbg !4861
+  call void @_ZdlPv(ptr noundef %281) #20, !dbg !4861
   br label %284, !dbg !4861
 
 284:                                              ; preds = %283, %280
@@ -2632,8 +2632,8 @@ define dso_local noundef i32 @_ZN4Tool4mainERKSt6vectorINSt7__cxx1112basic_strin
   unreachable
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS7_(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef nonnull align 8 dereferenceable(24) %1) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4890 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS7_(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef nonnull align 8 dereferenceable(24) %1) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4890 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   %5 = alloca %"class.std::allocator.38", align 1
@@ -2709,8 +2709,8 @@ define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11
   resume { ptr, i32 } %46, !dbg !4900
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE4sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !4915 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE4sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !4915 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !4916, metadata !DIExpression()), !dbg !4918
@@ -2728,8 +2728,8 @@ define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorINSt7__cxx1112basic_stri
   ret i64 %13, !dbg !4924
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEixEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #7 comdat align 2 !dbg !4925 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEixEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #6 comdat align 2 !dbg !4925 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
   store ptr %0, ptr %3, align 8
@@ -2751,7 +2751,7 @@ declare noundef i64 @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6leng
 ; Function Attrs: nounwind
 declare noundef nonnull align 1 dereferenceable(1) ptr @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm(ptr noundef nonnull align 8 dereferenceable(32), i64 noundef) #2
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5eraseEN9__gnu_cxx17__normal_iteratorIPKS5_S7_EE(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr %1) #4 comdat align 2 !dbg !4935 {
   %3 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %4 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
@@ -2785,8 +2785,8 @@ define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11c
   ret ptr %23, !dbg !4945
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5beginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !4946 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5beginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !4946 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -2800,8 +2800,8 @@ define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11c
   ret ptr %8, !dbg !4952
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2IPS6_EERKNS0_IT_NS_11__enable_ifIXsr3std10__are_sameISF_SE_EE7__valueESB_E6__typeEEE(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #11 comdat align 2 !dbg !4953 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2IPS6_EERKNS0_IT_NS_11__enable_ifIXsr3std10__are_sameISF_SE_EE7__valueESB_E6__typeEEE(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #10 comdat align 2 !dbg !4953 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -2825,8 +2825,8 @@ declare noundef nonnull align 8 dereferenceable(32) ptr @_ZNSt7__cxx1112basic_st
 ; Function Attrs: nounwind
 declare noundef i64 @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4findEcm(ptr noundef nonnull align 8 dereferenceable(32), i8 noundef signext, i64 noundef) #2
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5emptyEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !4969 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5emptyEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !4969 {
   %2 = alloca ptr, align 8
   %3 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %4 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
@@ -2843,8 +2843,8 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZNKSt6vectorINSt7__cxx1112bas
   ret i1 %10, !dbg !4975
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSaImEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !4976 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSaImEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !4976 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !4977, metadata !DIExpression()), !dbg !4979
@@ -2853,8 +2853,8 @@ define linkonce_odr dso_local void @_ZNSaImEC2Ev(ptr noundef nonnull align 1 der
   ret void, !dbg !4981
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt6vectorImSaImEEC2EmRKS0_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4982 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt6vectorImSaImEEC2EmRKS0_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !4982 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
   %6 = alloca ptr, align 8
@@ -2897,8 +2897,8 @@ define linkonce_odr dso_local void @_ZNSt6vectorImSaImEEC2EmRKS0_(ptr noundef no
   resume { ptr, i32 } %24, !dbg !4999
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSaImED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !5000 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSaImED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !5000 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5001, metadata !DIExpression()), !dbg !5002
@@ -2907,7 +2907,7 @@ define linkonce_odr dso_local void @_ZNSaImED2Ev(ptr noundef nonnull align 1 der
   ret void, !dbg !5005
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt6vectorImSaImEE7reserveEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !5006 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -2924,7 +2924,7 @@ define linkonce_odr dso_local void @_ZNSt6vectorImSaImEE7reserveEm(ptr noundef n
   br i1 %10, label %11, label %12, !dbg !5015
 
 11:                                               ; preds = %2
-  call void @_ZSt20__throw_length_errorPKc(ptr noundef @.str.36) #22, !dbg !5016
+  call void @_ZSt20__throw_length_errorPKc(ptr noundef @.str.36) #21, !dbg !5016
   unreachable, !dbg !5016
 
 12:                                               ; preds = %2
@@ -2988,8 +2988,8 @@ define linkonce_odr dso_local void @_ZNSt6vectorImSaImEE7reserveEm(ptr noundef n
   ret void, !dbg !5067
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZSt3minImERKT_S2_S2_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #7 comdat !dbg !5068 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZSt3minImERKT_S2_S2_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #6 comdat !dbg !5068 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -3019,8 +3019,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
   ret ptr %16, !dbg !5084
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !5085 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !5085 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5086, metadata !DIExpression()), !dbg !5088
@@ -3029,8 +3029,8 @@ define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_tr
   ret void, !dbg !5090
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2EmRKS6_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5091 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2EmRKS6_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5091 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
   %6 = alloca ptr, align 8
@@ -3073,8 +3073,8 @@ define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11
   resume { ptr, i32 } %24, !dbg !5107
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !5108 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !5108 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5109, metadata !DIExpression()), !dbg !5110
@@ -3083,7 +3083,7 @@ define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_tr
   ret void, !dbg !5113
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local ptr @_ZSt4copyIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEESC_ET0_T_SE_SD_(ptr %0, ptr %1, ptr %2) #4 comdat !dbg !5114 {
   %4 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %5 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
@@ -3130,8 +3130,8 @@ define linkonce_odr dso_local ptr @_ZSt4copyIN9__gnu_cxx17__normal_iteratorIPNSt
   ret ptr %33, !dbg !5132
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEplEl(ptr noundef nonnull align 8 dereferenceable(8) %0, i64 noundef %1) #7 comdat align 2 !dbg !5133 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEplEl(ptr noundef nonnull align 8 dereferenceable(8) %0, i64 noundef %1) #6 comdat align 2 !dbg !5133 {
   %3 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -3155,8 +3155,8 @@ define linkonce_odr dso_local ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1
 ; Function Attrs: nounwind
 declare i32 @pthread_create(ptr noundef, ptr noundef, ptr noundef, ptr noundef) #2
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNSt6vectorImSaImEEixEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #7 comdat align 2 !dbg !5144 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNSt6vectorImSaImEEixEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #6 comdat align 2 !dbg !5144 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
   store ptr %0, ptr %3, align 8
@@ -3174,8 +3174,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
 
 declare noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8), i32 noundef) #1
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5154 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5154 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5155, metadata !DIExpression()), !dbg !5156
@@ -3198,12 +3198,12 @@ define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11
   %13 = landingpad { ptr, i32 }
           catch ptr null, !dbg !5163
   %14 = extractvalue { ptr, i32 } %13, 0, !dbg !5163
-  call void @__clang_call_terminate(ptr %14) #19, !dbg !5163
+  call void @__clang_call_terminate(ptr %14) #18, !dbg !5163
   unreachable, !dbg !5163
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNSt6vectorImSaImEE5beginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !5166 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNSt6vectorImSaImEE5beginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !5166 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator.87", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -3217,8 +3217,8 @@ define linkonce_odr dso_local ptr @_ZNSt6vectorImSaImEE5beginEv(ptr noundef nonn
   ret ptr %8, !dbg !5172
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNSt6vectorImSaImEE3endEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !5173 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNSt6vectorImSaImEE3endEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !5173 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator.87", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -3232,8 +3232,8 @@ define linkonce_odr dso_local ptr @_ZNSt6vectorImSaImEE3endEv(ptr noundef nonnul
   ret ptr %8, !dbg !5179
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPmSt6vectorImSaImEEEEbRKNS_17__normal_iteratorIT_T0_EESA_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #7 comdat !dbg !5180 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPmSt6vectorImSaImEEEEbRKNS_17__normal_iteratorIT_T0_EESA_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #6 comdat !dbg !5180 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -3250,8 +3250,8 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPmSt6vectorImS
   ret i1 %11, !dbg !5193
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEdeEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !5194 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEdeEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !5194 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5195, metadata !DIExpression()), !dbg !5197
@@ -3263,8 +3263,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
 
 declare i32 @pthread_join(i64 noundef, ptr noundef) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEppEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !5200 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEppEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !5200 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5201, metadata !DIExpression()), !dbg !5203
@@ -3276,8 +3276,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
   ret ptr %3, !dbg !5206
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt6vectorImSaImEED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5207 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt6vectorImSaImEED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5207 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5208, metadata !DIExpression()), !dbg !5209
@@ -3300,12 +3300,12 @@ define linkonce_odr dso_local void @_ZNSt6vectorImSaImEED2Ev(ptr noundef nonnull
   %13 = landingpad { ptr, i32 }
           catch ptr null, !dbg !5216
   %14 = extractvalue { ptr, i32 } %13, 0, !dbg !5216
-  call void @__clang_call_terminate(ptr %14) #19, !dbg !5216
+  call void @__clang_call_terminate(ptr %14) #18, !dbg !5216
   unreachable, !dbg !5216
 }
 
-; Function Attrs: mustprogress noinline norecurse optnone uwtable
-define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #12 personality ptr @__gxx_personality_v0 !dbg !5219 {
+; Function Attrs: mustprogress noinline norecurse uwtable
+define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #11 personality ptr @__gxx_personality_v0 !dbg !5219 {
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
   %5 = alloca ptr, align 8
@@ -3320,7 +3320,7 @@ define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #12 personali
   store ptr %1, ptr %5, align 8
   call void @llvm.dbg.declare(metadata ptr %5, metadata !5224, metadata !DIExpression()), !dbg !5223
   call void @llvm.dbg.declare(metadata ptr %6, metadata !5225, metadata !DIExpression()), !dbg !5223
-  %11 = call noalias noundef nonnull ptr @_Znwm(i64 noundef 328) #20, !dbg !5223, !heapallocsite !1191
+  %11 = call noalias noundef nonnull ptr @_Znwm(i64 noundef 328) #19, !dbg !5223, !heapallocsite !1191
   invoke void @_ZN4ToolC1Ev(ptr noundef nonnull align 8 dereferenceable(328) %11)
           to label %12 unwind label %18, !dbg !5223
 
@@ -3345,7 +3345,7 @@ define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #12 personali
   store ptr %20, ptr %7, align 8, !dbg !5223
   %21 = extractvalue { ptr, i32 } %19, 1, !dbg !5223
   store i32 %21, ptr %8, align 4, !dbg !5223
-  call void @_ZdlPv(ptr noundef %11) #21, !dbg !5223
+  call void @_ZdlPv(ptr noundef %11) #20, !dbg !5223
   br label %60, !dbg !5223
 
 22:                                               ; preds = %14, %12
@@ -3448,12 +3448,12 @@ define dso_local noundef i32 @main(i32 noundef %0, ptr noundef %1) #12 personali
   %66 = landingpad { ptr, i32 }
           catch ptr null, !dbg !5232
   %67 = extractvalue { ptr, i32 } %66, 0, !dbg !5232
-  call void @__clang_call_terminate(ptr %67) #19, !dbg !5232
+  call void @__clang_call_terminate(ptr %67) #18, !dbg !5232
   unreachable, !dbg !5232
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco7AutoPtrI4ToolEC2EPS1_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef %1) unnamed_addr #11 comdat align 2 !dbg !5234 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco7AutoPtrI4ToolEC2EPS1_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef %1) unnamed_addr #10 comdat align 2 !dbg !5234 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -3467,7 +3467,7 @@ define linkonce_odr dso_local void @_ZN4Poco7AutoPtrI4ToolEC2EPS1_(ptr noundef n
   ret void, !dbg !5242
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZN4Poco7AutoPtrI4ToolEptEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #4 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5243 {
   %2 = alloca ptr, align 8
   %3 = alloca ptr, align 8
@@ -3491,7 +3491,7 @@ define linkonce_odr dso_local noundef ptr @_ZN4Poco7AutoPtrI4ToolEptEv(ptr nound
           to label %14 unwind label %15, !dbg !5252
 
 14:                                               ; preds = %12
-  call void @__cxa_throw(ptr %13, ptr @_ZTIN4Poco20NullPointerExceptionE, ptr @_ZN4Poco20NullPointerExceptionD1Ev) #22, !dbg !5251
+  call void @__cxa_throw(ptr %13, ptr @_ZTIN4Poco20NullPointerExceptionE, ptr @_ZN4Poco20NullPointerExceptionD1Ev) #21, !dbg !5251
   unreachable, !dbg !5251
 
 15:                                               ; preds = %12
@@ -3515,11 +3515,11 @@ define linkonce_odr dso_local noundef ptr @_ZN4Poco7AutoPtrI4ToolEptEv(ptr nound
 declare void @_ZN4Poco4Util11Application4initEiPPc(ptr noundef nonnull align 8 dereferenceable(224), i32 noundef, ptr noundef) #1
 
 ; Function Attrs: nounwind memory(none)
-declare i32 @llvm.eh.typeid.for(ptr) #13
+declare i32 @llvm.eh.typeid.for(ptr) #12
 
 declare ptr @__cxa_begin_catch(ptr)
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(68) ptr @_ZNK4Poco4Util11Application6loggerEv(ptr noundef nonnull align 8 dereferenceable(224) %0) #4 comdat align 2 !dbg !5254 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
@@ -3548,16 +3548,16 @@ declare void @_ZN4Poco6Logger3logERKNS_9ExceptionE(ptr noundef nonnull align 8 d
 declare void @__cxa_end_catch()
 
 ; Function Attrs: noinline noreturn nounwind
-define linkonce_odr hidden void @__clang_call_terminate(ptr noundef %0) #14 comdat {
+define linkonce_odr hidden void @__clang_call_terminate(ptr noundef %0) #13 comdat {
   %2 = call ptr @__cxa_begin_catch(ptr %0) #3
-  call void @_ZSt9terminatev() #19
+  call void @_ZSt9terminatev() #18
   unreachable
 }
 
 declare void @_ZSt9terminatev()
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco7AutoPtrI4ToolED2Ev(ptr noundef nonnull align 8 dereferenceable(8) %0) unnamed_addr #11 comdat align 2 !dbg !5271 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco7AutoPtrI4ToolED2Ev(ptr noundef nonnull align 8 dereferenceable(8) %0) unnamed_addr #10 comdat align 2 !dbg !5271 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5272, metadata !DIExpression()), !dbg !5273
@@ -3577,8 +3577,8 @@ define linkonce_odr dso_local void @_ZN4Poco7AutoPtrI4ToolED2Ev(ptr noundef nonn
   ret void, !dbg !5280
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv4SocketAddressImplD2Ev(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #11 comdat align 2 !dbg !5281 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv4SocketAddressImplD2Ev(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #10 comdat align 2 !dbg !5281 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5283, metadata !DIExpression()), !dbg !5285
@@ -3587,19 +3587,19 @@ define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv4SocketAddressImplD2Ev
   ret void, !dbg !5288
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv4SocketAddressImplD0Ev(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #11 comdat align 2 !dbg !5289 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv4SocketAddressImplD0Ev(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #10 comdat align 2 !dbg !5289 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5290, metadata !DIExpression()), !dbg !5291
   %3 = load ptr, ptr %2, align 8
   call void @_ZN4Poco3Net4Impl21IPv4SocketAddressImplD2Ev(ptr noundef nonnull align 8 dereferenceable(28) %3) #3, !dbg !5292
-  call void @_ZdlPv(ptr noundef %3) #21, !dbg !5292
+  call void @_ZdlPv(ptr noundef %3) #20, !dbg !5292
   ret void, !dbg !5292
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i16 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl4portEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #7 comdat align 2 !dbg !5293 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i16 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl4portEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #6 comdat align 2 !dbg !5293 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5294, metadata !DIExpression()), !dbg !5295
@@ -3610,8 +3610,8 @@ define linkonce_odr dso_local noundef zeroext i16 @_ZNK4Poco3Net4Impl21IPv4Socke
   ret i16 %6, !dbg !5298
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl6lengthEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #7 comdat align 2 !dbg !5299 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl6lengthEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #6 comdat align 2 !dbg !5299 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5300, metadata !DIExpression()), !dbg !5301
@@ -3619,8 +3619,8 @@ define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddress
   ret i32 16, !dbg !5302
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl4addrEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #7 comdat align 2 !dbg !5303 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl4addrEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #6 comdat align 2 !dbg !5303 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5304, metadata !DIExpression()), !dbg !5305
@@ -3629,8 +3629,8 @@ define linkonce_odr dso_local noundef ptr @_ZNK4Poco3Net4Impl21IPv4SocketAddress
   ret ptr %4, !dbg !5307
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl2afEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #7 comdat align 2 !dbg !5308 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl2afEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #6 comdat align 2 !dbg !5308 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5309, metadata !DIExpression()), !dbg !5310
@@ -3642,8 +3642,8 @@ define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddress
   ret i32 %7, !dbg !5313
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl6familyEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #7 comdat align 2 !dbg !5314 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl6familyEv(ptr noundef nonnull align 8 dereferenceable(28) %0) unnamed_addr #6 comdat align 2 !dbg !5314 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5315, metadata !DIExpression()), !dbg !5316
@@ -3653,8 +3653,8 @@ define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv4SocketAddress
 
 declare void @_ZNK4Poco3Net4Impl21IPv4SocketAddressImpl8toStringB5cxx11Ev(ptr sret(%"class.std::__cxx11::basic_string") align 8, ptr noundef nonnull align 8 dereferenceable(28)) unnamed_addr #1
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv6SocketAddressImplD2Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #11 comdat align 2 !dbg !5318 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv6SocketAddressImplD2Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #10 comdat align 2 !dbg !5318 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5322, metadata !DIExpression()), !dbg !5324
@@ -3663,19 +3663,19 @@ define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv6SocketAddressImplD2Ev
   ret void, !dbg !5327
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv6SocketAddressImplD0Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #11 comdat align 2 !dbg !5328 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco3Net4Impl21IPv6SocketAddressImplD0Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #10 comdat align 2 !dbg !5328 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5329, metadata !DIExpression()), !dbg !5330
   %3 = load ptr, ptr %2, align 8
   call void @_ZN4Poco3Net4Impl21IPv6SocketAddressImplD2Ev(ptr noundef nonnull align 8 dereferenceable(40) %3) #3, !dbg !5331
-  call void @_ZdlPv(ptr noundef %3) #21, !dbg !5331
+  call void @_ZdlPv(ptr noundef %3) #20, !dbg !5331
   ret void, !dbg !5331
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i16 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl4portEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #7 comdat align 2 !dbg !5332 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i16 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl4portEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #6 comdat align 2 !dbg !5332 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5333, metadata !DIExpression()), !dbg !5334
@@ -3686,8 +3686,8 @@ define linkonce_odr dso_local noundef zeroext i16 @_ZNK4Poco3Net4Impl21IPv6Socke
   ret i16 %6, !dbg !5337
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl6lengthEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #7 comdat align 2 !dbg !5338 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl6lengthEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #6 comdat align 2 !dbg !5338 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5339, metadata !DIExpression()), !dbg !5340
@@ -3695,8 +3695,8 @@ define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddress
   ret i32 28, !dbg !5341
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl4addrEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #7 comdat align 2 !dbg !5342 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl4addrEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #6 comdat align 2 !dbg !5342 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5343, metadata !DIExpression()), !dbg !5344
@@ -3705,8 +3705,8 @@ define linkonce_odr dso_local noundef ptr @_ZNK4Poco3Net4Impl21IPv6SocketAddress
   ret ptr %4, !dbg !5346
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl2afEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #7 comdat align 2 !dbg !5347 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl2afEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #6 comdat align 2 !dbg !5347 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5348, metadata !DIExpression()), !dbg !5349
@@ -3718,8 +3718,8 @@ define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddress
   ret i32 %7, !dbg !5352
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl6familyEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #7 comdat align 2 !dbg !5353 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl6familyEv(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #6 comdat align 2 !dbg !5353 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5354, metadata !DIExpression()), !dbg !5355
@@ -3729,8 +3729,8 @@ define linkonce_odr dso_local noundef i32 @_ZNK4Poco3Net4Impl21IPv6SocketAddress
 
 declare void @_ZNK4Poco3Net4Impl21IPv6SocketAddressImpl8toStringB5cxx11Ev(ptr sret(%"class.std::__cxx11::basic_string") align 8, ptr noundef nonnull align 8 dereferenceable(40)) unnamed_addr #1
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4ToolD2Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) unnamed_addr #11 comdat align 2 !dbg !5357 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4ToolD2Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) unnamed_addr #10 comdat align 2 !dbg !5357 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5359, metadata !DIExpression()), !dbg !5360
@@ -3746,14 +3746,14 @@ define linkonce_odr dso_local void @_ZN4ToolD2Ev(ptr noundef nonnull align 8 der
   ret void, !dbg !5361
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4ToolD0Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) unnamed_addr #11 comdat align 2 !dbg !5364 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4ToolD0Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) unnamed_addr #10 comdat align 2 !dbg !5364 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5365, metadata !DIExpression()), !dbg !5366
   %3 = load ptr, ptr %2, align 8
   call void @_ZN4ToolD2Ev(ptr noundef nonnull align 8 dereferenceable(328) %3) #3, !dbg !5367
-  call void @_ZdlPv(ptr noundef %3) #21, !dbg !5367
+  call void @_ZdlPv(ptr noundef %3) #20, !dbg !5367
   ret void, !dbg !5367
 }
 
@@ -3767,8 +3767,8 @@ declare void @_ZN4Poco4Util11Application12reinitializeERS1_(ptr noundef nonnull 
 
 declare noundef i32 @_ZN4Poco4Util11Application3runEv(ptr noundef nonnull align 8 dereferenceable(224)) unnamed_addr #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNSt8__detail14__to_chars_lenIjEEjT_i(i32 noundef %0, i32 noundef %1) #7 comdat !dbg !5368 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNSt8__detail14__to_chars_lenIjEEjT_i(i32 noundef %0, i32 noundef %1) #6 comdat !dbg !5368 {
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
   %5 = alloca i32, align 4
@@ -3865,8 +3865,8 @@ define linkonce_odr dso_local noundef i32 @_ZNSt8__detail14__to_chars_lenIjEEjT_
   ret i32 %57, !dbg !5434
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEmcRKS3_(ptr noundef nonnull align 8 dereferenceable(32) %0, i64 noundef %1, i8 noundef signext %2, ptr noundef nonnull align 1 dereferenceable(1) %3) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5435 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEmcRKS3_(ptr noundef nonnull align 8 dereferenceable(32) %0, i64 noundef %1, i8 noundef signext %2, ptr noundef nonnull align 1 dereferenceable(1) %3) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5435 {
   %5 = alloca ptr, align 8
   %6 = alloca i64, align 8
   %7 = alloca i8, align 1
@@ -3912,8 +3912,8 @@ define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traits
   resume { ptr, i32 } %26, !dbg !5455
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt8__detail18__to_chars_10_implIjEEvPcjT_(ptr noundef %0, i32 noundef %1, i32 noundef %2) #7 comdat !dbg !135 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt8__detail18__to_chars_10_implIjEEvPcjT_(ptr noundef %0, i32 noundef %1, i32 noundef %2) #6 comdat !dbg !135 {
   %4 = alloca ptr, align 8
   %5 = alloca i32, align 4
   %6 = alloca i32, align 4
@@ -4019,8 +4019,8 @@ declare void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hide
 
 declare void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructEmc(ptr noundef nonnull align 8 dereferenceable(32), i64 noundef, i8 noundef signext) #1
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD2Ev(ptr noundef nonnull align 8 dereferenceable(8) %0) unnamed_addr #11 comdat align 2 !dbg !5516 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD2Ev(ptr noundef nonnull align 8 dereferenceable(8) %0) unnamed_addr #10 comdat align 2 !dbg !5516 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5521, metadata !DIExpression()), !dbg !5523
@@ -4032,7 +4032,7 @@ define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traits
 ; Function Attrs: nounwind
 declare void @_ZNSaIcED2Ev(ptr noundef nonnull align 1 dereferenceable(1)) unnamed_addr #2
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i32 @_ZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef %3, i32 noundef %4) #4 comdat personality ptr @__gxx_personality_v0 !dbg !2332 {
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -4077,7 +4077,7 @@ define linkonce_odr dso_local noundef i32 @_ZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_P
 
 27:                                               ; preds = %23
   %28 = load ptr, ptr %7, align 8, !dbg !5555
-  invoke void @_ZSt24__throw_invalid_argumentPKc(ptr noundef %28) #22
+  invoke void @_ZSt24__throw_invalid_argumentPKc(ptr noundef %28) #21
           to label %29 unwind label %30, !dbg !5556
 
 29:                                               ; preds = %27
@@ -4094,7 +4094,7 @@ define linkonce_odr dso_local noundef i32 @_ZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_P
   br label %63, !dbg !5557
 
 34:                                               ; preds = %23
-  %35 = call ptr @__errno_location() #23, !dbg !5558
+  %35 = call ptr @__errno_location() #22, !dbg !5558
   %36 = load i32, ptr %35, align 4, !dbg !5558
   %37 = icmp eq i32 %36, 34, !dbg !5560
   br i1 %37, label %42, label %38, !dbg !5561
@@ -4113,7 +4113,7 @@ define linkonce_odr dso_local noundef i32 @_ZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_P
 
 44:                                               ; preds = %42
   %45 = load ptr, ptr %7, align 8, !dbg !5565
-  invoke void @_ZSt20__throw_out_of_rangePKc(ptr noundef %45) #22
+  invoke void @_ZSt20__throw_out_of_rangePKc(ptr noundef %45) #21
           to label %46 unwind label %30, !dbg !5566
 
 46:                                               ; preds = %44
@@ -4162,29 +4162,29 @@ declare i64 @strtol(ptr noundef, ptr noundef, i32 noundef) #2
 ; Function Attrs: nounwind
 declare noundef ptr @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(ptr noundef nonnull align 8 dereferenceable(32)) #2
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_EN11_Save_errnoC2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #11 comdat align 2 !dbg !5579 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_EN11_Save_errnoC2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #10 comdat align 2 !dbg !5579 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5580, metadata !DIExpression()), !dbg !5582
   %3 = load ptr, ptr %2, align 8
   %4 = getelementptr inbounds %struct._Save_errno, ptr %3, i32 0, i32 0, !dbg !5583
-  %5 = call ptr @__errno_location() #23, !dbg !5584
+  %5 = call ptr @__errno_location() #22, !dbg !5584
   %6 = load i32, ptr %5, align 4, !dbg !5584
   store i32 %6, ptr %4, align 4, !dbg !5583
-  %7 = call ptr @__errno_location() #23, !dbg !5585
+  %7 = call ptr @__errno_location() #22, !dbg !5585
   store i32 0, ptr %7, align 4, !dbg !5587
   ret void, !dbg !5588
 }
 
 ; Function Attrs: noreturn
-declare void @_ZSt24__throw_invalid_argumentPKc(ptr noundef) #15
+declare void @_ZSt24__throw_invalid_argumentPKc(ptr noundef) #14
 
 ; Function Attrs: nounwind willreturn memory(none)
-declare ptr @__errno_location() #16
+declare ptr @__errno_location() #15
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_EN10_Range_chk6_S_chkElSt17integral_constantIbLb1EE(i64 noundef %0) #7 comdat align 2 !dbg !5589 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_EN10_Range_chk6_S_chkElSt17integral_constantIbLb1EE(i64 noundef %0) #6 comdat align 2 !dbg !5589 {
   %2 = alloca %"struct.std::integral_constant", align 1
   %3 = alloca i64, align 8
   store i64 %0, ptr %3, align 8
@@ -4205,15 +4205,15 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZZN9__gnu_cxx6__stoaIlicJiEEE
 }
 
 ; Function Attrs: noreturn
-declare void @_ZSt20__throw_out_of_rangePKc(ptr noundef) #15
+declare void @_ZSt20__throw_out_of_rangePKc(ptr noundef) #14
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_EN11_Save_errnoD2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #11 comdat align 2 !dbg !5608 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_EN11_Save_errnoD2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #10 comdat align 2 !dbg !5608 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5609, metadata !DIExpression()), !dbg !5610
   %3 = load ptr, ptr %2, align 8
-  %4 = call ptr @__errno_location() #23, !dbg !5611
+  %4 = call ptr @__errno_location() #22, !dbg !5611
   %5 = load i32, ptr %4, align 4, !dbg !5611
   %6 = icmp eq i32 %5, 0, !dbg !5614
   br i1 %6, label %7, label %11, !dbg !5615
@@ -4221,7 +4221,7 @@ define linkonce_odr dso_local void @_ZZN9__gnu_cxx6__stoaIlicJiEEET0_PFT_PKT1_PP
 7:                                                ; preds = %1
   %8 = getelementptr inbounds %struct._Save_errno, ptr %3, i32 0, i32 0, !dbg !5616
   %9 = load i32, ptr %8, align 4, !dbg !5616
-  %10 = call ptr @__errno_location() #23, !dbg !5617
+  %10 = call ptr @__errno_location() #22, !dbg !5617
   store i32 %9, ptr %10, align 4, !dbg !5618
   br label %11, !dbg !5617
 
@@ -4234,19 +4234,19 @@ declare void @_ZN4Poco8RunnableC2Ev(ptr noundef nonnull align 8 dereferenceable(
 ; Function Attrs: nounwind
 declare void @_ZN4Poco8RunnableD2Ev(ptr noundef nonnull align 8 dereferenceable(8)) unnamed_addr #2
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN6WorkerD0Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #11 comdat align 2 !dbg !5620 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN6WorkerD0Ev(ptr noundef nonnull align 8 dereferenceable(40) %0) unnamed_addr #10 comdat align 2 !dbg !5620 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5621, metadata !DIExpression()), !dbg !5622
   %3 = load ptr, ptr %2, align 8
   call void @_ZN6WorkerD2Ev(ptr noundef nonnull align 8 dereferenceable(40) %3) #3, !dbg !5623
-  call void @_ZdlPv(ptr noundef %3) #21, !dbg !5623
+  call void @_ZdlPv(ptr noundef %3) #20, !dbg !5623
   ret void, !dbg !5623
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE3endEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !5624 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE3endEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !5624 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -4260,8 +4260,8 @@ define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11c
   ret ptr %8, !dbg !5630
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESG_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #7 comdat !dbg !5631 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESG_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #6 comdat !dbg !5631 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -4278,8 +4278,8 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPNSt7__cxx1112
   ret i1 %11, !dbg !5643
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !5644 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !5644 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5645, metadata !DIExpression()), !dbg !5646
@@ -4289,7 +4289,7 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_
   ret ptr %5, !dbg !5648
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(ptr noundef nonnull align 8 dereferenceable(40) %0, ptr noundef nonnull align 8 dereferenceable(32) %1) #4 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5649 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -4342,7 +4342,7 @@ define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic
   br i1 %39, label %40, label %56, !dbg !5666
 
 40:                                               ; preds = %38
-  %41 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 680) #20
+  %41 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 680) #19
           to label %42 unwind label %48, !dbg !5667, !heapallocsite !5668
 
 42:                                               ; preds = %40
@@ -4377,11 +4377,11 @@ define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic
   store ptr %54, ptr %7, align 8, !dbg !5675
   %55 = extractvalue { ptr, i32 } %53, 1, !dbg !5675
   store i32 %55, ptr %8, align 4, !dbg !5675
-  call void @_ZdlPv(ptr noundef %41) #21, !dbg !5667
+  call void @_ZdlPv(ptr noundef %41) #20, !dbg !5667
   br label %282, !dbg !5667
 
 56:                                               ; preds = %38
-  %57 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 664) #20
+  %57 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 664) #19
           to label %58 unwind label %48, !dbg !5676, !heapallocsite !4049
 
 58:                                               ; preds = %56
@@ -4407,7 +4407,7 @@ define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic
   store ptr %66, ptr %7, align 8, !dbg !5675
   %67 = extractvalue { ptr, i32 } %65, 1, !dbg !5675
   store i32 %67, ptr %8, align 4, !dbg !5675
-  call void @_ZdlPv(ptr noundef %57) #21, !dbg !5676
+  call void @_ZdlPv(ptr noundef %57) #20, !dbg !5676
   br label %282, !dbg !5676
 
 68:                                               ; preds = %63, %47
@@ -4454,7 +4454,7 @@ define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic
           to label %79 unwind label %119, !dbg !5695
 
 79:                                               ; preds = %78
-  %80 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 584) #20
+  %80 = invoke noalias noundef nonnull ptr @_Znwm(i64 noundef 584) #19
           to label %81 unwind label %123, !dbg !5696, !heapallocsite !5697
 
 81:                                               ; preds = %79
@@ -4584,7 +4584,7 @@ define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic
   store ptr %129, ptr %7, align 8, !dbg !5710
   %130 = extractvalue { ptr, i32 } %128, 1, !dbg !5710
   store i32 %130, ptr %8, align 4, !dbg !5710
-  call void @_ZdlPv(ptr noundef %80) #21, !dbg !5696
+  call void @_ZdlPv(ptr noundef %80) #20, !dbg !5696
   br label %131, !dbg !5696
 
 131:                                              ; preds = %127, %123
@@ -4970,15 +4970,15 @@ define linkonce_odr dso_local void @_ZN6Worker11convertFileERKNSt7__cxx1112basic
   %289 = landingpad { ptr, i32 }
           catch ptr null, !dbg !5725
   %290 = extractvalue { ptr, i32 } %289, 0, !dbg !5725
-  call void @__clang_call_terminate(ptr %290) #19, !dbg !5725
+  call void @__clang_call_terminate(ptr %290) #18, !dbg !5725
   unreachable, !dbg !5725
 
 291:                                              ; preds = %277
   unreachable
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEppEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !5781 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEppEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !5781 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5782, metadata !DIExpression()), !dbg !5784
@@ -4990,8 +4990,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
   ret ptr %3, !dbg !5787
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2ERKS7_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #11 comdat align 2 !dbg !5788 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2ERKS7_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #10 comdat align 2 !dbg !5788 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -5006,8 +5006,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1
   ret void, !dbg !5795
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !5796 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !5796 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5797, metadata !DIExpression()), !dbg !5798
@@ -5016,8 +5016,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
   ret ptr %4, !dbg !5800
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Tool12getServerURIB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) #7 comdat align 2 !dbg !5801 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Tool12getServerURIB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) #6 comdat align 2 !dbg !5801 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5802, metadata !DIExpression()), !dbg !5803
@@ -5030,8 +5030,8 @@ declare void @_ZN4Poco3URIC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIc
 
 declare noundef i32 @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEmmPKc(ptr noundef nonnull align 8 dereferenceable(32), i64 noundef, i64 noundef, ptr noundef) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Poco3URI7getHostB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(200) %0) #7 comdat align 2 !dbg !5806 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Poco3URI7getHostB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(200) %0) #6 comdat align 2 !dbg !5806 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5812, metadata !DIExpression()), !dbg !5814
@@ -5054,8 +5054,8 @@ declare void @_ZN4Poco3Net8HTMLForm11setEncodingERKNSt7__cxx1112basic_stringIcSt
 
 declare void @_ZN4Poco3Net19NameValueCollection3setERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_(ptr noundef nonnull align 8 dereferenceable(32), ptr noundef nonnull align 8 dereferenceable(32), ptr noundef nonnull align 8 dereferenceable(32)) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Tool20getDestinationFormatB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) #7 comdat align 2 !dbg !5817 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Tool20getDestinationFormatB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) #6 comdat align 2 !dbg !5817 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5818, metadata !DIExpression()), !dbg !5819
@@ -5077,8 +5077,8 @@ declare void @_ZN4Poco3Net8HTMLFormD1Ev(ptr noundef nonnull align 8 dereferencea
 
 declare noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c(ptr noundef nonnull align 8 dereferenceable(8), i8 noundef signext) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Poco9Exception7messageB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(52) %0) #7 comdat align 2 !dbg !5822 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Poco9Exception7messageB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(52) %0) #6 comdat align 2 !dbg !5822 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5827, metadata !DIExpression()), !dbg !5829
@@ -5091,7 +5091,7 @@ declare void @_ZN4Poco3Net12HTTPResponseC1Ev(ptr noundef nonnull align 8 derefer
 
 declare void @_ZN4Poco4PathC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(ptr noundef nonnull align 8 dereferenceable(153), ptr noundef nonnull align 8 dereferenceable(32)) unnamed_addr #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_RKS8_(ptr noalias sret(%"class.std::__cxx11::basic_string") align 8 %0, ptr noundef nonnull align 8 dereferenceable(32) %1, ptr noundef nonnull align 8 dereferenceable(32) %2) #4 comdat !dbg !5832 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5108,7 +5108,7 @@ define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx111
   ret void, !dbg !5843
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S5_(ptr noalias sret(%"class.std::__cxx11::basic_string") align 8 %0, ptr noundef nonnull align 8 dereferenceable(32) %1, i8 noundef signext %2) #4 comdat !dbg !5844 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5125,7 +5125,7 @@ define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx111
   ret void, !dbg !5855
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_(ptr noalias sret(%"class.std::__cxx11::basic_string") align 8 %0, ptr noundef nonnull align 8 dereferenceable(32) %1, ptr noundef nonnull align 8 dereferenceable(32) %2) #4 comdat !dbg !5856 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5186,7 +5186,7 @@ define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx111
   ret void, !dbg !5900
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_(ptr noalias sret(%"class.std::__cxx11::basic_string") align 8 %0, ptr noundef nonnull align 8 dereferenceable(32) %1, i8 noundef signext %2) #4 comdat personality ptr @__gxx_personality_v0 !dbg !1826 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5237,8 +5237,8 @@ define linkonce_odr dso_local void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx111
   resume { ptr, i32 } %25, !dbg !5913
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Tool17getDestinationDirB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) #7 comdat align 2 !dbg !5914 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK4Tool17getDestinationDirB5cxx11Ev(ptr noundef nonnull align 8 dereferenceable(328) %0) #6 comdat align 2 !dbg !5914 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !5915, metadata !DIExpression()), !dbg !5916
@@ -5292,7 +5292,7 @@ declare void @_ZN4Poco3Net4Impl17SocketAddressImplD2Ev(ptr noundef nonnull align
 
 declare noundef nonnull align 8 dereferenceable(32) ptr @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6insertEmPKc(ptr noundef nonnull align 8 dereferenceable(32), i64 noundef, ptr noundef) #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i64 @_ZNSt11char_traitsIcE6lengthEPKc(ptr noundef %0) #4 comdat align 2 !dbg !5919 {
   %2 = alloca ptr, align 8
   %3 = alloca i64, align 8
@@ -5321,7 +5321,7 @@ define linkonce_odr dso_local noundef i64 @_ZNSt11char_traitsIcE6lengthEPKc(ptr 
   ret i64 %13, !dbg !5937
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag(ptr noundef nonnull align 8 dereferenceable(32) %0, ptr noundef %1, ptr noundef %2) #4 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !5938 {
   %4 = alloca %"struct.std::forward_iterator_tag", align 1
   %5 = alloca ptr, align 8
@@ -5349,7 +5349,7 @@ define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traits
   br i1 %17, label %18, label %19, !dbg !5959
 
 18:                                               ; preds = %14
-  call void @_ZSt19__throw_logic_errorPKc(ptr noundef @.str.34) #22, !dbg !5960
+  call void @_ZSt19__throw_logic_errorPKc(ptr noundef @.str.34) #21, !dbg !5960
   unreachable, !dbg !5960
 
 19:                                               ; preds = %14, %3
@@ -5395,7 +5395,7 @@ define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traits
           to label %40 unwind label %41, !dbg !5983
 
 40:                                               ; preds = %37
-  invoke void @__cxa_rethrow() #22
+  invoke void @__cxa_rethrow() #21
           to label %56 unwind label %41, !dbg !5985
 
 41:                                               ; preds = %40, %37
@@ -5427,14 +5427,14 @@ define linkonce_odr dso_local void @_ZNSt7__cxx1112basic_stringIcSt11char_traits
   %54 = landingpad { ptr, i32 }
           catch ptr null, !dbg !5987
   %55 = extractvalue { ptr, i32 } %54, 0, !dbg !5987
-  call void @__clang_call_terminate(ptr %55) #19, !dbg !5987
+  call void @__clang_call_terminate(ptr %55) #18, !dbg !5987
   unreachable, !dbg !5987
 
 56:                                               ; preds = %40
   unreachable
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i64 @_ZN9__gnu_cxx11char_traitsIcE6lengthEPKc(ptr noundef %0) #4 comdat align 2 !dbg !5991 {
   %2 = alloca ptr, align 8
   %3 = alloca i64, align 8
@@ -5468,8 +5468,8 @@ define linkonce_odr dso_local noundef i64 @_ZN9__gnu_cxx11char_traitsIcE6lengthE
 ; Function Attrs: nounwind
 declare i64 @strlen(ptr noundef) #2
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #7 comdat align 2 !dbg !6058 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #6 comdat align 2 !dbg !6058 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -5486,8 +5486,8 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxx11char_traitsIcE2
   ret i1 %11, !dbg !6066
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_(ptr noundef %0) #7 comdat !dbg !6067 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_(ptr noundef %0) #6 comdat !dbg !6067 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6071, metadata !DIExpression()), !dbg !6072
@@ -5497,9 +5497,9 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxx17__is_null_point
 }
 
 ; Function Attrs: noreturn
-declare void @_ZSt19__throw_logic_errorPKc(ptr noundef) #15
+declare void @_ZSt19__throw_logic_errorPKc(ptr noundef) #14
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i64 @_ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_(ptr noundef %0, ptr noundef %1) #4 comdat !dbg !6076 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -5533,8 +5533,8 @@ declare void @__cxa_rethrow()
 
 declare void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm(ptr noundef nonnull align 8 dereferenceable(32), i64 noundef) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag(ptr noundef %0, ptr noundef %1) #7 comdat !dbg !6091 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag(ptr noundef %0, ptr noundef %1) #6 comdat !dbg !6091 {
   %3 = alloca %"struct.std::random_access_iterator_tag", align 1
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5551,15 +5551,15 @@ define linkonce_odr dso_local noundef i64 @_ZSt10__distanceIPKcENSt15iterator_tr
   ret i64 %10, !dbg !6105
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat !dbg !6106 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat !dbg !6106 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6112, metadata !DIExpression()), !dbg !6113
   ret void, !dbg !6114
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounter9duplicateEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #4 comdat align 2 !dbg !6115 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
@@ -5570,8 +5570,8 @@ define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounter9duplicateEv(ptr n
   ret void, !dbg !6120
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZN4Poco13AtomicCounterppEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #7 comdat align 2 !dbg !6121 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZN4Poco13AtomicCounterppEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #6 comdat align 2 !dbg !6121 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6127, metadata !DIExpression()), !dbg !6129
@@ -5581,8 +5581,8 @@ define linkonce_odr dso_local noundef i32 @_ZN4Poco13AtomicCounterppEv(ptr nound
   ret i32 %5, !dbg !6132
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNSt13__atomic_baseIiEppEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #7 comdat align 2 !dbg !6133 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNSt13__atomic_baseIiEppEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #6 comdat align 2 !dbg !6133 {
   %2 = alloca ptr, align 8
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
@@ -5599,8 +5599,8 @@ define linkonce_odr dso_local noundef i32 @_ZNSt13__atomic_baseIiEppEv(ptr nound
   ret i32 %10, !dbg !6139
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNK4Poco16RefCountedObject9duplicateEv(ptr noundef nonnull align 8 dereferenceable(12) %0) #7 comdat align 2 !dbg !6140 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNK4Poco16RefCountedObject9duplicateEv(ptr noundef nonnull align 8 dereferenceable(12) %0) #6 comdat align 2 !dbg !6140 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6146, metadata !DIExpression()), !dbg !6148
@@ -5610,8 +5610,8 @@ define linkonce_odr dso_local void @_ZNK4Poco16RefCountedObject9duplicateEv(ptr 
   ret void, !dbg !6151
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !6152 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !6152 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6153, metadata !DIExpression()), !dbg !6155
@@ -5619,7 +5619,7 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImED2Ev(ptr noun
   ret void, !dbg !6156
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZSt8_DestroyIPmmEvT_S1_RSaIT0_E(ptr noundef %0, ptr noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) #4 comdat !dbg !6157 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5636,8 +5636,8 @@ define linkonce_odr dso_local void @_ZSt8_DestroyIPmmEvT_S1_RSaIT0_E(ptr noundef
   ret void, !dbg !6171
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNSt12_Vector_baseImSaImEE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !6172 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNSt12_Vector_baseImSaImEE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !6172 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6173, metadata !DIExpression()), !dbg !6175
@@ -5646,8 +5646,8 @@ define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_Z
   ret ptr %4, !dbg !6177
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6178 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6178 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6179, metadata !DIExpression()), !dbg !6180
@@ -5677,11 +5677,11 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEED2Ev(ptr noundef 
   %20 = landingpad { ptr, i32 }
           catch ptr null, !dbg !6189
   %21 = extractvalue { ptr, i32 } %20, 0, !dbg !6189
-  call void @__clang_call_terminate(ptr %21) #19, !dbg !6189
+  call void @__clang_call_terminate(ptr %21) #18, !dbg !6189
   unreachable, !dbg !6189
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZSt8_DestroyIPmEvT_S1_(ptr noundef %0, ptr noundef %1) #4 comdat !dbg !6192 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -5695,8 +5695,8 @@ define linkonce_odr dso_local void @_ZSt8_DestroyIPmEvT_S1_(ptr noundef %0, ptr 
   ret void, !dbg !6204
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Destroy_auxILb1EE9__destroyIPmEEvT_S3_(ptr noundef %0, ptr noundef %1) #7 comdat align 2 !dbg !6205 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Destroy_auxILb1EE9__destroyIPmEEvT_S3_(ptr noundef %0, ptr noundef %1) #6 comdat align 2 !dbg !6205 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -5706,7 +5706,7 @@ define linkonce_odr dso_local void @_ZNSt12_Destroy_auxILb1EE9__destroyIPmEEvT_S
   ret void, !dbg !6214
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE13_M_deallocateEPmm(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef %1, i64 noundef %2) #4 comdat align 2 !dbg !6215 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5733,8 +5733,8 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE13_M_deallocateEP
   ret void, !dbg !6229
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE12_Vector_implD2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 !dbg !6230 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE12_Vector_implD2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 !dbg !6230 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6232, metadata !DIExpression()), !dbg !6234
@@ -5743,7 +5743,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE12_Vector_implD2E
   ret void, !dbg !6237
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaImEE10deallocateERS0_Pmm(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1, i64 noundef %2) #4 comdat align 2 !dbg !6238 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5761,8 +5761,8 @@ define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaImEE10deallocateER
   ret void, !dbg !6249
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImE10deallocateEPmm(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1, i64 noundef %2) #7 comdat align 2 !dbg !6250 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImE10deallocateEPmm(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1, i64 noundef %2) #6 comdat align 2 !dbg !6250 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca i64, align 8
@@ -5778,8 +5778,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImE10deallocateE
   ret void, !dbg !6259
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !6260 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !6260 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6261, metadata !DIExpression()), !dbg !6263
@@ -5787,8 +5787,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112ba
   ret void, !dbg !6264
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !6265 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !6265 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6266, metadata !DIExpression()), !dbg !6267
@@ -5796,7 +5796,7 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112ba
   ret void, !dbg !6268
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_EvT_S7_RSaIT0_E(ptr noundef %0, ptr noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) #4 comdat !dbg !6269 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5813,8 +5813,8 @@ define linkonce_odr dso_local void @_ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt
   ret void, !dbg !6283
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !6284 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !6284 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6285, metadata !DIExpression()), !dbg !6287
@@ -5823,8 +5823,8 @@ define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_Z
   ret ptr %4, !dbg !6289
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6290 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6290 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6291, metadata !DIExpression()), !dbg !6292
@@ -5854,11 +5854,11 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   %20 = landingpad { ptr, i32 }
           catch ptr null, !dbg !6301
   %21 = extractvalue { ptr, i32 } %20, 0, !dbg !6301
-  call void @__clang_call_terminate(ptr %21) #19, !dbg !6301
+  call void @__clang_call_terminate(ptr %21) #18, !dbg !6301
   unreachable, !dbg !6301
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_(ptr noundef %0, ptr noundef %1) #4 comdat !dbg !6304 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -5872,7 +5872,7 @@ define linkonce_odr dso_local void @_ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt
   ret void, !dbg !6315
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_(ptr noundef %0, ptr noundef %1) #4 comdat align 2 !dbg !6316 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -5903,8 +5903,8 @@ define linkonce_odr dso_local void @_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__c
   ret void, !dbg !6338
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZSt8_DestroyINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvPT_(ptr noundef %0) #7 comdat !dbg !6339 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZSt8_DestroyINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvPT_(ptr noundef %0) #6 comdat !dbg !6339 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6342, metadata !DIExpression()), !dbg !6343
@@ -5913,7 +5913,7 @@ define linkonce_odr dso_local void @_ZSt8_DestroyINSt7__cxx1112basic_stringIcSt1
   ret void, !dbg !6346
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_deallocateEPS5_m(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef %1, i64 noundef %2) #4 comdat align 2 !dbg !6347 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5940,8 +5940,8 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   ret void, !dbg !6361
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implD2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 !dbg !6362 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implD2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 !dbg !6362 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6364, metadata !DIExpression()), !dbg !6366
@@ -5950,7 +5950,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   ret void, !dbg !6369
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE10deallocateERS6_PS5_m(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1, i64 noundef %2) #4 comdat align 2 !dbg !6370 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -5968,8 +5968,8 @@ define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basi
   ret void, !dbg !6381
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10deallocateEPS6_m(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1, i64 noundef %2) #7 comdat align 2 !dbg !6382 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10deallocateEPS6_m(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1, i64 noundef %2) #6 comdat align 2 !dbg !6382 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca i64, align 8
@@ -5985,7 +5985,7 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112ba
   ret void, !dbg !6391
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZN9__gnu_cxx14__alloc_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEES6_E17_S_select_on_copyERKS7_(ptr noalias sret(%"class.std::allocator.38") align 1 %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #4 comdat align 2 !dbg !6392 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -5997,8 +5997,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx14__alloc_traitsISaINSt7__cxx11
   ret void, !dbg !6397
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNKSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !6398 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNKSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !6398 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6399, metadata !DIExpression()), !dbg !6401
@@ -6007,8 +6007,8 @@ define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_Z
   ret ptr %4, !dbg !6403
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2EmRKS6_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6404 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2EmRKS6_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6404 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
   %6 = alloca ptr, align 8
@@ -6049,7 +6049,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   resume { ptr, i32 } %22, !dbg !6417
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPS7_S7_ET0_T_SG_SF_RSaIT1_E(ptr %0, ptr %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #4 comdat !dbg !6418 {
   %5 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %6 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
@@ -6078,8 +6078,8 @@ define linkonce_odr dso_local noundef ptr @_ZSt22__uninitialized_copy_aIN9__gnu_
   ret ptr %18, !dbg !6436
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5beginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !6437 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5beginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !6437 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6093,8 +6093,8 @@ define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11
   ret ptr %8, !dbg !6443
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE3endEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !6444 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE3endEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !6444 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6108,8 +6108,8 @@ define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11
   ret ptr %8, !dbg !6450
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE37select_on_container_copy_constructionERKS6_(ptr noalias sret(%"class.std::allocator.38") align 1 %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #7 comdat align 2 !dbg !6451 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE37select_on_container_copy_constructionERKS6_(ptr noalias sret(%"class.std::allocator.38") align 1 %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #6 comdat align 2 !dbg !6451 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6120,8 +6120,8 @@ define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basi
   ret void, !dbg !6455
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS5_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #11 comdat align 2 !dbg !6456 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS5_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #10 comdat align 2 !dbg !6456 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6134,8 +6134,8 @@ define linkonce_odr dso_local void @_ZNSaINSt7__cxx1112basic_stringIcSt11char_tr
   ret void, !dbg !6463
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS7_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #11 comdat align 2 !dbg !6464 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS7_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #10 comdat align 2 !dbg !6464 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6146,8 +6146,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112ba
   ret void, !dbg !6469
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implC2ERKS6_(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #11 comdat align 2 !dbg !6470 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implC2ERKS6_(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #10 comdat align 2 !dbg !6470 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6161,7 +6161,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   ret void, !dbg !6478
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_create_storageEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !6479 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -6192,8 +6192,8 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   ret void, !dbg !6501
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_Vector_impl_dataC2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 !dbg !6502 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_Vector_impl_dataC2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 !dbg !6502 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6503, metadata !DIExpression()), !dbg !6505
@@ -6207,7 +6207,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseINSt7__cxx1112basic_strin
   ret void, !dbg !6509
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE11_M_allocateEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !6510 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -6234,7 +6234,7 @@ define linkonce_odr dso_local noundef ptr @_ZNSt12_Vector_baseINSt7__cxx1112basi
   ret ptr %14, !dbg !6520
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE8allocateERS6_m(ptr noundef nonnull align 1 dereferenceable(1) %0, i64 noundef %1) #4 comdat align 2 !dbg !6521 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -6248,7 +6248,7 @@ define linkonce_odr dso_local noundef ptr @_ZNSt16allocator_traitsISaINSt7__cxx1
   ret ptr %7, !dbg !6529
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE8allocateEmPKv(ptr noundef nonnull align 1 dereferenceable(1) %0, i64 noundef %1, ptr noundef %2) #4 comdat align 2 !dbg !6530 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -6271,22 +6271,22 @@ define linkonce_odr dso_local noundef ptr @_ZN9__gnu_cxx13new_allocatorINSt7__cx
   br i1 %13, label %14, label %15, !dbg !6546
 
 14:                                               ; preds = %11
-  call void @_ZSt28__throw_bad_array_new_lengthv() #22, !dbg !6547
+  call void @_ZSt28__throw_bad_array_new_lengthv() #21, !dbg !6547
   unreachable, !dbg !6547
 
 15:                                               ; preds = %11
-  call void @_ZSt17__throw_bad_allocv() #22, !dbg !6548
+  call void @_ZSt17__throw_bad_allocv() #21, !dbg !6548
   unreachable, !dbg !6548
 
 16:                                               ; preds = %3
   %17 = load i64, ptr %5, align 8, !dbg !6549
   %18 = mul i64 %17, 32, !dbg !6550
-  %19 = call noalias noundef nonnull ptr @_Znwm(i64 noundef %18) #24, !dbg !6551
+  %19 = call noalias noundef nonnull ptr @_Znwm(i64 noundef %18) #23, !dbg !6551
   ret ptr %19, !dbg !6552
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !6553 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !6553 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6554, metadata !DIExpression()), !dbg !6556
@@ -6295,12 +6295,12 @@ define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorINSt7__c
 }
 
 ; Function Attrs: noreturn
-declare void @_ZSt28__throw_bad_array_new_lengthv() #15
+declare void @_ZSt28__throw_bad_array_new_lengthv() #14
 
 ; Function Attrs: noreturn
-declare void @_ZSt17__throw_bad_allocv() #15
+declare void @_ZSt17__throw_bad_allocv() #14
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPS7_ET0_T_SG_SF_(ptr %0, ptr %1, ptr noundef %2) #4 comdat !dbg !6558 {
   %4 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %5 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
@@ -6330,9 +6330,9 @@ define linkonce_odr dso_local noundef ptr @_ZSt18uninitialized_copyIN9__gnu_cxx1
 }
 
 ; Function Attrs: nocallback nofree nounwind willreturn memory(argmem: readwrite)
-declare void @llvm.memcpy.p0.p0.i64(ptr noalias nocapture writeonly, ptr noalias nocapture readonly, i64, i1 immarg) #17
+declare void @llvm.memcpy.p0.p0.i64(ptr noalias nocapture writeonly, ptr noalias nocapture readonly, i64, i1 immarg) #16
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS9_SaIS9_EEEEPS9_EET0_T_SI_SH_(ptr %0, ptr %1, ptr noundef %2) #4 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6575 {
   %4 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %5 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
@@ -6391,7 +6391,7 @@ define linkonce_odr dso_local noundef ptr @_ZNSt20__uninitialized_copyILb0EE13__
           to label %32 unwind label %35, !dbg !6608
 
 32:                                               ; preds = %27
-  invoke void @__cxa_rethrow() #22
+  invoke void @__cxa_rethrow() #21
           to label %49 unwind label %35, !dbg !6609
 
 33:                                               ; preds = %13
@@ -6426,15 +6426,15 @@ define linkonce_odr dso_local noundef ptr @_ZNSt20__uninitialized_copyILb0EE13__
   %47 = landingpad { ptr, i32 }
           catch ptr null, !dbg !6613
   %48 = extractvalue { ptr, i32 } %47, 0, !dbg !6613
-  call void @__clang_call_terminate(ptr %48) #19, !dbg !6613
+  call void @__clang_call_terminate(ptr %48) #18, !dbg !6613
   unreachable, !dbg !6613
 
 49:                                               ; preds = %32
   unreachable
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESH_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #7 comdat !dbg !6614 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESH_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #6 comdat !dbg !6614 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6451,7 +6451,7 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxneIPKNSt7__cxx111
   ret i1 %11, !dbg !6627
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKS5_EEvPT_DpOT0_(ptr noundef %0, ptr noundef nonnull align 8 dereferenceable(32) %1) #4 comdat !dbg !6628 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
@@ -6465,8 +6465,8 @@ define linkonce_odr dso_local void @_ZSt10_ConstructINSt7__cxx1112basic_stringIc
   ret void, !dbg !6642
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !6643 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !6643 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6644, metadata !DIExpression()), !dbg !6646
@@ -6476,8 +6476,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(32) ptr @_
   ret ptr %5, !dbg !6648
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEppEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !6649 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEppEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !6649 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6650, metadata !DIExpression()), !dbg !6651
@@ -6490,10 +6490,10 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
 }
 
 ; Function Attrs: cold noreturn nounwind
-declare void @llvm.trap() #18
+declare void @llvm.trap() #17
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !6655 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !6655 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6656, metadata !DIExpression()), !dbg !6657
@@ -6502,8 +6502,8 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_Z
   ret ptr %4, !dbg !6659
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2ERKS8_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #11 comdat align 2 !dbg !6660 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2ERKS8_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #10 comdat align 2 !dbg !6660 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6521,8 +6521,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx
 ; Function Attrs: nounwind
 declare noundef i32 @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc(ptr noundef nonnull align 8 dereferenceable(32), ptr noundef) #2
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounterC2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #6 comdat align 2 !dbg !6668 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounterC2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #0 comdat align 2 !dbg !6668 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6669, metadata !DIExpression()), !dbg !6670
@@ -6532,8 +6532,8 @@ define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounterC2Ev(ptr noundef n
   ret void, !dbg !6672
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco13ReleasePolicyINS_3Net27PrivateKeyPassphraseHandlerEE7releaseEPS2_(ptr noundef %0) #7 comdat align 2 !dbg !6673 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco13ReleasePolicyINS_3Net27PrivateKeyPassphraseHandlerEE7releaseEPS2_(ptr noundef %0) #6 comdat align 2 !dbg !6673 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6674, metadata !DIExpression()), !dbg !6675
@@ -6554,8 +6554,8 @@ define linkonce_odr dso_local void @_ZN4Poco13ReleasePolicyINS_3Net27PrivateKeyP
 
 declare void @_ZN4Poco13AtomicCounterC1Ei(ptr noundef nonnull align 4 dereferenceable(4), i32 noundef) unnamed_addr #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEE7releaseEv(ptr noundef nonnull align 8 dereferenceable(16) %0) #7 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6679 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassphraseHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEE7releaseEv(ptr noundef nonnull align 8 dereferenceable(16) %0) #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6679 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6680, metadata !DIExpression()), !dbg !6681
@@ -6588,7 +6588,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
 
 20:                                               ; preds = %13
   call void @_ZN4Poco16ReferenceCounterD2Ev(ptr noundef nonnull align 4 dereferenceable(4) %18) #3, !dbg !6695
-  call void @_ZdlPv(ptr noundef %18) #21, !dbg !6695
+  call void @_ZdlPv(ptr noundef %18) #20, !dbg !6695
   br label %21, !dbg !6695
 
 21:                                               ; preds = %20, %13
@@ -6603,11 +6603,11 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net27PrivateKeyPassph
   %25 = landingpad { ptr, i32 }
           catch ptr null, !dbg !6686
   %26 = extractvalue { ptr, i32 } %25, 0, !dbg !6686
-  call void @__clang_call_terminate(ptr %26) #19, !dbg !6686
+  call void @__clang_call_terminate(ptr %26) #18, !dbg !6686
   unreachable, !dbg !6686
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i32 @_ZN4Poco16ReferenceCounter7releaseEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #4 comdat align 2 !dbg !6700 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
@@ -6618,8 +6618,8 @@ define linkonce_odr dso_local noundef i32 @_ZN4Poco16ReferenceCounter7releaseEv(
   ret i32 %5, !dbg !6705
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounterD2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #11 comdat align 2 !dbg !6706 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounterD2Ev(ptr noundef nonnull align 4 dereferenceable(4) %0) unnamed_addr #10 comdat align 2 !dbg !6706 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6708, metadata !DIExpression()), !dbg !6709
@@ -6629,8 +6629,8 @@ define linkonce_odr dso_local void @_ZN4Poco16ReferenceCounterD2Ev(ptr noundef n
   ret void, !dbg !6712
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZN4Poco13AtomicCountermmEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #7 comdat align 2 !dbg !6713 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZN4Poco13AtomicCountermmEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #6 comdat align 2 !dbg !6713 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6715, metadata !DIExpression()), !dbg !6716
@@ -6640,8 +6640,8 @@ define linkonce_odr dso_local noundef i32 @_ZN4Poco13AtomicCountermmEv(ptr nound
   ret i32 %5, !dbg !6719
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i32 @_ZNSt13__atomic_baseIiEmmEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #7 comdat align 2 !dbg !6720 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i32 @_ZNSt13__atomic_baseIiEmmEv(ptr noundef nonnull align 4 dereferenceable(4) %0) #6 comdat align 2 !dbg !6720 {
   %2 = alloca ptr, align 8
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
@@ -6661,8 +6661,8 @@ define linkonce_odr dso_local noundef i32 @_ZNSt13__atomic_baseIiEmmEv(ptr nound
 ; Function Attrs: nounwind
 declare void @_ZN4Poco13AtomicCounterD1Ev(ptr noundef nonnull align 4 dereferenceable(4)) unnamed_addr #2
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco13ReleasePolicyINS_3Net25InvalidCertificateHandlerEE7releaseEPS2_(ptr noundef %0) #7 comdat align 2 !dbg !6726 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco13ReleasePolicyINS_3Net25InvalidCertificateHandlerEE7releaseEPS2_(ptr noundef %0) #6 comdat align 2 !dbg !6726 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6727, metadata !DIExpression()), !dbg !6728
@@ -6681,8 +6681,8 @@ define linkonce_odr dso_local void @_ZN4Poco13ReleasePolicyINS_3Net25InvalidCert
   ret void, !dbg !6731
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEE7releaseEv(ptr noundef nonnull align 8 dereferenceable(16) %0) #7 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6732 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertificateHandlerENS_16ReferenceCounterENS_13ReleasePolicyIS2_EEE7releaseEv(ptr noundef nonnull align 8 dereferenceable(16) %0) #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6732 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6733, metadata !DIExpression()), !dbg !6734
@@ -6715,7 +6715,7 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
 
 20:                                               ; preds = %13
   call void @_ZN4Poco16ReferenceCounterD2Ev(ptr noundef nonnull align 4 dereferenceable(4) %18) #3, !dbg !6748
-  call void @_ZdlPv(ptr noundef %18) #21, !dbg !6748
+  call void @_ZdlPv(ptr noundef %18) #20, !dbg !6748
   br label %21, !dbg !6748
 
 21:                                               ; preds = %20, %13
@@ -6730,12 +6730,12 @@ define linkonce_odr dso_local void @_ZN4Poco9SharedPtrINS_3Net25InvalidCertifica
   %25 = landingpad { ptr, i32 }
           catch ptr null, !dbg !6739
   %26 = extractvalue { ptr, i32 } %25, 0, !dbg !6739
-  call void @__clang_call_terminate(ptr %26) #19, !dbg !6739
+  call void @__clang_call_terminate(ptr %26) #18, !dbg !6739
   unreachable, !dbg !6739
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNK4Poco16RefCountedObject7releaseEv(ptr noundef nonnull align 8 dereferenceable(12) %0) #7 comdat align 2 !dbg !6753 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNK4Poco16RefCountedObject7releaseEv(ptr noundef nonnull align 8 dereferenceable(12) %0) #6 comdat align 2 !dbg !6753 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6755, metadata !DIExpression()), !dbg !6756
@@ -6763,7 +6763,7 @@ define linkonce_odr dso_local void @_ZNK4Poco16RefCountedObject7releaseEv(ptr no
   ret void, !dbg !6764
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EE(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr %1) #4 comdat align 2 !dbg !6765 {
   %3 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %4 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
@@ -6825,8 +6825,8 @@ define linkonce_odr dso_local ptr @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11c
   ret ptr %42, !dbg !6784
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZN9__gnu_cxxmiIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSF_SI_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #7 comdat !dbg !6785 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZN9__gnu_cxxmiIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEENS_17__normal_iteratorIT_T0_E15difference_typeERKSF_SI_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #6 comdat !dbg !6785 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6846,8 +6846,8 @@ define linkonce_odr dso_local noundef i64 @_ZN9__gnu_cxxmiIPKNSt7__cxx1112basic_
   ret i64 %14, !dbg !6797
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE6cbeginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !6798 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE6cbeginEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !6798 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator.81", align 8
   %3 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6861,7 +6861,7 @@ define linkonce_odr dso_local ptr @_ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11
   ret ptr %8, !dbg !6804
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local ptr @_ZSt4moveIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEESC_ET0_T_SE_SD_(ptr %0, ptr %1, ptr %2) #4 comdat !dbg !6805 {
   %4 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %5 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
@@ -6908,8 +6908,8 @@ define linkonce_odr dso_local ptr @_ZSt4moveIN9__gnu_cxx17__normal_iteratorIPNSt
   ret ptr %33, !dbg !6821
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE7destroyIS5_EEvRS6_PT_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1) #7 comdat align 2 !dbg !6822 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE7destroyIS5_EEvRS6_PT_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1) #6 comdat align 2 !dbg !6822 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -6922,7 +6922,7 @@ define linkonce_odr dso_local void @_ZNSt16allocator_traitsISaINSt7__cxx1112basi
   ret void, !dbg !6835
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local ptr @_ZSt13__copy_move_aILb1EN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEESC_ET1_T0_SE_SD_(ptr %0, ptr %1, ptr %2) #4 comdat !dbg !6836 {
   %4 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %5 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
@@ -6965,8 +6965,8 @@ define linkonce_odr dso_local ptr @_ZSt13__copy_move_aILb1EN9__gnu_cxx17__normal
   ret ptr %30, !dbg !6854
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEET_SD_(ptr %0) #7 comdat !dbg !6855 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEET_SD_(ptr %0) #6 comdat !dbg !6855 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %3 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %4 = getelementptr inbounds %"class.__gnu_cxx::__normal_iterator", ptr %3, i32 0, i32 0
@@ -6978,8 +6978,8 @@ define linkonce_odr dso_local ptr @_ZSt12__miter_baseIN9__gnu_cxx17__normal_iter
   ret ptr %6, !dbg !6864
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local ptr @_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEES8_ET_SD_T0_(ptr %0, ptr noundef %1) #7 comdat !dbg !6865 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local ptr @_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEES8_ET_SD_T0_(ptr %0, ptr noundef %1) #6 comdat !dbg !6865 {
   %3 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %4 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %5 = alloca ptr, align 8
@@ -7006,7 +7006,7 @@ define linkonce_odr dso_local ptr @_ZSt12__niter_wrapIN9__gnu_cxx17__normal_iter
   ret ptr %19, !dbg !6880
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a1ILb1EPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ET1_T0_S8_S7_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #4 comdat !dbg !6881 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -7024,8 +7024,8 @@ define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a1ILb1EPNSt7__cxx11
   ret ptr %10, !dbg !6897
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS5_SaIS5_EEET_N9__gnu_cxx17__normal_iteratorISA_T0_EE(ptr %0) #7 comdat !dbg !6898 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS5_SaIS5_EEET_N9__gnu_cxx17__normal_iteratorISA_T0_EE(ptr %0) #6 comdat !dbg !6898 {
   %2 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %3 = getelementptr inbounds %"class.__gnu_cxx::__normal_iterator", ptr %2, i32 0, i32 0
   store ptr %0, ptr %3, align 8
@@ -7035,7 +7035,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt12__niter_baseIPNSt7__cxx1112basi
   ret ptr %5, !dbg !6904
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a2ILb1EPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ET1_T0_S8_S7_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #4 comdat !dbg !6905 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -7053,8 +7053,8 @@ define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a2ILb1EPNSt7__cxx11
   ret ptr %10, !dbg !6916
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZNSt11__copy_moveILb1ELb0ESt26random_access_iterator_tagE8__copy_mIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_EET0_T_SB_SA_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #7 comdat align 2 !dbg !6917 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZNSt11__copy_moveILb1ELb0ESt26random_access_iterator_tagE8__copy_mIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_EET0_T_SB_SA_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #6 comdat align 2 !dbg !6917 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -7103,8 +7103,8 @@ define linkonce_odr dso_local noundef ptr @_ZNSt11__copy_moveILb1ELb0ESt26random
   ret ptr %29, !dbg !6953
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7destroyIS6_EEvPT_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1) #7 comdat align 2 !dbg !6954 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7destroyIS6_EEvPT_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef %1) #6 comdat align 2 !dbg !6954 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -7117,8 +7117,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112ba
   ret void, !dbg !6964
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxeqIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESH_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #7 comdat !dbg !6965 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxeqIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESH_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) #6 comdat !dbg !6965 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -7135,8 +7135,8 @@ define linkonce_odr dso_local noundef zeroext i1 @_ZN9__gnu_cxxeqIPKNSt7__cxx111
   ret i1 %11, !dbg !6975
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #11 comdat align 2 !dbg !6976 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImEC2Ev(ptr noundef nonnull align 1 dereferenceable(1) %0) unnamed_addr #10 comdat align 2 !dbg !6976 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !6977, metadata !DIExpression()), !dbg !6978
@@ -7144,7 +7144,7 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImEC2Ev(ptr noun
   ret void, !dbg !6979
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i64 @_ZNSt6vectorImSaImEE17_S_check_init_lenEmRKS0_(i64 noundef %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #4 comdat align 2 !dbg !6980 {
   %3 = alloca i64, align 8
   %4 = alloca ptr, align 8
@@ -7162,7 +7162,7 @@ define linkonce_odr dso_local noundef i64 @_ZNSt6vectorImSaImEE17_S_check_init_l
   br i1 %9, label %10, label %11, !dbg !6991
 
 10:                                               ; preds = %2
-  call void @_ZSt20__throw_length_errorPKc(ptr noundef @.str.35) #22, !dbg !6992
+  call void @_ZSt20__throw_length_errorPKc(ptr noundef @.str.35) #21, !dbg !6992
   unreachable, !dbg !6992
 
 11:                                               ; preds = %2
@@ -7170,8 +7170,8 @@ define linkonce_odr dso_local noundef i64 @_ZNSt6vectorImSaImEE17_S_check_init_l
   ret i64 %12, !dbg !6994
 }
 
-; Function Attrs: noinline optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEEC2EmRKS0_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #6 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6995 {
+; Function Attrs: noinline uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEEC2EmRKS0_(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) unnamed_addr #0 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !6995 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
   %6 = alloca ptr, align 8
@@ -7212,7 +7212,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEEC2EmRKS0_(ptr nou
   resume { ptr, i32 } %22, !dbg !7008
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt6vectorImSaImEE21_M_default_initializeEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !7009 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7233,8 +7233,8 @@ define linkonce_odr dso_local void @_ZNSt6vectorImSaImEE21_M_default_initializeE
   ret void, !dbg !7022
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNSt6vectorImSaImEE11_S_max_sizeERKS0_(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7023 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNSt6vectorImSaImEE11_S_max_sizeERKS0_(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7023 {
   %2 = alloca ptr, align 8
   %3 = alloca i64, align 8
   %4 = alloca i64, align 8
@@ -7251,8 +7251,8 @@ define linkonce_odr dso_local noundef i64 @_ZNSt6vectorImSaImEE11_S_max_sizeERKS
   ret i64 %8, !dbg !7034
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSaImEC2ERKS_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #11 comdat align 2 !dbg !7035 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSaImEC2ERKS_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #10 comdat align 2 !dbg !7035 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -7266,10 +7266,10 @@ define linkonce_odr dso_local void @_ZNSaImEC2ERKS_(ptr noundef nonnull align 1 
 }
 
 ; Function Attrs: noreturn
-declare void @_ZSt20__throw_length_errorPKc(ptr noundef) #15
+declare void @_ZSt20__throw_length_errorPKc(ptr noundef) #14
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNSt16allocator_traitsISaImEE8max_sizeERKS0_(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7043 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNSt16allocator_traitsISaImEE8max_sizeERKS0_(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7043 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7044, metadata !DIExpression()), !dbg !7045
@@ -7278,8 +7278,8 @@ define linkonce_odr dso_local noundef i64 @_ZNSt16allocator_traitsISaImEE8max_si
   ret i64 %4, !dbg !7048
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorImE8max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7049 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorImE8max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7049 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7050, metadata !DIExpression()), !dbg !7052
@@ -7288,8 +7288,8 @@ define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorImE8max_
   ret i64 %4, !dbg !7054
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorImE11_M_max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7055 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorImE11_M_max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7055 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7056, metadata !DIExpression()), !dbg !7057
@@ -7297,8 +7297,8 @@ define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorImE11_M_
   ret i64 1152921504606846975, !dbg !7058
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImEC2ERKS1_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #11 comdat align 2 !dbg !7059 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImEC2ERKS1_(ptr noundef nonnull align 1 dereferenceable(1) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #10 comdat align 2 !dbg !7059 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -7309,8 +7309,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx13new_allocatorImEC2ERKS1_(ptr 
   ret void, !dbg !7064
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE12_Vector_implC2ERKS0_(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #11 comdat align 2 !dbg !7065 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE12_Vector_implC2ERKS0_(ptr noundef nonnull align 8 dereferenceable(24) %0, ptr noundef nonnull align 1 dereferenceable(1) %1) unnamed_addr #10 comdat align 2 !dbg !7065 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -7324,7 +7324,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE12_Vector_implC2E
   ret void, !dbg !7073
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE17_M_create_storageEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !7074 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7355,8 +7355,8 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE17_M_create_stora
   ret void, !dbg !7096
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE17_Vector_impl_dataC2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #11 comdat align 2 !dbg !7097 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE17_Vector_impl_dataC2Ev(ptr noundef nonnull align 8 dereferenceable(24) %0) unnamed_addr #10 comdat align 2 !dbg !7097 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7098, metadata !DIExpression()), !dbg !7100
@@ -7370,7 +7370,7 @@ define linkonce_odr dso_local void @_ZNSt12_Vector_baseImSaImEE17_Vector_impl_da
   ret void, !dbg !7104
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt12_Vector_baseImSaImEE11_M_allocateEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !7105 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7397,7 +7397,7 @@ define linkonce_odr dso_local noundef ptr @_ZNSt12_Vector_baseImSaImEE11_M_alloc
   ret ptr %14, !dbg !7115
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt16allocator_traitsISaImEE8allocateERS0_m(ptr noundef nonnull align 1 dereferenceable(1) %0, i64 noundef %1) #4 comdat align 2 !dbg !7116 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7411,7 +7411,7 @@ define linkonce_odr dso_local noundef ptr @_ZNSt16allocator_traitsISaImEE8alloca
   ret ptr %7, !dbg !7124
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZN9__gnu_cxx13new_allocatorImE8allocateEmPKv(ptr noundef nonnull align 1 dereferenceable(1) %0, i64 noundef %1, ptr noundef %2) #4 comdat align 2 !dbg !7125 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -7434,21 +7434,21 @@ define linkonce_odr dso_local noundef ptr @_ZN9__gnu_cxx13new_allocatorImE8alloc
   br i1 %13, label %14, label %15, !dbg !7141
 
 14:                                               ; preds = %11
-  call void @_ZSt28__throw_bad_array_new_lengthv() #22, !dbg !7142
+  call void @_ZSt28__throw_bad_array_new_lengthv() #21, !dbg !7142
   unreachable, !dbg !7142
 
 15:                                               ; preds = %11
-  call void @_ZSt17__throw_bad_allocv() #22, !dbg !7143
+  call void @_ZSt17__throw_bad_allocv() #21, !dbg !7143
   unreachable, !dbg !7143
 
 16:                                               ; preds = %3
   %17 = load i64, ptr %5, align 8, !dbg !7144
   %18 = mul i64 %17, 8, !dbg !7145
-  %19 = call noalias noundef nonnull ptr @_Znwm(i64 noundef %18) #24, !dbg !7146
+  %19 = call noalias noundef nonnull ptr @_Znwm(i64 noundef %18) #23, !dbg !7146
   ret ptr %19, !dbg !7147
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt27__uninitialized_default_n_aIPmmmET_S1_T0_RSaIT1_E(ptr noundef %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) #4 comdat !dbg !7148 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -7465,7 +7465,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt27__uninitialized_default_n_aIPmm
   ret ptr %9, !dbg !7162
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt25__uninitialized_default_nIPmmET_S1_T0_(ptr noundef %0, i64 noundef %1) #4 comdat !dbg !7163 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7482,7 +7482,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt25__uninitialized_default_nIPmmET
   ret ptr %8, !dbg !7176
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt27__uninitialized_default_n_1ILb1EE18__uninit_default_nIPmmEET_S3_T0_(ptr noundef %0, i64 noundef %1) #4 comdat align 2 !dbg !7177 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7517,8 +7517,8 @@ define linkonce_odr dso_local noundef ptr @_ZNSt27__uninitialized_default_n_1ILb
   ret ptr %19, !dbg !7207
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZSt10_ConstructImJEEvPT_DpOT0_(ptr noundef %0) #7 comdat !dbg !7208 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZSt10_ConstructImJEEvPT_DpOT0_(ptr noundef %0) #6 comdat !dbg !7208 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7213, metadata !DIExpression()), !dbg !7214
@@ -7527,7 +7527,7 @@ define linkonce_odr dso_local void @_ZSt10_ConstructImJEEvPT_DpOT0_(ptr noundef 
   ret void, !dbg !7217
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt6fill_nIPmmmET_S1_T0_RKT1_(ptr noundef %0, i64 noundef %1, ptr noundef nonnull align 8 dereferenceable(8) %2) #4 comdat !dbg !7218 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -7549,7 +7549,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt6fill_nIPmmmET_S1_T0_RKT1_(ptr no
   ret ptr %13, !dbg !7235
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt10__fill_n_aIPmmmET_S1_T0_RKT1_St26random_access_iterator_tag(ptr noundef %0, i64 noundef %1, ptr noundef nonnull align 8 dereferenceable(8) %2) #4 comdat !dbg !7236 {
   %4 = alloca ptr, align 8
   %5 = alloca %"struct.std::random_access_iterator_tag", align 1
@@ -7590,8 +7590,8 @@ define linkonce_odr dso_local noundef ptr @_ZSt10__fill_n_aIPmmmET_S1_T0_RKT1_St
   ret ptr %23, !dbg !7265
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZSt17__size_to_integerm(i64 noundef %0) #7 comdat !dbg !7266 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZSt17__size_to_integerm(i64 noundef %0) #6 comdat !dbg !7266 {
   %2 = alloca i64, align 8
   store i64 %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7269, metadata !DIExpression()), !dbg !7270
@@ -7599,15 +7599,15 @@ define linkonce_odr dso_local noundef i64 @_ZSt17__size_to_integerm(i64 noundef 
   ret i64 %3, !dbg !7272
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZSt19__iterator_categoryIPmENSt15iterator_traitsIT_E17iterator_categoryERKS2_(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat !dbg !7273 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZSt19__iterator_categoryIPmENSt15iterator_traitsIT_E17iterator_categoryERKS2_(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat !dbg !7273 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7279, metadata !DIExpression()), !dbg !7280
   ret void, !dbg !7281
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZSt8__fill_aIPmmEvT_S1_RKT0_(ptr noundef %0, ptr noundef %1, ptr noundef nonnull align 8 dereferenceable(8) %2) #4 comdat !dbg !7282 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -7625,8 +7625,8 @@ define linkonce_odr dso_local void @_ZSt8__fill_aIPmmEvT_S1_RKT0_(ptr noundef %0
   ret void, !dbg !7297
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZSt9__fill_a1IPmmEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_(ptr noundef %0, ptr noundef %1, ptr noundef nonnull align 8 dereferenceable(8) %2) #7 comdat !dbg !7298 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZSt9__fill_a1IPmmEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_(ptr noundef %0, ptr noundef %1, ptr noundef nonnull align 8 dereferenceable(8) %2) #6 comdat !dbg !7298 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -7665,8 +7665,8 @@ define linkonce_odr dso_local void @_ZSt9__fill_a1IPmmEN9__gnu_cxx11__enable_ifI
   ret void, !dbg !7329
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE8max_sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !7330 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE8max_sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !7330 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7331, metadata !DIExpression()), !dbg !7333
@@ -7676,8 +7676,8 @@ define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE8max_sizeEv(ptr 
   ret i64 %5, !dbg !7336
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE8capacityEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !7337 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE8capacityEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !7337 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7338, metadata !DIExpression()), !dbg !7339
@@ -7695,8 +7695,8 @@ define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE8capacityEv(ptr 
   ret i64 %13, !dbg !7345
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE4sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !7346 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE4sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !7346 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7347, metadata !DIExpression()), !dbg !7348
@@ -7714,8 +7714,8 @@ define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorImSaImEE4sizeEv(ptr noun
   ret i64 %13, !dbg !7354
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZNSt6vectorImSaImEE11_S_relocateEPmS2_S2_RS0_(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #7 comdat align 2 !dbg !2328 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZNSt6vectorImSaImEE11_S_relocateEPmS2_S2_RS0_(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #6 comdat align 2 !dbg !2328 {
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -7737,8 +7737,8 @@ define linkonce_odr dso_local noundef ptr @_ZNSt6vectorImSaImEE11_S_relocateEPmS
   ret ptr %14, !dbg !7368
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNKSt12_Vector_baseImSaImEE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #7 comdat align 2 !dbg !7369 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_ZNKSt12_Vector_baseImSaImEE19_M_get_Tp_allocatorEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #6 comdat align 2 !dbg !7369 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7370, metadata !DIExpression()), !dbg !7372
@@ -7747,8 +7747,8 @@ define linkonce_odr dso_local noundef nonnull align 1 dereferenceable(1) ptr @_Z
   ret ptr %4, !dbg !7374
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZNSt6vectorImSaImEE14_S_do_relocateEPmS2_S2_RS0_St17integral_constantIbLb1EE(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #7 comdat align 2 !dbg !7375 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZNSt6vectorImSaImEE14_S_do_relocateEPmS2_S2_RS0_St17integral_constantIbLb1EE(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #6 comdat align 2 !dbg !7375 {
   %5 = alloca %"struct.std::integral_constant", align 1
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -7771,8 +7771,8 @@ define linkonce_odr dso_local noundef ptr @_ZNSt6vectorImSaImEE14_S_do_relocateE
   ret ptr %14, !dbg !7391
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZSt12__relocate_aIPmS0_SaImEET0_T_S3_S2_RT1_(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #7 comdat !dbg !7392 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZSt12__relocate_aIPmS0_SaImEET0_T_S3_S2_RT1_(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #6 comdat !dbg !7392 {
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -7796,8 +7796,8 @@ define linkonce_odr dso_local noundef ptr @_ZSt12__relocate_aIPmS0_SaImEET0_T_S3
   ret ptr %16, !dbg !7414
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZSt14__relocate_a_1ImmENSt9enable_ifIXsr3std24__is_bitwise_relocatableIT_EE5valueEPS1_E4typeES2_S2_S2_RSaIT0_E(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #7 comdat !dbg !7415 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZSt14__relocate_a_1ImmENSt9enable_ifIXsr3std24__is_bitwise_relocatableIT_EE5valueEPS1_E4typeES2_S2_S2_RSaIT0_E(ptr noundef %0, ptr noundef %1, ptr noundef %2, ptr noundef nonnull align 1 dereferenceable(1) %3) #6 comdat !dbg !7415 {
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
   %7 = alloca ptr, align 8
@@ -7838,8 +7838,8 @@ define linkonce_odr dso_local noundef ptr @_ZSt14__relocate_a_1ImmENSt9enable_if
   ret ptr %26, !dbg !7450
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef ptr @_ZSt12__niter_baseIPmET_S1_(ptr noundef %0) #7 comdat !dbg !7451 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef ptr @_ZSt12__niter_baseIPmET_S1_(ptr noundef %0) #6 comdat !dbg !7451 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7454, metadata !DIExpression()), !dbg !7455
@@ -7848,9 +7848,9 @@ define linkonce_odr dso_local noundef ptr @_ZSt12__niter_baseIPmET_S1_(ptr nound
 }
 
 ; Function Attrs: nocallback nofree nounwind willreturn memory(argmem: readwrite)
-declare void @llvm.memmove.p0.p0.i64(ptr nocapture writeonly, ptr nocapture readonly, i64, i1 immarg) #17
+declare void @llvm.memmove.p0.p0.i64(ptr nocapture writeonly, ptr nocapture readonly, i64, i1 immarg) #16
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef i64 @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_S_check_init_lenEmRKS6_(i64 noundef %0, ptr noundef nonnull align 1 dereferenceable(1) %1) #4 comdat align 2 !dbg !7458 {
   %3 = alloca i64, align 8
   %4 = alloca ptr, align 8
@@ -7868,7 +7868,7 @@ define linkonce_odr dso_local noundef i64 @_ZNSt6vectorINSt7__cxx1112basic_strin
   br i1 %9, label %10, label %11, !dbg !7469
 
 10:                                               ; preds = %2
-  call void @_ZSt20__throw_length_errorPKc(ptr noundef @.str.35) #22, !dbg !7470
+  call void @_ZSt20__throw_length_errorPKc(ptr noundef @.str.35) #21, !dbg !7470
   unreachable, !dbg !7470
 
 11:                                               ; preds = %2
@@ -7876,7 +7876,7 @@ define linkonce_odr dso_local noundef i64 @_ZNSt6vectorINSt7__cxx1112basic_strin
   ret i64 %12, !dbg !7472
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE21_M_default_initializeEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #4 comdat align 2 !dbg !7473 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7897,8 +7897,8 @@ define linkonce_odr dso_local void @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11
   ret void, !dbg !7486
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE11_S_max_sizeERKS6_(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7487 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE11_S_max_sizeERKS6_(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7487 {
   %2 = alloca ptr, align 8
   %3 = alloca i64, align 8
   %4 = alloca i64, align 8
@@ -7915,8 +7915,8 @@ define linkonce_odr dso_local noundef i64 @_ZNSt6vectorINSt7__cxx1112basic_strin
   ret i64 %8, !dbg !7497
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE8max_sizeERKS6_(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7498 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE8max_sizeERKS6_(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7498 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7499, metadata !DIExpression()), !dbg !7500
@@ -7925,8 +7925,8 @@ define linkonce_odr dso_local noundef i64 @_ZNSt16allocator_traitsISaINSt7__cxx1
   ret i64 %4, !dbg !7503
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE8max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #7 comdat align 2 !dbg !7504 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE8max_sizeEv(ptr noundef nonnull align 1 dereferenceable(1) %0) #6 comdat align 2 !dbg !7504 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7505, metadata !DIExpression()), !dbg !7506
@@ -7935,7 +7935,7 @@ define linkonce_odr dso_local noundef i64 @_ZNK9__gnu_cxx13new_allocatorINSt7__c
   ret i64 %4, !dbg !7508
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt27__uninitialized_default_n_aIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmS5_ET_S7_T0_RSaIT1_E(ptr noundef %0, i64 noundef %1, ptr noundef nonnull align 1 dereferenceable(1) %2) #4 comdat !dbg !7509 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -7952,7 +7952,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt27__uninitialized_default_n_aIPNS
   ret ptr %9, !dbg !7522
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt25__uninitialized_default_nIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmET_S7_T0_(ptr noundef %0, i64 noundef %1) #4 comdat !dbg !7523 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -7969,7 +7969,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt25__uninitialized_default_nIPNSt7
   ret ptr %8, !dbg !7536
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmEET_S9_T0_(ptr noundef %0, i64 noundef %1) #4 comdat align 2 personality ptr @__gxx_personality_v0 !dbg !7537 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -8025,7 +8025,7 @@ define linkonce_odr dso_local noundef ptr @_ZNSt27__uninitialized_default_n_1ILb
           to label %29 unwind label %32, !dbg !7568
 
 29:                                               ; preds = %24
-  invoke void @__cxa_rethrow() #22
+  invoke void @__cxa_rethrow() #21
           to label %46 unwind label %32, !dbg !7569
 
 30:                                               ; preds = %9
@@ -8060,15 +8060,15 @@ define linkonce_odr dso_local noundef ptr @_ZNSt27__uninitialized_default_n_1ILb
   %44 = landingpad { ptr, i32 }
           catch ptr null, !dbg !7573
   %45 = extractvalue { ptr, i32 } %44, 0, !dbg !7573
-  call void @__clang_call_terminate(ptr %45) #19, !dbg !7573
+  call void @__clang_call_terminate(ptr %45) #18, !dbg !7573
   unreachable, !dbg !7573
 
 46:                                               ; preds = %29
   unreachable
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJEEvPT_DpOT0_(ptr noundef %0) #7 comdat !dbg !7574 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJEEvPT_DpOT0_(ptr noundef %0) #6 comdat !dbg !7574 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7576, metadata !DIExpression()), !dbg !7577
@@ -8077,7 +8077,7 @@ define linkonce_odr dso_local void @_ZSt10_ConstructINSt7__cxx1112basic_stringIc
   ret void, !dbg !7580
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local ptr @_ZSt13__copy_move_aILb0EN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEESC_ET1_T0_SE_SD_(ptr %0, ptr %1, ptr %2) #4 comdat !dbg !7581 {
   %4 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
   %5 = alloca %"class.__gnu_cxx::__normal_iterator", align 8
@@ -8120,7 +8120,7 @@ define linkonce_odr dso_local ptr @_ZSt13__copy_move_aILb0EN9__gnu_cxx17__normal
   ret ptr %30, !dbg !7599
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a1ILb0EPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ET1_T0_S8_S7_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #4 comdat !dbg !7600 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -8138,7 +8138,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a1ILb0EPNSt7__cxx11
   ret ptr %10, !dbg !7612
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a2ILb0EPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ET1_T0_S8_S7_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #4 comdat !dbg !7613 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -8156,7 +8156,7 @@ define linkonce_odr dso_local noundef ptr @_ZSt14__copy_move_a2ILb0EPNSt7__cxx11
   ret ptr %10, !dbg !7624
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local noundef ptr @_ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_EET0_T_SB_SA_(ptr noundef %0, ptr noundef %1, ptr noundef %2) #4 comdat align 2 !dbg !7625 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -8206,8 +8206,8 @@ define linkonce_odr dso_local noundef ptr @_ZNSt11__copy_moveILb0ELb0ESt26random
   ret ptr %29, !dbg !7659
 }
 
-; Function Attrs: noinline nounwind optnone uwtable
-define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEC2ERKS1_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #11 comdat align 2 !dbg !7660 {
+; Function Attrs: noinline nounwind uwtable
+define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEEC2ERKS1_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1) unnamed_addr #10 comdat align 2 !dbg !7660 {
   %3 = alloca ptr, align 8
   %4 = alloca ptr, align 8
   store ptr %0, ptr %3, align 8
@@ -8222,8 +8222,8 @@ define linkonce_odr dso_local void @_ZN9__gnu_cxx17__normal_iteratorIPmSt6vector
   ret void, !dbg !7667
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
-define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEE4baseEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #7 comdat align 2 !dbg !7668 {
+; Function Attrs: mustprogress noinline nounwind uwtable
+define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(8) ptr @_ZNK9__gnu_cxx17__normal_iteratorIPmSt6vectorImSaImEEE4baseEv(ptr noundef nonnull align 8 dereferenceable(8) %0) #6 comdat align 2 !dbg !7668 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !7669, metadata !DIExpression()), !dbg !7670
@@ -8253,27 +8253,26 @@ attributes #0 = { noinline uwtable "frame-pointer"="all" "min-legal-vector-width
 attributes #1 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #2 = { nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #3 = { nounwind }
-attributes #4 = { mustprogress noinline optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #4 = { mustprogress noinline uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #5 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-attributes #6 = { noinline optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #7 = { mustprogress noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #8 = { noreturn nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #9 = { nobuiltin allocsize(0) "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #10 = { nobuiltin nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #11 = { noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #12 = { mustprogress noinline norecurse optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #13 = { nounwind memory(none) }
-attributes #14 = { noinline noreturn nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #15 = { noreturn "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #16 = { nounwind willreturn memory(none) "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
-attributes #17 = { nocallback nofree nounwind willreturn memory(argmem: readwrite) }
-attributes #18 = { cold noreturn nounwind }
-attributes #19 = { noreturn nounwind }
-attributes #20 = { builtin allocsize(0) }
-attributes #21 = { builtin nounwind }
-attributes #22 = { noreturn }
-attributes #23 = { nounwind willreturn memory(none) }
-attributes #24 = { allocsize(0) }
+attributes #6 = { mustprogress noinline nounwind uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #7 = { noreturn nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #8 = { nobuiltin allocsize(0) "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #9 = { nobuiltin nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #10 = { noinline nounwind uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #11 = { mustprogress noinline norecurse uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #12 = { nounwind memory(none) }
+attributes #13 = { noinline noreturn nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #14 = { noreturn "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #15 = { nounwind willreturn memory(none) "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #16 = { nocallback nofree nounwind willreturn memory(argmem: readwrite) }
+attributes #17 = { cold noreturn nounwind }
+attributes #18 = { noreturn nounwind }
+attributes #19 = { builtin allocsize(0) }
+attributes #20 = { builtin nounwind }
+attributes #21 = { noreturn }
+attributes #22 = { nounwind willreturn memory(none) }
+attributes #23 = { allocsize(0) }
 
 !llvm.dbg.cu = !{!142}
 !llvm.module.flags = !{!4071, !4072, !4073, !4074, !4075, !4076, !4077}

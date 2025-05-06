@@ -25,7 +25,7 @@ $_ZNSt14numeric_limitsIiE3minEv = comdat any
 
 $_ZNSt14numeric_limitsIiE3maxEv = comdat any
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local noundef zeroext i1 @_ZN12StringVector6equalsEmRKS_m(ptr noundef nonnull align 8 dereferenceable(56) %0, i64 noundef %1, ptr noundef nonnull align 8 dereferenceable(56) %2, i64 noundef %3) #0 align 2 !dbg !1071 {
   %5 = alloca i1, align 1
   %6 = alloca ptr, align 8
@@ -109,7 +109,7 @@ define dso_local noundef zeroext i1 @_ZN12StringVector6equalsEmRKS_m(ptr noundef
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorI11StringTokenSaIS0_EE4sizeEv(ptr noundef nonnull align 8 dereferenceable(24) %0) #2 comdat align 2 !dbg !1136 {
   %2 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
@@ -128,7 +128,7 @@ define linkonce_odr dso_local noundef i64 @_ZNKSt6vectorI11StringTokenSaIS0_EE4s
   ret i64 %13, !dbg !1151
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(16) ptr @_ZNSt6vectorI11StringTokenSaIS0_EEixEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #2 comdat align 2 !dbg !1152 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -145,7 +145,7 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(16) ptr @_
   ret ptr %10, !dbg !1224
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(16) ptr @_ZNKSt6vectorI11StringTokenSaIS0_EEixEm(ptr noundef nonnull align 8 dereferenceable(24) %0, i64 noundef %1) #2 comdat align 2 !dbg !1225 {
   %3 = alloca ptr, align 8
   %4 = alloca i64, align 8
@@ -164,7 +164,7 @@ define linkonce_odr dso_local noundef nonnull align 8 dereferenceable(16) ptr @_
 
 declare noundef i32 @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEmmRKS4_mm(ptr noundef nonnull align 8 dereferenceable(32), i64 noundef, i64 noundef, ptr noundef nonnull align 8 dereferenceable(32), i64 noundef, i64 noundef) #3
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local noundef zeroext i1 @_ZNK12StringVector9getUInt32EmRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERj(ptr noundef nonnull align 8 dereferenceable(56) %0, i64 noundef %1, ptr noundef nonnull align 8 dereferenceable(32) %2, ptr noundef nonnull align 4 dereferenceable(4) %3) #0 align 2 !dbg !1242 {
   %5 = alloca i1, align 1
   %6 = alloca ptr, align 8
@@ -279,12 +279,12 @@ declare noundef nonnull align 1 dereferenceable(1) ptr @_ZNKSt7__cxx1112basic_st
 
 declare noundef i32 @_ZN4Util9safe_atoiEPKci(ptr noundef, i32 noundef) #3
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef i32 @_ZNSt14numeric_limitsIjE3maxEv() #2 comdat align 2 !dbg !1322 {
   ret i32 -1, !dbg !1365
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local noundef zeroext i1 @_ZNK12StringVector18getNameIntegerPairEmRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERi(ptr noundef nonnull align 8 dereferenceable(56) %0, i64 noundef %1, ptr noundef nonnull align 8 dereferenceable(32) %2, ptr noundef nonnull align 4 dereferenceable(4) %3) #0 align 2 !dbg !1366 {
   %5 = alloca i1, align 1
   %6 = alloca ptr, align 8
@@ -439,19 +439,19 @@ declare noundef nonnull align 8 dereferenceable(32) ptr @_ZNSt7__cxx1112basic_st
 ; Function Attrs: nounwind
 declare void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(ptr noundef nonnull align 8 dereferenceable(32)) unnamed_addr #4
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef i32 @_ZNSt14numeric_limitsIiE3minEv() #2 comdat align 2 !dbg !1466 {
   ret i32 -2147483648, !dbg !1503
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef i32 @_ZNSt14numeric_limitsIiE3maxEv() #2 comdat align 2 !dbg !1504 {
   ret i32 2147483647, !dbg !1505
 }
 
-attributes #0 = { mustprogress noinline optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #0 = { mustprogress noinline uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-attributes #2 = { mustprogress noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #2 = { mustprogress noinline nounwind uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #3 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #4 = { nounwind "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #5 = { nounwind }

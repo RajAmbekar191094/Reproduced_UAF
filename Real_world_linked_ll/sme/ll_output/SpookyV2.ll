@@ -20,7 +20,7 @@ $_ZN10SpookyHash5Rot64Emi = comdat any
 
 $_ZN10SpookyHash10EndPartialERmS0_S0_S0_S0_S0_S0_S0_S0_S0_S0_S0_ = comdat any
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN10SpookyHash5ShortEPKvmPmS2_(ptr noundef %0, i64 noundef %1, ptr noundef %2, ptr noundef %3) #0 align 2 !dbg !89 {
   %5 = alloca ptr, align 8
   %6 = alloca i64, align 8
@@ -360,7 +360,7 @@ define dso_local void @_ZN10SpookyHash5ShortEPKvmPmS2_(ptr noundef %0, i64 nound
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZN10SpookyHash8ShortMixERmS0_S0_S0_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1, ptr noundef nonnull align 8 dereferenceable(8) %2, ptr noundef nonnull align 8 dereferenceable(8) %3) #0 comdat align 2 !dbg !273 {
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -581,7 +581,7 @@ define linkonce_odr dso_local void @_ZN10SpookyHash8ShortMixERmS0_S0_S0_(ptr nou
   ret void, !dbg !402
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local void @_ZN10SpookyHash8ShortEndERmS0_S0_S0_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1, ptr noundef nonnull align 8 dereferenceable(8) %2, ptr noundef nonnull align 8 dereferenceable(8) %3) #2 comdat align 2 !dbg !403 {
   %5 = alloca ptr, align 8
   %6 = alloca ptr, align 8
@@ -785,7 +785,7 @@ define linkonce_odr dso_local void @_ZN10SpookyHash8ShortEndERmS0_S0_S0_(ptr nou
   ret void, !dbg !522
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN10SpookyHash7Hash128EPKvmPmS2_(ptr noundef %0, i64 noundef %1, ptr noundef %2, ptr noundef %3) #0 align 2 !dbg !523 {
   %5 = alloca ptr, align 8
   %6 = alloca i64, align 8
@@ -922,7 +922,7 @@ define dso_local void @_ZN10SpookyHash7Hash128EPKvmPmS2_(ptr noundef %0, i64 nou
   ret void, !dbg !642
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local void @_ZN10SpookyHash3MixEPKmRmS2_S2_S2_S2_S2_S2_S2_S2_S2_S2_S2_(ptr noundef %0, ptr noundef nonnull align 8 dereferenceable(8) %1, ptr noundef nonnull align 8 dereferenceable(8) %2, ptr noundef nonnull align 8 dereferenceable(8) %3, ptr noundef nonnull align 8 dereferenceable(8) %4, ptr noundef nonnull align 8 dereferenceable(8) %5, ptr noundef nonnull align 8 dereferenceable(8) %6, ptr noundef nonnull align 8 dereferenceable(8) %7, ptr noundef nonnull align 8 dereferenceable(8) %8, ptr noundef nonnull align 8 dereferenceable(8) %9, ptr noundef nonnull align 8 dereferenceable(8) %10, ptr noundef nonnull align 8 dereferenceable(8) %11, ptr noundef nonnull align 8 dereferenceable(8) %12) #2 comdat align 2 !dbg !643 {
   %14 = alloca ptr, align 8
   %15 = alloca ptr, align 8
@@ -1332,7 +1332,7 @@ declare void @llvm.memcpy.p0.p0.i64(ptr noalias nocapture writeonly, ptr noalias
 ; Function Attrs: nocallback nofree nounwind willreturn memory(argmem: write)
 declare void @llvm.memset.p0.i64(ptr nocapture writeonly, i8, i64, i1 immarg) #4
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define linkonce_odr dso_local void @_ZN10SpookyHash3EndEPKmRmS2_S2_S2_S2_S2_S2_S2_S2_S2_S2_S2_(ptr noundef %0, ptr noundef nonnull align 8 dereferenceable(8) %1, ptr noundef nonnull align 8 dereferenceable(8) %2, ptr noundef nonnull align 8 dereferenceable(8) %3, ptr noundef nonnull align 8 dereferenceable(8) %4, ptr noundef nonnull align 8 dereferenceable(8) %5, ptr noundef nonnull align 8 dereferenceable(8) %6, ptr noundef nonnull align 8 dereferenceable(8) %7, ptr noundef nonnull align 8 dereferenceable(8) %8, ptr noundef nonnull align 8 dereferenceable(8) %9, ptr noundef nonnull align 8 dereferenceable(8) %10, ptr noundef nonnull align 8 dereferenceable(8) %11, ptr noundef nonnull align 8 dereferenceable(8) %12) #0 comdat align 2 !dbg !863 {
   %14 = alloca ptr, align 8
   %15 = alloca ptr, align 8
@@ -1499,7 +1499,7 @@ define linkonce_odr dso_local void @_ZN10SpookyHash3EndEPKmRmS2_S2_S2_S2_S2_S2_S
   ret void, !dbg !965
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define dso_local void @_ZN10SpookyHash4InitEmm(ptr noundef nonnull align 8 dereferenceable(297) %0, i64 noundef %1, i64 noundef %2) #2 align 2 !dbg !966 {
   %4 = alloca ptr, align 8
   %5 = alloca i64, align 8
@@ -1526,7 +1526,7 @@ define dso_local void @_ZN10SpookyHash4InitEmm(ptr noundef nonnull align 8 deref
   ret void, !dbg !984
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN10SpookyHash6UpdateEPKvm(ptr noundef nonnull align 8 dereferenceable(297) %0, ptr noundef %1, i64 noundef %2) #0 align 2 !dbg !985 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1833,7 +1833,7 @@ define dso_local void @_ZN10SpookyHash6UpdateEPKvm(ptr noundef nonnull align 8 d
   ret void, !dbg !1201
 }
 
-; Function Attrs: mustprogress noinline optnone uwtable
+; Function Attrs: mustprogress noinline uwtable
 define dso_local void @_ZN10SpookyHash5FinalEPmS0_(ptr noundef nonnull align 8 dereferenceable(297) %0, ptr noundef %1, ptr noundef %2) #0 align 2 !dbg !1202 {
   %4 = alloca ptr, align 8
   %5 = alloca ptr, align 8
@@ -1998,7 +1998,7 @@ define dso_local void @_ZN10SpookyHash5FinalEPmS0_(ptr noundef nonnull align 8 d
   ret void, !dbg !1296
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local noundef i64 @_ZN10SpookyHash5Rot64Emi(i64 noundef %0, i32 noundef %1) #2 comdat align 2 !dbg !1297 {
   %3 = alloca i64, align 8
   %4 = alloca i32, align 4
@@ -2019,7 +2019,7 @@ define linkonce_odr dso_local noundef i64 @_ZN10SpookyHash5Rot64Emi(i64 noundef 
   ret i64 %14, !dbg !1310
 }
 
-; Function Attrs: mustprogress noinline nounwind optnone uwtable
+; Function Attrs: mustprogress noinline nounwind uwtable
 define linkonce_odr dso_local void @_ZN10SpookyHash10EndPartialERmS0_S0_S0_S0_S0_S0_S0_S0_S0_S0_S0_(ptr noundef nonnull align 8 dereferenceable(8) %0, ptr noundef nonnull align 8 dereferenceable(8) %1, ptr noundef nonnull align 8 dereferenceable(8) %2, ptr noundef nonnull align 8 dereferenceable(8) %3, ptr noundef nonnull align 8 dereferenceable(8) %4, ptr noundef nonnull align 8 dereferenceable(8) %5, ptr noundef nonnull align 8 dereferenceable(8) %6, ptr noundef nonnull align 8 dereferenceable(8) %7, ptr noundef nonnull align 8 dereferenceable(8) %8, ptr noundef nonnull align 8 dereferenceable(8) %9, ptr noundef nonnull align 8 dereferenceable(8) %10, ptr noundef nonnull align 8 dereferenceable(8) %11) #2 comdat align 2 !dbg !1311 {
   %13 = alloca ptr, align 8
   %14 = alloca ptr, align 8
@@ -2264,9 +2264,9 @@ define linkonce_odr dso_local void @_ZN10SpookyHash10EndPartialERmS0_S0_S0_S0_S0
   ret void, !dbg !1456
 }
 
-attributes #0 = { mustprogress noinline optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #0 = { mustprogress noinline uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-attributes #2 = { mustprogress noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #2 = { mustprogress noinline nounwind uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
 attributes #3 = { nocallback nofree nounwind willreturn memory(argmem: readwrite) }
 attributes #4 = { nocallback nofree nounwind willreturn memory(argmem: write) }
 
