@@ -20,14 +20,14 @@ void spawnThreads()
     // cin >> x;
     x=100;
     
-        // Create thread t1 and join it immediately to avoid Use After Scope
-        pthread_create(&t1, nullptr, UseOfData, &x);
-        pthread_join(t1, nullptr);
- 
-        x = 100;
-        // Create thread t2 and join it immediately to avoid Use After Scope
-        pthread_create(&t2, nullptr, UseOfData, &x);
-        pthread_join(t2, nullptr);
+    // Create thread t1 and join it immediately to avoid Use After Scope
+    pthread_create(&t1, nullptr, UseOfData, &x);
+    pthread_join(t1, nullptr);
+
+    x = 100;
+    // Create thread t2 and join it immediately to avoid Use After Scope
+    pthread_create(&t2, nullptr, UseOfData, &x);
+    pthread_join(t2, nullptr);
   
 }
 

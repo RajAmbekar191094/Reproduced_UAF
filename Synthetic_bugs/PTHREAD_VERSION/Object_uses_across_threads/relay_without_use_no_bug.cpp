@@ -31,7 +31,7 @@ void* threadFunc2(void* arg) {
     int* x = (int*)arg;
     cout << "[T1] Relaying value to T2\n";
     pthread_create(&t2, nullptr, threadFunc3, x);
-    // pthread_join(t2, nullptr);
+    pthread_join(t2, nullptr);
     // sleep(2);
     cout << "[T1] T2 gone and it is not owner of data\n";
     return nullptr;
@@ -47,7 +47,7 @@ void Func1() {
    
    
     pthread_join(t1, nullptr);
-    pthread_join(t2, nullptr);
+    // pthread_join(t2, nullptr);
 
     cout << "[Func1] Done\n";
 }
