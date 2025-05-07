@@ -12,6 +12,7 @@ void* threadFunction(void* arg) {
 
 void runThread(pthread_t *t, int counter) {
     pthread_create(t, nullptr, threadFunction, &counter);  // Create a new thread
+    pthread_join(*t, nullptr);  // Wait for the thread to finish
 }
 
 int startThread() {

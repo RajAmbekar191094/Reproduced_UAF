@@ -52,14 +52,14 @@
    }
    
    void threadFunction() {
-       int x[3] = {1,2,3};
-       ASSERT(0,pthread_create(&t1, nullptr, thread_func, static_cast<void*>(&x)));
-       pthread_join(t1, nullptr);
+        int x = 10;
+       pthread_create(&t1, nullptr, thread_func, static_cast<void*>(&x));
+      
    }
    
-   // int main() {
-   //     //  int x=10;
-   //     // t1=std::thread(thread_func);
-   //     threadFunction();
-   //     // pthread_join(t1, nullptr);
-   // }
+   int main() {
+       //  int x=10;
+       // t1=std::thread(thread_func);
+       threadFunction();
+       pthread_join(t1, nullptr);
+   }

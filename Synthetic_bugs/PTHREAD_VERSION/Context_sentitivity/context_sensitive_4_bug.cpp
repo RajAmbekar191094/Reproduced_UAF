@@ -23,7 +23,7 @@ void spawnThreads()
     {
         // Create thread t1 and join it immediately to avoid Use After Scope
         pthread_create(&t1, nullptr, UseOfData, &x);
-        pthread_join(t1, nullptr);
+       
     }
     else
     {
@@ -37,5 +37,6 @@ void spawnThreads()
 int main()
 {
     spawnThreads();
+    pthread_join(t1, nullptr);
     return 0;
 }

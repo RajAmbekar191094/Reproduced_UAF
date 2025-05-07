@@ -1,5 +1,5 @@
 /* Description: The function UseOfData is called at 2 different locations in spawnThreads function by  thread handle t1 ,
-differnet functions but  same data x. Here the join 
+differnet functions and different datas x1 and x2. Here the join 
 is placed immediately after the thread spawn so there is no Use After Scope error */
 
 #include <iostream>
@@ -23,26 +23,29 @@ void* UseOfData2(void* arg)
 
 void spawnThreads()
 {
-    int x;
-    // cin >> x;
-    x=30;
-    if (x == 10)
-    {
+    int x1=100;
+    int x2=200;
+    // cin >> x1;
+    // cin>>x2;
+    // if (x1 == 10)
+    // {
         // Create thread t1 and join it immediately to avoid Use After Scope
-        pthread_create(&t1, nullptr, UseOfData1, &x);
-        pthread_join(t1, nullptr);
-    }
-    else
-    {
-        x = 100;
+        pthread_create(&t1, nullptr, UseOfData1, &x1);
+        
+    // }
+    // else
+    // {
+        x1 = 100;
         // Create thread t2 and join it immediately to avoid Use After Scope
-        pthread_create(&t1, nullptr, UseOfData2, &x);
-        pthread_join(t1, nullptr);
-    }
+        pthread_create(&t2, nullptr, UseOfData2, &x2);
+        
+    // }
 }
 
 int main()
 {
     spawnThreads();
+    pthread_join(t1, nullptr);
+    pthread_join(t2, nullptr);
     return 0;
 }

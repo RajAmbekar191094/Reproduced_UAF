@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-
-int *gptr
-=======
 #include <iostream>
 #include <pthread.h>
 #include <unistd.h> // for sleep
 using namespace std;
 int *gPtr;
 pthread_t t1,t2;
->>>>>>> f60704d (Converted submodule to regular folder and added benchmark fixes)
 void* t2_func(void* arg) {
     printf("T2 read: %d\n", *gPtr);
     return NULL;

@@ -1,22 +1,20 @@
-<<<<<<< HEAD
-
-int *gptr
-=======
 #include <iostream>
 #include <pthread.h>
 #include <unistd.h> // for sleep
 using namespace std;
-int *gPtr;
+int *gPtr1,*gPtr2;
 pthread_t t1,t2;
->>>>>>> f60704d (Converted submodule to regular folder and added benchmark fixes)
 void* t2_func(void* arg) {
-    printf("T2 read: %d\n", *gPtr);
+    printf("T2 read: %d\n", *gPtr1);
+    printf("T2 read: %d\n", *gPtr2);
     return NULL;
 }
 
 void* t1_func(void* arg) {
-    int local = 30;
-    gPtr = &local;
+    int local1 = 30;
+    int local2 = 40;
+    gPtr1 = &local1;
+    gPtr2 = &local2;
     pthread_create(&t2, NULL, t2_func, NULL);
     // pthread_join(t2, NULL); // T2 => T1
     return NULL;

@@ -5,15 +5,7 @@ using namespace std;
 
 pthread_t t1, t2, t3;
 
-// T3: uses the int
-// void* threadFunc4(void* arg) {
-//     sleep(5);
-//     int* x = (int*)arg;
-//     cout << "[T3] Using value: " << *x << endl;
-//     return nullptr;
-// }
 
-// T2: just relays
 void* threadFunc3(void* arg) {
     // int* x = (int*)arg;
     // cout << "[T2] Relaying value to T3\n";
@@ -28,9 +20,20 @@ void* threadFunc3(void* arg) {
 
 // T1: just relays
 void* threadFunc2(void* arg) {
+
     int* x = (int*)arg;
+
+    // int* x = (int*)arg;
+    int val2=234;
+    arg=&val2;
+
     cout << "[T1] Relaying value to T2\n";
     pthread_create(&t2, nullptr, threadFunc3, x);
+
+    // int* x = (int*)arg;
+    cout << "[T1] Relaying value to T2\n";
+    pthread_create(&t2, nullptr, threadFunc3, arg);
+
     // pthread_join(t2, nullptr);
     // sleep(2);
     cout << "[T1] T2 gone and it is not owner of data\n";

@@ -20,14 +20,14 @@ void spawnThreads(int* x)
     {
         // Create thread t1 and join it immediately
         pthread_create(&t1, nullptr, UseOfData, x);
-        pthread_join(t1, nullptr);
+        // pthread_join(t1, nullptr);
     }
     else
     {
         *x = 100;
         // Create thread t2 and join it immediately
         pthread_create(&t2, nullptr, UseOfData, x);
-        pthread_join(t2, nullptr);
+        // pthread_join(t2, nullptr);
     }
 }
 
@@ -43,6 +43,8 @@ int main()
     // Modify x and call spawnThreads again
     for (x = 0; x < 10; x++);
     spawnThreads(&x);
-
+    pthread_join(t1, nullptr);
+    pthread_join(t2, nullptr);
+    
     return 0;
 }
