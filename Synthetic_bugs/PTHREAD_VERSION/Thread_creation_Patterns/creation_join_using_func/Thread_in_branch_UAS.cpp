@@ -1,4 +1,4 @@
-/* Description: Thread creation inside one of the branches of the if loop */
+/* Description: Thread creation inside one of the branches of the if loop. Thread is joined in main instead of func1 resulting in UAS*/
 
 #include <iostream>
 #include <pthread.h>

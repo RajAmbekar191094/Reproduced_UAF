@@ -1,4 +1,5 @@
-/* Description: Object x is created on stack (local var) and then passed as reference to thread function thread_func */
+/* Description: Object x is created on stack (local var) and then passed as reference to thread function thread_func.
+The thread is joined outside the scope of object creation which results in UAS bug*/
 
 #include <iostream>
 #include <pthread.h>

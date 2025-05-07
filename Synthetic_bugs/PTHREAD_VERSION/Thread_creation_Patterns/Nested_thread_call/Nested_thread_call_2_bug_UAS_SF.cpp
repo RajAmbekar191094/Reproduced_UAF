@@ -1,3 +1,5 @@
+/* description: A single object is passed as reference from one thread to another at multiple levels. Object localVar is owned by taskLevel1. The thread t2
+is joined at main  instead of taskLevel1 leading to Use After Scope bug*/
 #include <iostream>
 #include <pthread.h>
 #include <functional> // for std::ref
