@@ -20,17 +20,17 @@ void* threadFunc3(void* arg) {
 
 // T1: just relays
 void* threadFunc2(void* arg) {
-
     // int* x = (int*)arg;
-
-    // int* x = (int*)arg;
-    int val2=234;
+    int val2=100;
+    int val3=200;
     arg=&val2;
-
     cout << "[T1] Relaying value to T2\n";
     pthread_create(&t2, nullptr, threadFunc3, arg);
     // pthread_join(t2, nullptr);
     // sleep(2);
+    arg=&val3;
+    cout << "[T1] Relaying value to T2\n";
+    pthread_create(&t2, nullptr, threadFunc3, arg);
     cout << "[T1] T2 gone and it is not owner of data\n";
     return nullptr;
 }

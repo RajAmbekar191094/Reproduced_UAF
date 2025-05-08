@@ -7,7 +7,6 @@ and is passed by reference to thread t5. Thread t5 is joined in main function le
 pthread_t t5;
 // Function for level 5 thread
 void* taskLevel5(void* arg) {
-    sleep(5);
     int* ref = static_cast<int*>(arg);
     *ref += 50;  // Modify the variable by reference
     std::cout << "Level 5 thread is running. Modified value: " << *ref << "\n";
@@ -21,7 +20,6 @@ void* taskLevel4(void* arg) {
   
     pthread_create(&t5, nullptr, taskLevel5, &localVar);  // Pass reference to level 5
    
-   
     std::cout << "Level 4 thread finished after level 5. Modified value: " << localVar << "\n";
     return nullptr;
 }
@@ -31,10 +29,7 @@ void* taskLevel3(void* arg) {
     std::cout << "Level 3 thread is running.\n";
     pthread_t t4;
     pthread_create(&t4, nullptr, taskLevel4, nullptr);  // Pass reference to level 4
-   
-   
     pthread_join(t4, nullptr);  // Wait for level 4 to finish
-    pthread_join(t5, nullptr);  // Wait for level 5 to finish
     std::cout << "Level 3 thread finished after level 4" << "\n";
     return nullptr;
 }
@@ -66,7 +61,7 @@ int main() {
     pthread_t t1;
     pthread_create(&t1, nullptr, taskLevel1, nullptr);
     pthread_join(t1, nullptr);  
-  
+    pthread_join(t5, nullptr);  // Wait for level 5 to finish
     
     std::cout << "Main thread finished after level 1." <<"\n";
     return 0;

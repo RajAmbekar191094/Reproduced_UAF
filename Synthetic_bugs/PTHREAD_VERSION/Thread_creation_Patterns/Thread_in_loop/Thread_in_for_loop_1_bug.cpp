@@ -4,11 +4,13 @@ of the same runLoopThreads giving rise to potential Use After Scope bugs */
 #include <iostream>
 #include <pthread.h>
 #include <vector>
+#include <unistd.h>
 
 // Function to be executed by each thread
 std::vector<pthread_t> threads;  // Vector to hold thread IDs
 
 void* threadTask(void* args) {
+    sleep(2);
     auto* data = static_cast<std::pair<int*, int>*>(args);
     int* ref = data->first;
     int id = data->second;
@@ -21,7 +23,7 @@ void* threadTask(void* args) {
 }
 
 void runLoopThreads() {
-    int sharedVar = 0;  // A variable shared by all threads
+    int sharedVar = 56;  // A variable shared by all threads
 
     // Create 5 threads in a for loop
     for (int i = 0; i < 5; ++i) {

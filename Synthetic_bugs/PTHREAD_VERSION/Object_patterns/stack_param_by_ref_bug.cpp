@@ -46,7 +46,7 @@
    
    void* thread_func(void *arg) {
        int *x = static_cast<int*>(arg);
-       std::cout << "Value of x is:" << x[1] << "\n";
+       std::cout << "Value of x is:" << *x << "\n";
        // std::cout<<"Value of x is:";
        return nullptr;
    }

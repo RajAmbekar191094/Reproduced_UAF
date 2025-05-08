@@ -21,14 +21,14 @@ void* threadFunc3(void* arg) {
 // T1: just relays
 void* threadFunc2(void* arg) {
 
-    int* x = (int*)arg;
-
     // int* x = (int*)arg;
-    int val2=234;
-    arg=&val2;
 
-    cout << "[T1] Relaying value to T2\n";
-    pthread_create(&t2, nullptr, threadFunc3, x);
+    // // int* x = (int*)arg;
+    // int val2=234;
+    // arg=&val2;
+
+    // cout << "[T1] Relaying value to T2\n";
+    // pthread_create(&t2, nullptr, threadFunc3, x);
 
     // int* x = (int*)arg;
     cout << "[T1] Relaying value to T2\n";

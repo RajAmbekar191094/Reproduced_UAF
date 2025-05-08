@@ -1,11 +1,12 @@
 #include <iostream>
 #include <pthread.h>
 #include<unistd.h>
+using namespace std;
 
 pthread_t t1,t2;
 
 void* thread_func(void *arg) {
-    sleep(2);
+    sleep(10);
     int *x = static_cast<int*>(arg);
     std::cout << "Value of x is:" << *x << "\n";
     // std::cout<<"Value of x is:";
@@ -19,13 +20,11 @@ void threadFunction() {
     if(x==20)
     {
         pthread_join(t1, nullptr);
+        pthread_join(t2, nullptr);
 
     }
-    else 
-    {
-        pthread_join(t2, nullptr);
-    
-    }
+   
+    cout<<"Func ended"<<endl;
 }
 
 int main() {

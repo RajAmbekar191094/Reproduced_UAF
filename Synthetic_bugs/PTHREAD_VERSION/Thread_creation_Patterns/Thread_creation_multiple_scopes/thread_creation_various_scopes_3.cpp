@@ -4,11 +4,13 @@ which internally creates thread to run threadTask function */
 #include <iostream>
 #include <pthread.h>  // for pthread
 #include <functional>  // for std::ref
+#include<unistd.h>
 using namespace std;
 
 void* runLocalThread1(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 1: " << *x << endl;
     return nullptr;
 }
@@ -16,6 +18,7 @@ void* runLocalThread1(void* arg)
 void* runLocalThread2(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 2: " << *x << endl;
     return nullptr;
 }
@@ -23,6 +26,7 @@ void* runLocalThread2(void* arg)
 void* runLocalThread3(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 3: " << *x << endl;
     return nullptr;
 }
@@ -30,6 +34,7 @@ void* runLocalThread3(void* arg)
 void* runLocalThread4(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 4: " << *x << endl;
     return nullptr;
 }
@@ -37,6 +42,7 @@ void* runLocalThread4(void* arg)
 void* runLocalThread5(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 5: " << *x << endl;
     return nullptr;
 }
@@ -44,6 +50,7 @@ void* runLocalThread5(void* arg)
 void* runLocalThread6(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 6: " << *x << endl;
     return nullptr;
 }
@@ -51,6 +58,7 @@ void* runLocalThread6(void* arg)
 void* runLocalThread7(void* arg)
 {
     int* x = static_cast<int*>(arg);
+    sleep(5);
     cout << "Value in local thread 7: " << *x << endl;
     return nullptr;
 }
@@ -68,16 +76,16 @@ int main()
         int s1_var = 1;
         pthread_create(&scope_1, nullptr, runLocalThread1, &s1_var);
 
-        if(i==100)
+        if(i==10)
 
         {
             int s2_var = 2;
             pthread_create(&scope_2, nullptr, runLocalThread2, &s2_var);
-            if(i==1000)
+            if(i==10)
             {
                 int s3_var = 3;
                 pthread_create(&scope_3, nullptr, runLocalThread3, &s3_var);
-                if(i==10000)
+                if(i==10)
                 {
                     
                         int sn_var = 4;
@@ -87,6 +95,7 @@ int main()
             }
         }
     }
+    cout<<"loop scope ended"<<endl;
 
     pthread_join(scope_1, nullptr);
     pthread_join(scope_2, nullptr);

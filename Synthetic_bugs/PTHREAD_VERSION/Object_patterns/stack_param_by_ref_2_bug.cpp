@@ -22,10 +22,10 @@ int main() {
     // std::cin >> a;
     a=56;
     
-    if (a == 10) {
+    if (a == 56) {
         int x = 10;
         // cout<<"Mem loc:"<<&x<<endl;
-        pthread_create(&t1, nullptr, thread_func, static_cast<void*>(&x));
+        pthread_create(&t1, nullptr, thread_func, &x);
     }
     std::cout << "Scope over" << std::endl;
     

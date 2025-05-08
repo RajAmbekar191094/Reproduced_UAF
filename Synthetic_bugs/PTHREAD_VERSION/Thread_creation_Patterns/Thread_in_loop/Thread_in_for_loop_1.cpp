@@ -14,7 +14,7 @@ void* threadTask(void* args) {
 }
 
 int main() {
-    int sharedVar = 0;  // A variable shared by all threads
+    int sharedVar = 56;  // A variable shared by all threads
 
     std::vector<pthread_t> threads;  // Vector to hold thread IDs
 
