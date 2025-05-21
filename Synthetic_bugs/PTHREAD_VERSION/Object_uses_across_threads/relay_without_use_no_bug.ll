@@ -57,15 +57,21 @@ declare noundef nonnull align 8 dereferenceable(8) ptr @_ZSt4endlIcSt11char_trai
 ; Function Attrs: mustprogress noinline optnone uwtable
 define dso_local noundef ptr @_Z11threadFunc2Pv(ptr noundef %0) #0 !dbg !848 {
   %2 = alloca ptr, align 8
+  %3 = alloca ptr, align 8
   store ptr %0, ptr %2, align 8
   call void @llvm.dbg.declare(metadata ptr %2, metadata !849, metadata !DIExpression()), !dbg !850
-  %3 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.1), !dbg !851
-  %4 = load ptr, ptr %2, align 8, !dbg !852
-  %5 = call i32 @pthread_create(ptr noundef @t2, ptr noundef null, ptr noundef @_Z11threadFunc3Pv, ptr noundef %4) #5, !dbg !853
-  %6 = load i64, ptr @t2, align 8, !dbg !854
-  %7 = call i32 @pthread_join(i64 noundef %6, ptr noundef null), !dbg !855
-  %8 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.2), !dbg !856
-  ret ptr null, !dbg !857
+  call void @llvm.dbg.declare(metadata ptr %3, metadata !851, metadata !DIExpression()), !dbg !852
+  %4 = load ptr, ptr %2, align 8, !dbg !853
+  store ptr %4, ptr %3, align 8, !dbg !852
+  %5 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.1), !dbg !854
+  %6 = load ptr, ptr %3, align 8, !dbg !855
+  %7 = call i32 @pthread_create(ptr noundef @t2, ptr noundef null, ptr noundef @_Z11threadFunc3Pv, ptr noundef %6) #5, !dbg !856
+  %8 = load ptr, ptr %2, align 8, !dbg !857
+  %9 = call i32 @pthread_create(ptr noundef @t2, ptr noundef null, ptr noundef @_Z11threadFunc3Pv, ptr noundef %8) #5, !dbg !858
+  %10 = load i64, ptr @t2, align 8, !dbg !859
+  %11 = call i32 @pthread_join(i64 noundef %10, ptr noundef null), !dbg !860
+  %12 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.2), !dbg !861
+  ret ptr null, !dbg !862
 }
 
 ; Function Attrs: nounwind
@@ -74,31 +80,29 @@ declare i32 @pthread_create(ptr noundef, ptr noundef, ptr noundef, ptr noundef) 
 declare i32 @pthread_join(i64 noundef, ptr noundef) #2
 
 ; Function Attrs: mustprogress noinline optnone uwtable
-define dso_local void @_Z5Func1v() #0 !dbg !858 {
+define dso_local void @_Z5Func1v() #0 !dbg !863 {
   %1 = alloca i32, align 4
-  call void @llvm.dbg.declare(metadata ptr %1, metadata !859, metadata !DIExpression()), !dbg !860
-  store i32 123, ptr %1, align 4, !dbg !860
-  %2 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.3), !dbg !861
-  %3 = load i32, ptr %1, align 4, !dbg !862
-  %4 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8) %2, i32 noundef %3), !dbg !863
-  %5 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEPFRSoS_E(ptr noundef nonnull align 8 dereferenceable(8) %4, ptr noundef @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_), !dbg !864
-  %6 = call i32 @pthread_create(ptr noundef @t1, ptr noundef null, ptr noundef @_Z11threadFunc2Pv, ptr noundef %1) #5, !dbg !865
-  %7 = load i64, ptr @t1, align 8, !dbg !866
-  %8 = call i32 @pthread_join(i64 noundef %7, ptr noundef null), !dbg !867
-  %9 = load i64, ptr @t2, align 8, !dbg !868
-  %10 = call i32 @pthread_join(i64 noundef %9, ptr noundef null), !dbg !869
-  %11 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.4), !dbg !870
-  ret void, !dbg !871
+  call void @llvm.dbg.declare(metadata ptr %1, metadata !864, metadata !DIExpression()), !dbg !865
+  store i32 123, ptr %1, align 4, !dbg !865
+  %2 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.3), !dbg !866
+  %3 = load i32, ptr %1, align 4, !dbg !867
+  %4 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8) %2, i32 noundef %3), !dbg !868
+  %5 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEPFRSoS_E(ptr noundef nonnull align 8 dereferenceable(8) %4, ptr noundef @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_), !dbg !869
+  %6 = call i32 @pthread_create(ptr noundef @t1, ptr noundef null, ptr noundef @_Z11threadFunc2Pv, ptr noundef %1) #5, !dbg !870
+  %7 = load i64, ptr @t1, align 8, !dbg !871
+  %8 = call i32 @pthread_join(i64 noundef %7, ptr noundef null), !dbg !872
+  %9 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.4), !dbg !873
+  ret void, !dbg !874
 }
 
 ; Function Attrs: mustprogress noinline norecurse optnone uwtable
-define dso_local noundef i32 @main() #4 !dbg !872 {
+define dso_local noundef i32 @main() #4 !dbg !875 {
   %1 = alloca i32, align 4
   store i32 0, ptr %1, align 4
-  %2 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.5), !dbg !873
-  call void @_Z5Func1v(), !dbg !874
-  %3 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.6), !dbg !875
-  ret i32 0, !dbg !876
+  %2 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.5), !dbg !876
+  call void @_Z5Func1v(), !dbg !877
+  %3 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.6), !dbg !878
+  ret i32 0, !dbg !879
 }
 
 attributes #0 = { mustprogress noinline optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
@@ -115,14 +119,14 @@ attributes #5 = { nounwind }
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(name: "t1", scope: !2, file: !10, line: 6, type: !11, isLocal: false, isDefinition: true)
 !2 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !3, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !4, globals: !7, imports: !53, splitDebugInlining: false, nameTableKind: None)
-!3 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_uses_across_threads/relay_without_use_no_bug.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "1c3f93bcde08c8b4392988b53ec24f3f")
+!3 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_uses_across_threads/relay_without_use_no_bug.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "cf9830f993ea6ca844f7626bf416fefd")
 !4 = !{!5}
 !5 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !6, size: 64)
 !6 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
 !7 = !{!0, !8, !14, !16, !23, !28, !33, !38, !43, !48}
 !8 = !DIGlobalVariableExpression(var: !9, expr: !DIExpression())
 !9 = distinct !DIGlobalVariable(name: "t2", scope: !2, file: !10, line: 6, type: !11, isLocal: false, isDefinition: true)
-!10 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_uses_across_threads/relay_without_use_no_bug.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "1c3f93bcde08c8b4392988b53ec24f3f")
+!10 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_uses_across_threads/relay_without_use_no_bug.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "cf9830f993ea6ca844f7626bf416fefd")
 !11 = !DIDerivedType(tag: DW_TAG_typedef, name: "pthread_t", file: !12, line: 27, baseType: !13)
 !12 = !DIFile(filename: "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h", directory: "", checksumkind: CSK_MD5, checksum: "2d764266ce95ab26d4a4767c2ec78176")
 !13 = !DIBasicType(name: "unsigned long", size: 64, encoding: DW_ATE_unsigned)
@@ -141,27 +145,27 @@ attributes #5 = { nounwind }
 !26 = !{!27}
 !27 = !DISubrange(count: 27)
 !28 = !DIGlobalVariableExpression(var: !29, expr: !DIExpression())
-!29 = distinct !DIGlobalVariable(scope: null, file: !10, line: 36, type: !30, isLocal: true, isDefinition: true)
+!29 = distinct !DIGlobalVariable(scope: null, file: !10, line: 40, type: !30, isLocal: true, isDefinition: true)
 !30 = !DICompositeType(tag: DW_TAG_array_type, baseType: !19, size: 336, elements: !31)
 !31 = !{!32}
 !32 = !DISubrange(count: 42)
 !33 = !DIGlobalVariableExpression(var: !34, expr: !DIExpression())
-!34 = distinct !DIGlobalVariable(scope: null, file: !10, line: 43, type: !35, isLocal: true, isDefinition: true)
+!34 = distinct !DIGlobalVariable(scope: null, file: !10, line: 47, type: !35, isLocal: true, isDefinition: true)
 !35 = !DICompositeType(tag: DW_TAG_array_type, baseType: !19, size: 184, elements: !36)
 !36 = !{!37}
 !37 = !DISubrange(count: 23)
 !38 = !DIGlobalVariableExpression(var: !39, expr: !DIExpression())
-!39 = distinct !DIGlobalVariable(scope: null, file: !10, line: 52, type: !40, isLocal: true, isDefinition: true)
+!39 = distinct !DIGlobalVariable(scope: null, file: !10, line: 56, type: !40, isLocal: true, isDefinition: true)
 !40 = !DICompositeType(tag: DW_TAG_array_type, baseType: !19, size: 112, elements: !41)
 !41 = !{!42}
 !42 = !DISubrange(count: 14)
 !43 = !DIGlobalVariableExpression(var: !44, expr: !DIExpression())
-!44 = distinct !DIGlobalVariable(scope: null, file: !10, line: 56, type: !45, isLocal: true, isDefinition: true)
+!44 = distinct !DIGlobalVariable(scope: null, file: !10, line: 60, type: !45, isLocal: true, isDefinition: true)
 !45 = !DICompositeType(tag: DW_TAG_array_type, baseType: !19, size: 176, elements: !46)
 !46 = !{!47}
 !47 = !DISubrange(count: 22)
 !48 = !DIGlobalVariableExpression(var: !49, expr: !DIExpression())
-!49 = distinct !DIGlobalVariable(scope: null, file: !10, line: 59, type: !50, isLocal: true, isDefinition: true)
+!49 = distinct !DIGlobalVariable(scope: null, file: !10, line: 63, type: !50, isLocal: true, isDefinition: true)
 !50 = !DICompositeType(tag: DW_TAG_array_type, baseType: !19, size: 128, elements: !51)
 !51 = !{!52}
 !52 = !DISubrange(count: 16)
@@ -963,29 +967,32 @@ attributes #5 = { nounwind }
 !848 = distinct !DISubprogram(name: "threadFunc2", linkageName: "_Z11threadFunc2Pv", scope: !10, file: !10, line: 30, type: !833, scopeLine: 30, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
 !849 = !DILocalVariable(name: "arg", arg: 1, scope: !848, file: !10, line: 30, type: !179)
 !850 = !DILocation(line: 30, column: 25, scope: !848)
-!851 = !DILocation(line: 32, column: 10, scope: !848)
-!852 = !DILocation(line: 33, column: 47, scope: !848)
-!853 = !DILocation(line: 33, column: 5, scope: !848)
-!854 = !DILocation(line: 34, column: 18, scope: !848)
-!855 = !DILocation(line: 34, column: 5, scope: !848)
-!856 = !DILocation(line: 36, column: 10, scope: !848)
-!857 = !DILocation(line: 37, column: 5, scope: !848)
-!858 = distinct !DISubprogram(name: "Func1", linkageName: "_Z5Func1v", scope: !10, file: !10, line: 41, type: !420, scopeLine: 41, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
-!859 = !DILocalVariable(name: "val", scope: !858, file: !10, line: 42, type: !6)
-!860 = !DILocation(line: 42, column: 9, scope: !858)
-!861 = !DILocation(line: 43, column: 10, scope: !858)
-!862 = !DILocation(line: 43, column: 41, scope: !858)
-!863 = !DILocation(line: 43, column: 38, scope: !858)
-!864 = !DILocation(line: 43, column: 45, scope: !858)
-!865 = !DILocation(line: 45, column: 5, scope: !858)
-!866 = !DILocation(line: 49, column: 18, scope: !858)
-!867 = !DILocation(line: 49, column: 5, scope: !858)
-!868 = !DILocation(line: 50, column: 18, scope: !858)
-!869 = !DILocation(line: 50, column: 5, scope: !858)
-!870 = !DILocation(line: 52, column: 10, scope: !858)
-!871 = !DILocation(line: 53, column: 1, scope: !858)
-!872 = distinct !DISubprogram(name: "main", scope: !10, file: !10, line: 55, type: !505, scopeLine: 55, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
-!873 = !DILocation(line: 56, column: 10, scope: !872)
-!874 = !DILocation(line: 57, column: 5, scope: !872)
-!875 = !DILocation(line: 59, column: 10, scope: !872)
-!876 = !DILocation(line: 60, column: 5, scope: !872)
+!851 = !DILocalVariable(name: "x", scope: !848, file: !10, line: 31, type: !5)
+!852 = !DILocation(line: 31, column: 10, scope: !848)
+!853 = !DILocation(line: 31, column: 20, scope: !848)
+!854 = !DILocation(line: 32, column: 10, scope: !848)
+!855 = !DILocation(line: 34, column: 47, scope: !848)
+!856 = !DILocation(line: 34, column: 5, scope: !848)
+!857 = !DILocation(line: 36, column: 47, scope: !848)
+!858 = !DILocation(line: 36, column: 5, scope: !848)
+!859 = !DILocation(line: 38, column: 18, scope: !848)
+!860 = !DILocation(line: 38, column: 5, scope: !848)
+!861 = !DILocation(line: 40, column: 10, scope: !848)
+!862 = !DILocation(line: 41, column: 5, scope: !848)
+!863 = distinct !DISubprogram(name: "Func1", linkageName: "_Z5Func1v", scope: !10, file: !10, line: 45, type: !420, scopeLine: 45, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
+!864 = !DILocalVariable(name: "val", scope: !863, file: !10, line: 46, type: !6)
+!865 = !DILocation(line: 46, column: 9, scope: !863)
+!866 = !DILocation(line: 47, column: 10, scope: !863)
+!867 = !DILocation(line: 47, column: 41, scope: !863)
+!868 = !DILocation(line: 47, column: 38, scope: !863)
+!869 = !DILocation(line: 47, column: 45, scope: !863)
+!870 = !DILocation(line: 49, column: 5, scope: !863)
+!871 = !DILocation(line: 53, column: 18, scope: !863)
+!872 = !DILocation(line: 53, column: 5, scope: !863)
+!873 = !DILocation(line: 56, column: 10, scope: !863)
+!874 = !DILocation(line: 57, column: 1, scope: !863)
+!875 = distinct !DISubprogram(name: "main", scope: !10, file: !10, line: 59, type: !505, scopeLine: 59, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
+!876 = !DILocation(line: 60, column: 10, scope: !875)
+!877 = !DILocation(line: 61, column: 5, scope: !875)
+!878 = !DILocation(line: 63, column: 10, scope: !875)
+!879 = !DILocation(line: 64, column: 5, scope: !875)

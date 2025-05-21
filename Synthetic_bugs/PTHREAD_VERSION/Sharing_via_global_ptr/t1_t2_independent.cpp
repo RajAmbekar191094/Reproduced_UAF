@@ -23,8 +23,9 @@ void* t2_func(void* arg) {
 }
 
 int main() {
-    pthread_create(&t1, NULL, t1_func, NULL);
+   
     pthread_create(&t2, NULL, t2_func, NULL);
+    pthread_create(&t1, NULL, t1_func, NULL);
     pthread_join(t1, NULL); // T2 => T1
     
     return 0;
