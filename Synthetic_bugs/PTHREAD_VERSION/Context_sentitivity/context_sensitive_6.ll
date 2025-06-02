@@ -78,8 +78,8 @@ define dso_local void @_Z12spawnThreadsv() #0 !dbg !827 {
 
 8:                                                ; preds = %0
   store i32 100, ptr %1, align 4, !dbg !840
-  %9 = call i32 @pthread_create(ptr noundef @t1, ptr noundef null, ptr noundef @_Z10UseOfData2Pv, ptr noundef %1) #5, !dbg !842
-  %10 = load i64, ptr @t1, align 8, !dbg !843
+  %9 = call i32 @pthread_create(ptr noundef @t2, ptr noundef null, ptr noundef @_Z10UseOfData2Pv, ptr noundef %1) #5, !dbg !842
+  %10 = load i64, ptr @t2, align 8, !dbg !843
   %11 = call i32 @pthread_join(i64 noundef %10, ptr noundef null), !dbg !844
   br label %12
 
@@ -114,14 +114,14 @@ attributes #5 = { nounwind }
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(name: "t1", scope: !2, file: !10, line: 9, type: !11, isLocal: false, isDefinition: true)
 !2 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !3, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !4, globals: !7, imports: !21, splitDebugInlining: false, nameTableKind: None)
-!3 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Context_sentitivity/context_sensitive_6.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "c45ffed0c0e20f5823b30aca269c4ec1")
+!3 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Context_sentitivity/context_sensitive_6.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "ef296cdbc815b304464de2d3854bd330")
 !4 = !{!5}
 !5 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !6, size: 64)
 !6 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
 !7 = !{!0, !8, !14}
 !8 = !DIGlobalVariableExpression(var: !9, expr: !DIExpression())
 !9 = distinct !DIGlobalVariable(name: "t2", scope: !2, file: !10, line: 9, type: !11, isLocal: false, isDefinition: true)
-!10 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Context_sentitivity/context_sensitive_6.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "c45ffed0c0e20f5823b30aca269c4ec1")
+!10 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Context_sentitivity/context_sensitive_6.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "ef296cdbc815b304464de2d3854bd330")
 !11 = !DIDerivedType(tag: DW_TAG_typedef, name: "pthread_t", file: !12, line: 27, baseType: !13)
 !12 = !DIFile(filename: "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h", directory: "", checksumkind: CSK_MD5, checksum: "2d764266ce95ab26d4a4767c2ec78176")
 !13 = !DIBasicType(name: "unsigned long", size: 64, encoding: DW_ATE_unsigned)

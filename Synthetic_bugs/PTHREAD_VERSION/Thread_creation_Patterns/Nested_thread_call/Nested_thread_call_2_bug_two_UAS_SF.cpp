@@ -42,7 +42,7 @@ void* taskLevel2(void* arg) {
     std::cout << "Level 2 thread is running.\n";
     pthread_t t3;
     pthread_create(&t3, nullptr, taskLevel3, ref);  // Pass reference to level 3
-    pthread_join(t3, nullptr);  
+    // pthread_join(t3, nullptr);  
     std::cout << "Level 2 thread finished after level 3. Current value: " << *ref << "\n";
     return nullptr;
 }

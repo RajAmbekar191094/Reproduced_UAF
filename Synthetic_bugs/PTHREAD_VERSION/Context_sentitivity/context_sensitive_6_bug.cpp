@@ -36,7 +36,7 @@ void spawnThreads()
     {
         x = 100;
         // Create thread t2 and join it immediately to avoid Use After Scope
-        pthread_create(&t1, nullptr, UseOfData2, &x);
+        pthread_create(&t2, nullptr, UseOfData2, &x);
        
     }
 }

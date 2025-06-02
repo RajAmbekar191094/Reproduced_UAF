@@ -14,7 +14,7 @@ module asm ".globl _ZSt21ios_base_library_initv"
 %"class.std::ios_base" = type { ptr, i64, i64, i32, i32, i32, ptr, %"struct.std::ios_base::_Words", [8 x %"struct.std::ios_base::_Words"], i32, ptr, %"class.std::locale" }
 %"struct.std::ios_base::_Words" = type { ptr, i64 }
 %"class.std::locale" = type { ptr }
-%"class.__gnu_cxx::__normal_iterator" = type { ptr }
+%"class.__gnu_cxx::__normal_iterator" = type { ptr }c
 
 $_ZNSt6vectorImSaImEEC2Ev = comdat any
 

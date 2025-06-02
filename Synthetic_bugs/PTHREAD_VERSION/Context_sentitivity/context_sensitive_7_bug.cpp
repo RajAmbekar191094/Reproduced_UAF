@@ -4,6 +4,7 @@ is placed immediately after the thread spawn so there is no Use After Scope erro
 
 #include <iostream>
 #include <pthread.h>
+#include<unistd.h>
 using namespace std;
 
 pthread_t t1, t2;
@@ -36,8 +37,8 @@ void spawnThreads()
     else
     {
         x1 = 100;
-        // Create thread t2 and join it immediately to avoid Use After Scope
-        pthread_create(&t1, nullptr, UseOfData2, &x2);
+       
+        pthread_create(&t2, nullptr, UseOfData2, &x2);
        
     }
 }
@@ -45,6 +46,7 @@ void spawnThreads()
 int main()
 {
     spawnThreads();
-    pthread_join(t1, nullptr);
+    // sleep(2);
+    pthread_join(t2, nullptr);
     return 0;
 }

@@ -26,13 +26,13 @@ void c(int* z)
         if (i == 1 || i == 2) // Corrected condition
         {
             pthread_t t;
-            pthread_create(&t, nullptr, runThread, static_cast<void*>(z)); // Pass pointer
+            pthread_create(&t, nullptr, runThread, z); // Pass pointer
             td.push_back(t); // Store thread
         }
         else
         {
             pthread_t t;
-            pthread_create(&t, nullptr, runThreadByVal, static_cast<void*>(z)); // Pass value
+            pthread_create(&t, nullptr, runThreadByVal, z); // Pass value
             td.push_back(t); // Store thread
         }
     }
