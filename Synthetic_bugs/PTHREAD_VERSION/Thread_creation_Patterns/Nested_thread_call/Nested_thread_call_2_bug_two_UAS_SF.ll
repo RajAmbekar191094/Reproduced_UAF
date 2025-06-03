@@ -120,47 +120,45 @@ define dso_local noundef ptr @_Z10taskLevel2Pv(ptr noundef %0) #0 !dbg !887 {
   call void @llvm.dbg.declare(metadata ptr %4, metadata !894, metadata !DIExpression()), !dbg !895
   %7 = load ptr, ptr %3, align 8, !dbg !896
   %8 = call i32 @pthread_create(ptr noundef %4, ptr noundef null, ptr noundef @_Z10taskLevel3Pv, ptr noundef %7) #5, !dbg !897
-  %9 = load i64, ptr %4, align 8, !dbg !898
-  %10 = call i32 @pthread_join(i64 noundef %9, ptr noundef null), !dbg !899
-  %11 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.7), !dbg !900
-  %12 = load ptr, ptr %3, align 8, !dbg !901
-  %13 = load i32, ptr %12, align 4, !dbg !902
-  %14 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8) %11, i32 noundef %13), !dbg !903
-  %15 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) %14, ptr noundef @.str.1), !dbg !904
-  ret ptr null, !dbg !905
+  %9 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.7), !dbg !898
+  %10 = load ptr, ptr %3, align 8, !dbg !899
+  %11 = load i32, ptr %10, align 4, !dbg !900
+  %12 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8) %9, i32 noundef %11), !dbg !901
+  %13 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) %12, ptr noundef @.str.1), !dbg !902
+  ret ptr null, !dbg !903
 }
 
 ; Function Attrs: mustprogress noinline optnone uwtable
-define dso_local noundef ptr @_Z10taskLevel1Pv(ptr noundef %0) #0 !dbg !906 {
+define dso_local noundef ptr @_Z10taskLevel1Pv(ptr noundef %0) #0 !dbg !904 {
   %2 = alloca ptr, align 8
   %3 = alloca i32, align 4
   store ptr %0, ptr %2, align 8
-  call void @llvm.dbg.declare(metadata ptr %2, metadata !907, metadata !DIExpression()), !dbg !908
-  call void @llvm.dbg.declare(metadata ptr %3, metadata !909, metadata !DIExpression()), !dbg !910
-  store i32 100, ptr %3, align 4, !dbg !910
-  %4 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.8), !dbg !911
-  %5 = call i32 @pthread_create(ptr noundef @t2, ptr noundef null, ptr noundef @_Z10taskLevel2Pv, ptr noundef %3) #5, !dbg !912
-  %6 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.9), !dbg !913
-  %7 = load i32, ptr %3, align 4, !dbg !914
-  %8 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8) %6, i32 noundef %7), !dbg !915
-  %9 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) %8, ptr noundef @.str.1), !dbg !916
-  ret ptr null, !dbg !917
+  call void @llvm.dbg.declare(metadata ptr %2, metadata !905, metadata !DIExpression()), !dbg !906
+  call void @llvm.dbg.declare(metadata ptr %3, metadata !907, metadata !DIExpression()), !dbg !908
+  store i32 100, ptr %3, align 4, !dbg !908
+  %4 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.8), !dbg !909
+  %5 = call i32 @pthread_create(ptr noundef @t2, ptr noundef null, ptr noundef @_Z10taskLevel2Pv, ptr noundef %3) #5, !dbg !910
+  %6 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.9), !dbg !911
+  %7 = load i32, ptr %3, align 4, !dbg !912
+  %8 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEi(ptr noundef nonnull align 8 dereferenceable(8) %6, i32 noundef %7), !dbg !913
+  %9 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) %8, ptr noundef @.str.1), !dbg !914
+  ret ptr null, !dbg !915
 }
 
 ; Function Attrs: mustprogress noinline norecurse optnone uwtable
-define dso_local noundef i32 @main() #4 !dbg !918 {
+define dso_local noundef i32 @main() #4 !dbg !916 {
   %1 = alloca i32, align 4
   %2 = alloca i64, align 8
   store i32 0, ptr %1, align 4
-  %3 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.10), !dbg !919
-  %4 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEPFRSoS_E(ptr noundef nonnull align 8 dereferenceable(8) %3, ptr noundef @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_), !dbg !920
-  call void @llvm.dbg.declare(metadata ptr %2, metadata !921, metadata !DIExpression()), !dbg !922
-  %5 = call i32 @pthread_create(ptr noundef %2, ptr noundef null, ptr noundef @_Z10taskLevel1Pv, ptr noundef null) #5, !dbg !923
-  %6 = load i64, ptr %2, align 8, !dbg !924
-  %7 = call i32 @pthread_join(i64 noundef %6, ptr noundef null), !dbg !925
-  %8 = load i64, ptr @t2, align 8, !dbg !926
-  %9 = call i32 @pthread_join(i64 noundef %8, ptr noundef null), !dbg !927
-  ret i32 0, !dbg !928
+  %3 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(ptr noundef nonnull align 8 dereferenceable(8) @_ZSt4cout, ptr noundef @.str.10), !dbg !917
+  %4 = call noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEPFRSoS_E(ptr noundef nonnull align 8 dereferenceable(8) %3, ptr noundef @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_), !dbg !918
+  call void @llvm.dbg.declare(metadata ptr %2, metadata !919, metadata !DIExpression()), !dbg !920
+  %5 = call i32 @pthread_create(ptr noundef %2, ptr noundef null, ptr noundef @_Z10taskLevel1Pv, ptr noundef null) #5, !dbg !921
+  %6 = load i64, ptr %2, align 8, !dbg !922
+  %7 = call i32 @pthread_join(i64 noundef %6, ptr noundef null), !dbg !923
+  %8 = load i64, ptr @t2, align 8, !dbg !924
+  %9 = call i32 @pthread_join(i64 noundef %8, ptr noundef null), !dbg !925
+  ret i32 0, !dbg !926
 }
 
 declare noundef nonnull align 8 dereferenceable(8) ptr @_ZNSolsEPFRSoS_E(ptr noundef nonnull align 8 dereferenceable(8), ptr noundef) #2
@@ -181,14 +179,14 @@ attributes #5 = { nounwind }
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(name: "t2", scope: !2, file: !10, line: 7, type: !822, isLocal: false, isDefinition: true)
 !2 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !3, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !4, globals: !7, imports: !51, splitDebugInlining: false, nameTableKind: None)
-!3 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2_bug_two_UAS_SF.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "a04990a2a6d29bd76d804a598bf9d7b5")
+!3 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2_bug_two_UAS_SF.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "21533d52246fa98dc1cfe093c3f4fbea")
 !4 = !{!5}
 !5 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !6, size: 64)
 !6 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
 !7 = !{!0, !8, !16, !21, !26, !31, !33, !35, !37, !39, !41, !46}
 !8 = !DIGlobalVariableExpression(var: !9, expr: !DIExpression())
 !9 = distinct !DIGlobalVariable(scope: null, file: !10, line: 13, type: !11, isLocal: true, isDefinition: true)
-!10 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2_bug_two_UAS_SF.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "a04990a2a6d29bd76d804a598bf9d7b5")
+!10 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2_bug_two_UAS_SF.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "21533d52246fa98dc1cfe093c3f4fbea")
 !11 = !DICompositeType(tag: DW_TAG_array_type, baseType: !12, size: 352, elements: !14)
 !12 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !13)
 !13 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -1076,34 +1074,32 @@ attributes #5 = { nounwind }
 !895 = !DILocation(line: 43, column: 15, scope: !887)
 !896 = !DILocation(line: 44, column: 46, scope: !887)
 !897 = !DILocation(line: 44, column: 5, scope: !887)
-!898 = !DILocation(line: 45, column: 18, scope: !887)
-!899 = !DILocation(line: 45, column: 5, scope: !887)
-!900 = !DILocation(line: 46, column: 15, scope: !887)
-!901 = !DILocation(line: 46, column: 79, scope: !887)
-!902 = !DILocation(line: 46, column: 78, scope: !887)
-!903 = !DILocation(line: 46, column: 75, scope: !887)
-!904 = !DILocation(line: 46, column: 83, scope: !887)
-!905 = !DILocation(line: 47, column: 5, scope: !887)
-!906 = distinct !DISubprogram(name: "taskLevel1", linkageName: "_Z10taskLevel1Pv", scope: !10, file: !10, line: 51, type: !833, scopeLine: 51, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
-!907 = !DILocalVariable(name: "arg", arg: 1, scope: !906, file: !10, line: 51, type: !178)
-!908 = !DILocation(line: 51, column: 24, scope: !906)
-!909 = !DILocalVariable(name: "localVar", scope: !906, file: !10, line: 52, type: !6)
-!910 = !DILocation(line: 52, column: 9, scope: !906)
-!911 = !DILocation(line: 53, column: 15, scope: !906)
-!912 = !DILocation(line: 54, column: 5, scope: !906)
-!913 = !DILocation(line: 56, column: 15, scope: !906)
-!914 = !DILocation(line: 56, column: 76, scope: !906)
-!915 = !DILocation(line: 56, column: 73, scope: !906)
-!916 = !DILocation(line: 56, column: 85, scope: !906)
-!917 = !DILocation(line: 57, column: 5, scope: !906)
-!918 = distinct !DISubprogram(name: "main", scope: !10, file: !10, line: 61, type: !504, scopeLine: 61, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
-!919 = !DILocation(line: 62, column: 15, scope: !918)
-!920 = !DILocation(line: 62, column: 43, scope: !918)
-!921 = !DILocalVariable(name: "t1", scope: !918, file: !10, line: 63, type: !822)
-!922 = !DILocation(line: 63, column: 15, scope: !918)
-!923 = !DILocation(line: 64, column: 5, scope: !918)
-!924 = !DILocation(line: 66, column: 18, scope: !918)
-!925 = !DILocation(line: 66, column: 5, scope: !918)
-!926 = !DILocation(line: 67, column: 18, scope: !918)
-!927 = !DILocation(line: 67, column: 5, scope: !918)
-!928 = !DILocation(line: 69, column: 5, scope: !918)
+!898 = !DILocation(line: 46, column: 15, scope: !887)
+!899 = !DILocation(line: 46, column: 79, scope: !887)
+!900 = !DILocation(line: 46, column: 78, scope: !887)
+!901 = !DILocation(line: 46, column: 75, scope: !887)
+!902 = !DILocation(line: 46, column: 83, scope: !887)
+!903 = !DILocation(line: 47, column: 5, scope: !887)
+!904 = distinct !DISubprogram(name: "taskLevel1", linkageName: "_Z10taskLevel1Pv", scope: !10, file: !10, line: 51, type: !833, scopeLine: 51, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
+!905 = !DILocalVariable(name: "arg", arg: 1, scope: !904, file: !10, line: 51, type: !178)
+!906 = !DILocation(line: 51, column: 24, scope: !904)
+!907 = !DILocalVariable(name: "localVar", scope: !904, file: !10, line: 52, type: !6)
+!908 = !DILocation(line: 52, column: 9, scope: !904)
+!909 = !DILocation(line: 53, column: 15, scope: !904)
+!910 = !DILocation(line: 54, column: 5, scope: !904)
+!911 = !DILocation(line: 56, column: 15, scope: !904)
+!912 = !DILocation(line: 56, column: 76, scope: !904)
+!913 = !DILocation(line: 56, column: 73, scope: !904)
+!914 = !DILocation(line: 56, column: 85, scope: !904)
+!915 = !DILocation(line: 57, column: 5, scope: !904)
+!916 = distinct !DISubprogram(name: "main", scope: !10, file: !10, line: 61, type: !504, scopeLine: 61, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !2, retainedNodes: !835)
+!917 = !DILocation(line: 62, column: 15, scope: !916)
+!918 = !DILocation(line: 62, column: 43, scope: !916)
+!919 = !DILocalVariable(name: "t1", scope: !916, file: !10, line: 63, type: !822)
+!920 = !DILocation(line: 63, column: 15, scope: !916)
+!921 = !DILocation(line: 64, column: 5, scope: !916)
+!922 = !DILocation(line: 66, column: 18, scope: !916)
+!923 = !DILocation(line: 66, column: 5, scope: !916)
+!924 = !DILocation(line: 67, column: 18, scope: !916)
+!925 = !DILocation(line: 67, column: 5, scope: !916)
+!926 = !DILocation(line: 69, column: 5, scope: !916)
