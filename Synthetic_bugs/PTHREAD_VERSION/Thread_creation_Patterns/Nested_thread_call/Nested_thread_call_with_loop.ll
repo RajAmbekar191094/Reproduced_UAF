@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -554,7 +554,7 @@ attributes #11 = { builtin nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 14, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "405407f5e1457c719d0d58c7b96c2459")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "405407f5e1457c719d0d58c7b96c2459")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 352, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -612,7 +612,7 @@ attributes #11 = { builtin nounwind }
 !57 = !{!58}
 !58 = !DISubrange(count: 37)
 !59 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !60, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !61, globals: !559, imports: !560, splitDebugInlining: false, nameTableKind: None)
-!60 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "405407f5e1457c719d0d58c7b96c2459")
+!60 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "405407f5e1457c719d0d58c7b96c2459")
 !61 = !{!62, !64, !69, !72, !94, !100, !197}
 !62 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !63, size: 64)
 !63 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -1233,7 +1233,7 @@ attributes #11 = { builtin nounwind }
 !678 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !679, identifier: "_ZTS13__va_list_tag")
 !679 = !{!680, !682, !683, !685}
 !680 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !678, file: !681, baseType: !573, size: 32)
-!681 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp", directory: "/home/cs22mtech12008")
+!681 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_with_loop.cpp", directory: "/home/cs22mtech12008")
 !682 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !678, file: !681, baseType: !573, size: 32, offset: 32)
 !683 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !678, file: !681, baseType: !684, size: 64, offset: 64)
 !684 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: null, size: 64)

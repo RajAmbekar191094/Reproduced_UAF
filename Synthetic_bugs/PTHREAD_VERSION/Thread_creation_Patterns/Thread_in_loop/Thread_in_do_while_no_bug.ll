@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -1246,7 +1246,7 @@ attributes #16 = { builtin allocsize(0) }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 14, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "1a6286b03f83e9c215fb9fbef7f280e3")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "1a6286b03f83e9c215fb9fbef7f280e3")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 240, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -1279,7 +1279,7 @@ attributes #16 = { builtin allocsize(0) }
 !32 = !{!33}
 !33 = !DISubrange(count: 26)
 !34 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !35, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !36, globals: !591, imports: !592, splitDebugInlining: false, nameTableKind: None)
-!35 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "1a6286b03f83e9c215fb9fbef7f280e3")
+!35 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "1a6286b03f83e9c215fb9fbef7f280e3")
 !36 = !{!37, !39, !40, !42, !46, !112, !71, !47, !534, !50, !53, !74, !80, !175}
 !37 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !38, size: 64)
 !38 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -1957,7 +1957,7 @@ attributes #16 = { builtin allocsize(0) }
 !710 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !711, identifier: "_ZTS13__va_list_tag")
 !711 = !{!712, !714, !715, !716}
 !712 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !710, file: !713, baseType: !605, size: 32)
-!713 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp", directory: "/home/cs22mtech12008")
+!713 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_do_while_no_bug.cpp", directory: "/home/cs22mtech12008")
 !714 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !710, file: !713, baseType: !605, size: 32, offset: 32)
 !715 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !710, file: !713, baseType: !39, size: 64, offset: 64)
 !716 = !DIDerivedType(tag: DW_TAG_member, name: "reg_save_area", scope: !710, file: !713, baseType: !39, size: 64, offset: 128)

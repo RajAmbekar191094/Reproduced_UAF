@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -88,7 +88,7 @@ attributes #5 = { nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 9, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "f70feac50aa9f8ec2400ace65a3487fb")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "f70feac50aa9f8ec2400ace65a3487fb")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 440, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -105,7 +105,7 @@ attributes #5 = { nounwind }
 !16 = !{!17}
 !17 = !DISubrange(count: 20)
 !18 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !19, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !20, globals: !23, imports: !24, splitDebugInlining: false, nameTableKind: None)
-!19 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "f70feac50aa9f8ec2400ace65a3487fb")
+!19 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "f70feac50aa9f8ec2400ace65a3487fb")
 !20 = !{!21}
 !21 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !22, size: 64)
 !22 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -234,7 +234,7 @@ attributes #5 = { nounwind }
 !145 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !146, identifier: "_ZTS13__va_list_tag")
 !146 = !{!147, !149, !150, !152}
 !147 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !145, file: !148, baseType: !38, size: 32)
-!148 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp", directory: "/home/cs22mtech12008")
+!148 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_pass_by_value.cpp", directory: "/home/cs22mtech12008")
 !149 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !145, file: !148, baseType: !38, size: 32, offset: 32)
 !150 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !145, file: !148, baseType: !151, size: 64, offset: 64)
 !151 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: null, size: 64)

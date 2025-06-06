@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -98,7 +98,7 @@ attributes #9 = { builtin nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 9, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "338844b04711924bcae382ba7f00be2b")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "338844b04711924bcae382ba7f00be2b")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 128, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -110,7 +110,7 @@ attributes #9 = { builtin nounwind }
 !11 = !{!12}
 !12 = !DISubrange(count: 2)
 !13 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !14, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !15, globals: !19, imports: !20, splitDebugInlining: false, nameTableKind: None)
-!14 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "338844b04711924bcae382ba7f00be2b")
+!14 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "338844b04711924bcae382ba7f00be2b")
 !15 = !{!16, !18}
 !16 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !17, size: 64)
 !17 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -240,7 +240,7 @@ attributes #9 = { builtin nounwind }
 !141 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !142, identifier: "_ZTS13__va_list_tag")
 !142 = !{!143, !145, !146, !147}
 !143 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !141, file: !144, baseType: !34, size: 32)
-!144 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp", directory: "/home/cs22mtech12008")
+!144 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Object_patterns/heap_param.cpp", directory: "/home/cs22mtech12008")
 !145 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !141, file: !144, baseType: !34, size: 32, offset: 32)
 !146 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !141, file: !144, baseType: !18, size: 64, offset: 64)
 !147 = !DIDerivedType(tag: DW_TAG_member, name: "reg_save_area", scope: !141, file: !144, baseType: !18, size: 64, offset: 128)

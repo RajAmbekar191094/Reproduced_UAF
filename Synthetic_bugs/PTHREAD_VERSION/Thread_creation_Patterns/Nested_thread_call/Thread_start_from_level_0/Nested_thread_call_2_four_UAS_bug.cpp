@@ -7,7 +7,7 @@ bug */
 #include <functional> // for std::ref
 #include<unistd.h>
 pthread_t t1,t2;
-int localVar = 100;  // Local variable to be passed by reference
+
 
 // Function for level 5 thread
 void* taskLevel5(void* arg) {
@@ -65,9 +65,9 @@ void* taskLevel1(void* arg) {
 // Main function
 void* taskLevel0(void* arg) {
    
-    std::cout << "Level 0 is running. Initial value: " << localVar << "\n";
+    std::cout << "Level 0 is running. \n";
     
-    pthread_create(&t1, nullptr, taskLevel1, &localVar);
+    pthread_create(&t1, nullptr, taskLevel1, nullptr);
     // pthread_join(t1, nullptr);  // Wait for thread at level 1 to finish
     
     std::cout << "Level 0 is completed\n";

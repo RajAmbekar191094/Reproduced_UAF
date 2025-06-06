@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -1229,7 +1229,7 @@ attributes #16 = { builtin allocsize(0) }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 12, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "ee2993183d503b2828674e47cb23bb38")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "ee2993183d503b2828674e47cb23bb38")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 288, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -1252,7 +1252,7 @@ attributes #16 = { builtin allocsize(0) }
 !22 = !{!23}
 !23 = !DISubrange(count: 26)
 !24 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !25, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !26, globals: !581, imports: !582, splitDebugInlining: false, nameTableKind: None)
-!25 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "ee2993183d503b2828674e47cb23bb38")
+!25 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "ee2993183d503b2828674e47cb23bb38")
 !26 = !{!27, !29, !30, !32, !36, !38, !39, !524, !40, !43, !46, !66, !72, !165}
 !27 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !28, size: 64)
 !28 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -1930,7 +1930,7 @@ attributes #16 = { builtin allocsize(0) }
 !700 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !701, identifier: "_ZTS13__va_list_tag")
 !701 = !{!702, !704, !705, !706}
 !702 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !700, file: !703, baseType: !595, size: 32)
-!703 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp", directory: "/home/cs22mtech12008")
+!703 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_in_loop/Thread_in_for_loop_1.cpp", directory: "/home/cs22mtech12008")
 !704 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !700, file: !703, baseType: !595, size: 32, offset: 32)
 !705 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !700, file: !703, baseType: !29, size: 64, offset: 64)
 !706 = !DIDerivedType(tag: DW_TAG_member, name: "reg_save_area", scope: !700, file: !703, baseType: !29, size: 64, offset: 128)

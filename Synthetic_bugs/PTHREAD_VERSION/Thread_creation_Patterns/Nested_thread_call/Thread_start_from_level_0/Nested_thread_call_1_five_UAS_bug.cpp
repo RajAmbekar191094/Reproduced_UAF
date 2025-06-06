@@ -7,7 +7,7 @@ bug */
 #include <functional> // for std::ref
 
 pthread_t t1;
-int localVar = 100;  // Local variable to be passed by reference
+
 
 // Function for level 5 thread
 void* taskLevel5(void* arg) {

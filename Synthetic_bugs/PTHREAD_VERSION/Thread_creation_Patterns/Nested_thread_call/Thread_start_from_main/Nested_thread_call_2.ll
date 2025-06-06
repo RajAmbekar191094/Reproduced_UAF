@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Thread_start_from_main/Nested_thread_call_2.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Thread_start_from_main/Nested_thread_call_2.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -181,7 +181,7 @@ attributes #5 = { nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 12, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "1d04322bab770ff3cc8485eb6be15520")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Thread_start_from_main/Nested_thread_call_2.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "1d04322bab770ff3cc8485eb6be15520")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 352, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -223,7 +223,7 @@ attributes #5 = { nounwind }
 !41 = !{!42}
 !42 = !DISubrange(count: 23)
 !43 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !44, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !45, globals: !48, imports: !49, splitDebugInlining: false, nameTableKind: None)
-!44 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "1d04322bab770ff3cc8485eb6be15520")
+!44 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Thread_start_from_main/Nested_thread_call_2.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "1d04322bab770ff3cc8485eb6be15520")
 !45 = !{!46}
 !46 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !47, size: 64)
 !47 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -352,7 +352,7 @@ attributes #5 = { nounwind }
 !170 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !171, identifier: "_ZTS13__va_list_tag")
 !171 = !{!172, !174, !175, !177}
 !172 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !170, file: !173, baseType: !63, size: 32)
-!173 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_2.cpp", directory: "/home/cs22mtech12008")
+!173 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Thread_start_from_main/Nested_thread_call_2.cpp", directory: "/home/cs22mtech12008")
 !174 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !170, file: !173, baseType: !63, size: 32, offset: 32)
 !175 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !170, file: !173, baseType: !176, size: 64, offset: 64)
 !176 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: null, size: 64)

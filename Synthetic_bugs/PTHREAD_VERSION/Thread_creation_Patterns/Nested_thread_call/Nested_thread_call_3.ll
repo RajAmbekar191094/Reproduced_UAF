@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -171,7 +171,7 @@ attributes #5 = { nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 11, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "990fb92b6e1a9458897b1a0ff1856dfe")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "990fb92b6e1a9458897b1a0ff1856dfe")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 352, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -218,7 +218,7 @@ attributes #5 = { nounwind }
 !46 = !{!47}
 !47 = !DISubrange(count: 36)
 !48 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !49, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !50, globals: !53, imports: !54, splitDebugInlining: false, nameTableKind: None)
-!49 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "990fb92b6e1a9458897b1a0ff1856dfe")
+!49 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "990fb92b6e1a9458897b1a0ff1856dfe")
 !50 = !{!51}
 !51 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !52, size: 64)
 !52 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -347,7 +347,7 @@ attributes #5 = { nounwind }
 !175 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !176, identifier: "_ZTS13__va_list_tag")
 !176 = !{!177, !179, !180, !182}
 !177 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !175, file: !178, baseType: !68, size: 32)
-!178 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp", directory: "/home/cs22mtech12008")
+!178 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Nested_thread_call/Nested_thread_call_3.cpp", directory: "/home/cs22mtech12008")
 !179 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !175, file: !178, baseType: !68, size: 32, offset: 32)
 !180 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !175, file: !178, baseType: !181, size: 64, offset: 64)
 !181 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: null, size: 64)

@@ -1,5 +1,5 @@
-; ModuleID = '/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp'
-source_filename = "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp"
+; ModuleID = '/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp'
+source_filename = "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -107,7 +107,7 @@ attributes #9 = { builtin nounwind }
 
 !0 = !DIGlobalVariableExpression(var: !1, expr: !DIExpression())
 !1 = distinct !DIGlobalVariable(scope: null, file: !2, line: 9, type: !3, isLocal: true, isDefinition: true)
-!2 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "81eb3ca7a34920eb7a25001dee4d48f8")
+!2 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp", directory: "/home/cs22mtech12008", checksumkind: CSK_MD5, checksum: "81eb3ca7a34920eb7a25001dee4d48f8")
 !3 = !DICompositeType(tag: DW_TAG_array_type, baseType: !4, size: 240, elements: !6)
 !4 = !DIDerivedType(tag: DW_TAG_const_type, baseType: !5)
 !5 = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
@@ -129,7 +129,7 @@ attributes #9 = { builtin nounwind }
 !21 = !{!22}
 !22 = !DISubrange(count: 20)
 !23 = distinct !DICompileUnit(language: DW_LANG_C_plus_plus_14, file: !24, producer: "clang version 16.0.0", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, retainedTypes: !25, globals: !28, imports: !29, splitDebugInlining: false, nameTableKind: None)
-!24 = !DIFile(filename: "/home/cs22mtech12008/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "81eb3ca7a34920eb7a25001dee4d48f8")
+!24 = !DIFile(filename: "/home/cs22mtech12008/NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp", directory: "/home/cs22mtech12008/UseAfterScope/Scripts", checksumkind: CSK_MD5, checksum: "81eb3ca7a34920eb7a25001dee4d48f8")
 !25 = !{!26}
 !26 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: !27, size: 64)
 !27 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
@@ -258,7 +258,7 @@ attributes #9 = { builtin nounwind }
 !150 = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "__va_list_tag", size: 192, flags: DIFlagTypePassByValue, elements: !151, identifier: "_ZTS13__va_list_tag")
 !151 = !{!152, !154, !155, !157}
 !152 = !DIDerivedType(tag: DW_TAG_member, name: "gp_offset", scope: !150, file: !153, baseType: !43, size: 32)
-!153 = !DIFile(filename: "Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp", directory: "/home/cs22mtech12008")
+!153 = !DIFile(filename: "NEW_CLONE_FOR_BENCHMARKS/Reproduced_UAF/Synthetic_bugs/PTHREAD_VERSION/Thread_creation_Patterns/Thread_handle_patterns/handle_on_heap.cpp", directory: "/home/cs22mtech12008")
 !154 = !DIDerivedType(tag: DW_TAG_member, name: "fp_offset", scope: !150, file: !153, baseType: !43, size: 32, offset: 32)
 !155 = !DIDerivedType(tag: DW_TAG_member, name: "overflow_arg_area", scope: !150, file: !153, baseType: !156, size: 64, offset: 64)
 !156 = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: null, size: 64)

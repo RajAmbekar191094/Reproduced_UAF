@@ -11,7 +11,7 @@ void* thread_func(void *arg) {
     // std::cout<<"Value of x is:";
     return nullptr;
 }
-void join_func(pthread_t t)
+void join_func(pthread_t *t)
 {
     pthread_join(t,nullptr);
 }
@@ -31,7 +31,7 @@ void threadFunction() {
        
     
     }
-    join_func(t2);
+    join_func(&t2);
     // pthread_join(t2, nullptr);
 }
 

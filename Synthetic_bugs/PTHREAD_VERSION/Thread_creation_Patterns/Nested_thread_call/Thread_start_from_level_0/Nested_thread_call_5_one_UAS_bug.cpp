@@ -6,8 +6,8 @@ bug */
 #include <pthread.h>
 #include <functional> // for std::ref
 #include<unistd.h>
-pthread_t t1,t2,t3,t4;
-int localVar = 100;  // Local variable to be passed by reference
+pthread_t t1,t2,t3,t4,t5;
+
 
 // Function for level 5 thread
 void* taskLevel5(void* arg) {
@@ -35,8 +35,8 @@ void* taskLevel3(void* arg) {
     // int* ref = static_cast<int*>(arg);
     std::cout << "Level 3 thread is running.\n";
 
-    pthread_create(&t4, nullptr, taskLevel4, &localVar);  // Pass reference to level 4
-   
+    pthread_create(&t4, nullptr, taskLevel4,nullptr);  // Pass reference to level 4
+   pthread_join(t5, nullptr);  // Wait for level 5 to finish
     std::cout << "Level 3 thread finished after level 4.\n";
     return nullptr;
 }
@@ -48,7 +48,7 @@ void* taskLevel2(void* arg) {
     std::cout << "Level 2 thread is running.\n";
 
     pthread_create(&t3, nullptr, taskLevel3, nullptr);  // Pass reference to level 3
-  
+  pthread_join(t4, nullptr);  // Wait for level 5 to finish
     std::cout << "Level 2 thread finished after level 3.\n";
     return nullptr;
 }
@@ -59,8 +59,8 @@ void* taskLevel1(void* arg) {
   
     std::cout << "Level 1 thread is running.\n";
 
-    pthread_create(&t2, nullptr, taskLevel2, &localVar);  // Pass reference to level 2
-    
+    pthread_create(&t2, nullptr, taskLevel2, nullptr);  // Pass reference to level 2
+    pthread_join(t3, nullptr);  // Wait for level 5 to finish
     std::cout << "Level 1 thread finished after level 2.\n";
     return nullptr;
 }
@@ -68,10 +68,11 @@ void* taskLevel1(void* arg) {
 // Main function
 void* taskLevel0(void* arg) {
    
-    std::cout << "Level 0 is running. Initial value: " << localVar << "\n";
+    std::cout << "Level 0 is running \n";
     
-    pthread_create(&t1, nullptr, taskLevel1, &localVar);
+    pthread_create(&t1, nullptr, taskLevel1, nullptr);
     // pthread_join(t1, nullptr);  // Wait for thread at level 1 to finish
+    pthread_join(t2, nullptr);  // Wait for level 5 to finish
     
     std::cout << "Level 0 is completed \n";
     return nullptr;
@@ -82,10 +83,8 @@ int main() {
     
     taskLevel0(nullptr);
     sleep(5);
-     pthread_join(t5, nullptr);  // Wait for level 5 to finish
-     pthread_join(t4, nullptr);  // Wait for level 4 to finish
-      pthread_join(t3, nullptr);  // Wait for level 3 to finish
-    pthread_join(t2, nullptr);  // Wait for level 2 to finish
+     
+    
     pthread_join(t1, nullptr);  // Wait for thread at level 1 to finish
     return 0;
 }
