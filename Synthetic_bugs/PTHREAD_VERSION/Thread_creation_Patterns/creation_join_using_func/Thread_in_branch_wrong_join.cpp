@@ -4,6 +4,7 @@
 #include <pthread.h>
 #include <atomic>
 #include <vector>
+#include<unistd.h>
 
 pthread_t t1;
 pthread_t t2;
@@ -47,7 +48,7 @@ int main()
     pthread_create(&t2, nullptr, func2, &newval);
 
     // Join both threads to ensure the main thread waits for them to finish
-  
+   sleep(5);
  
 
     return 0;
